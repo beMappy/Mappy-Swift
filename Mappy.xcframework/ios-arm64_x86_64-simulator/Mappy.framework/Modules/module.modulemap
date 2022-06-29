@@ -1,0 +1,11 @@
+framework module Mappy {
+  umbrella header "Mappy.h"
+
+  export *
+  module * { export * }
+}
+
+module Mappy.Swift {
+    header "Mappy-Swift.h"
+    requires objc
+}
