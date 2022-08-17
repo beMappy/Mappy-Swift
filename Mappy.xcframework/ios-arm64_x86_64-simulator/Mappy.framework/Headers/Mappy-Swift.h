@@ -217,6 +217,16 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+
+
+
+
+
+
+
+
+
+
 @class NSCoder;
 
 /// MapView is a UI object that helps in rendering the 2D map. Once the map is loaded, add the map to MapView and then you can add the same to your UI hierarchy.
@@ -456,6 +466,16 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="Mappy",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+
+
+
+
+
+
+
+
+
 
 
 @class NSCoder;

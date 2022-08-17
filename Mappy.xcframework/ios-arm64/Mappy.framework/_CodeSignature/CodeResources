@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Mappy-Swift.h</key>
 		<data>
-		bwhxPDMuzz6QdmtAU5r/UKL07mc=
+		5djo1ano6aSU/FmASTCfyp/DkVI=
 		</data>
 		<key>Headers/Mappy.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		OFOQB0xm9tgAYUxXC7XwEN1JhJA=
+		C4gFlTybNWQ5RG2LFraijmLnMbg=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		k5WjDd3iRWsCoQh76niqaCMlzVM=
+		XqNenMGlAq7Kg+L739TBFkOYxl0=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		brprNiFzuPmqNjFzplXyyop5YBI=
+		4Oa9i1/m7aXslkkiEFsYFaHxpGk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,7 +39,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AmP8NtJUZLvgzpdWgXX1NM7I9E2LWQUvlymm2W9dml8=
+			mRV38r3WnpOlbD58uK6iu2OqEwzIueDGH5/b6DRJccE=
 			</data>
 		</dict>
 		<key>Headers/Mappy.h</key>
@@ -53,21 +53,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MZxJBhIDYUfsiWFH89Be1HhjCcVbgEtVjr6WKXaGLuo=
+			QzOYRkqj3LFcbmEBvRoSrIFSVmN+LkyOVAF0g3qRkQ8=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ftJnhpuaCiBLQA8o+Iu2b8GDcAx/3Ams7FtbPBDndNk=
+			RIzoLIKLNWHa2MqiW193+WFCGvZQ/bud6+817XYCUH0=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m3JCNHeBUT+0gb3vkepGgl+kUe/zjRp3L9LlTFDZpgo=
+			sJ+2pX34rWtbKY51xJ1JMJd3oaZj1Iqq4j6L5iW5Q8w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

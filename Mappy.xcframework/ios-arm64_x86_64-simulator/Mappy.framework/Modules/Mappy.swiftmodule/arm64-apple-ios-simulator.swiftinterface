@@ -15,6 +15,7 @@ import _Concurrency
 public enum MapsProviderError : Foundation.LocalizedError {
   case objectNotFound
   case mapNotFound
+  case diskOperationFailed
   case underlyingError(Swift.Error)
   public var errorDescription: Swift.String? {
     get
@@ -25,30 +26,266 @@ public enum MapsProviderError : Foundation.LocalizedError {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) final public var isPointingNorth: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var onViewpointChange: (() -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-public enum VenuesProviderError : Foundation.LocalizedError {
-  case objectNotFound
-  case venuesNotFound
-  case venueNotFound
-  case underlyingError(Swift.Error)
-  public var errorDescription: Swift.String? {
+public struct Building : Swift.Equatable, Swift.Hashable {
+  public enum Category : Swift.String {
+    case chalet
+    case hotelLobby
+    case lodge
+    case restaurant
+    case restroom
+    case skiPatrol
+    case other
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let name: Swift.String
+  public let category: Mappy.Building.Category?
+  public let url: Swift.String?
+  public let phone: Swift.String?
+  public let facilityId: Swift.String?
+  public init(name: Swift.String, category: Mappy.Building.Category?, url: Swift.String?, phone: Swift.String?, facilityId: Swift.String?)
+  public static func == (a: Mappy.Building, b: Mappy.Building) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
 }
-final public class Scene {
-  public init(sceneInfo: Mappy.Venue)
-  final public func load(completion: @escaping (Swift.Error?) -> Swift.Void)
+public struct SkiLift : Swift.Equatable, Swift.Hashable {
+  public enum LiftType : Swift.String {
+    case magicCarpet
+    case towRope
+    case chairLift2
+    case chairLift3
+    case chairLift4
+    case chairLift5
+    case chairLift6
+    case gondola
+    case tram
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum PassengerPosition : Swift.String {
+    case sit
+    case stand
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var displayName: Swift.String {
+    get
+  }
+  public let name: Swift.String
+  public let liftType: Mappy.SkiLift.LiftType?
+  public let passengerPosition: Mappy.SkiLift.PassengerPosition?
+  public let length: Swift.Double?
+  public let travelTime: Swift.Double?
+  public var liftNumber: Swift.Int?
+  public init(name: Swift.String, liftNumber: Swift.Int?, liftType: Mappy.SkiLift.LiftType?, passengerPosition: Mappy.SkiLift.PassengerPosition?, length: Swift.Double?, travelTime: Swift.Double?)
+  public static func == (a: Mappy.SkiLift, b: Mappy.SkiLift) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class VenuesService {
+  public init()
+  public func getVenues() -> Combine.AnyPublisher<[Mappy.Venue], Mappy.VenuesProviderError>
+  public func getVenue(venueId: Swift.String) -> Combine.AnyPublisher<Mappy.Venue?, Mappy.VenuesProviderError>
   @objc deinit
 }
+final public class Scene {
+  public init(sceneInfo: Mappy.Venue)
+  @objc deinit
+}
+public protocol Serializable : Swift.Decodable, Swift.Encodable {
+  func serialize() -> Foundation.Data?
+}
+extension Mappy.Serializable {
+  public func serialize() -> Foundation.Data?
+}
+public struct BuildingAmenity : Swift.Equatable, Swift.Hashable {
+  public enum Category : Swift.String, Swift.Comparable {
+    case foodAndBeverage
+    case retail
+    case firstAid
+    case other
+    case accommodations
+    case guestServices
+    case transportation
+    case baseArea
+    case skiFeature
+    case information
+    public static func < (lhs: Mappy.BuildingAmenity.Category, rhs: Mappy.BuildingAmenity.Category) -> Swift.Bool
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Subtype : Swift.String {
+    case bar
+    case fullService
+    case casual
+    case ticketOffice
+    case rentalShop
+    case repairShop
+    case retailStore
+    case zipTours
+    case skiPatrol
+    case aed
+    case restroom
+    case skiSchool
+    case kidZones
+    case lockers
+    case restArea
+    case adaAccessible
+    case other
+    case shuttleStop
+    case transportation
+    case rentals
+    case atm
+    case hotel
+    case condo
+    case information
+    case baseArea
+    case village
+    case villageNoDetail
+    case racingArena
+    case terrainPark
+    case guestServices
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let name: Swift.String
+  public let category: Mappy.BuildingAmenity.Category?
+  public let subtype: Mappy.BuildingAmenity.Subtype?
+  public let buildingId: Swift.Int?
+  public let buildingName: Swift.String?
+  public let levelId: Swift.String?
+  public let url: Swift.String?
+  public let phone: Swift.String?
+  public init(name: Swift.String, category: Mappy.BuildingAmenity.Category?, subtype: Mappy.BuildingAmenity.Subtype?, buildingId: Swift.Int?, buildingName: Swift.String?, levelId: Swift.String?, url: Swift.String?, phone: Swift.String?)
+  public static func == (a: Mappy.BuildingAmenity, b: Mappy.BuildingAmenity) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum FeatureCategory : Swift.Equatable, Swift.Hashable {
+  case skiSlope(Mappy.SkiSlope)
+  case skiLift(Mappy.SkiLift)
+  case building(Mappy.Building)
+  case amenity(Mappy.BuildingAmenity)
+  case bookmark(Mappy.Bookmark)
+  public var name: Swift.String {
+    get
+  }
+  public static func == (a: Mappy.FeatureCategory, b: Mappy.FeatureCategory) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum Environment : Swift.String, Mappy.Serializable {
+  case DEV, TST, STG, PRD
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct SkiSlope : Swift.Equatable, Swift.Hashable {
+  public enum Level : Swift.Int, Swift.Comparable, Swift.CaseIterable, Swift.Identifiable {
+    public static func < (lhs: Mappy.SkiSlope.Level, rhs: Mappy.SkiSlope.Level) -> Swift.Bool
+    case beginner, intermediate, advanced, expert
+    public var id: Swift.Int {
+      get
+    }
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [Mappy.SkiSlope.Level]
+    public typealias ID = Swift.Int
+    public typealias RawValue = Swift.Int
+    public static var allCases: [Mappy.SkiSlope.Level] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum RunType : Swift.String {
+    case walkingPath
+    case mainRun
+    case connectorTrail
+    case nordicTrail
+    case catwalk
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let name: Swift.String
+  public let level: Mappy.SkiSlope.Level?
+  public let runType: Mappy.SkiSlope.RunType?
+  public let length: Swift.Double?
+  public let averageSlope: Swift.Double?
+  public let averageSpeed: Swift.Double?
+  public let travelTime: Swift.Double?
+  public let extremeCondition: Swift.Bool?
+  public init(name: Swift.String, level: Mappy.SkiSlope.Level?, runType: Mappy.SkiSlope.RunType?, length: Swift.Double?, averageSlope: Swift.Double?, averageSpeed: Swift.Double?, travelTime: Swift.Double?, extremeCondition: Swift.Bool?)
+  public static func == (a: Mappy.SkiSlope, b: Mappy.SkiSlope) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class MappyCore {
+  public static func initialize(clientId: Swift.String, secret: Swift.String, completion: ((Swift.Error?) -> Swift.Void)?)
+  @objc deinit
+}
+public protocol FeatureAccessing {
+  func featureLayers(withTablesNamed names: [Swift.String]) -> Combine.AnyPublisher<[Mappy.FeatureLayerContaining], Swift.Error>
+  func layerName(withTableNamed name: Swift.String) -> Swift.String?
+}
+extension Mappy.FeatureAccessing {
+  public func features(inLayersWithTablesNamed names: [Swift.String]) -> Combine.AnyPublisher<[ArcGIS.AGSFeature], Swift.Error>
+}
+final public class Map2DAccessor {
+  public init(with packageURL: Foundation.URL)
+  @objc deinit
+}
+extension Mappy.Map2DAccessor {
+  final public func sharedMap() -> Combine.AnyPublisher<ArcGIS.AGSMap, Swift.Error>
+  final public func sharedLocator() -> Combine.AnyPublisher<ArcGIS.AGSLocatorTask, Swift.Error>
+  final public func sharedRouter() -> Combine.AnyPublisher<ArcGIS.AGSRouteTask, Swift.Error>
+  final public func sharedFloorManager() -> Combine.AnyPublisher<ArcGIS.AGSFloorManager?, Swift.Error>
+  final public func featureLayers(withTablesNamed names: [Swift.String]) -> Combine.AnyPublisher<[Mappy.FeatureLayerContaining], Swift.Error>
+  final public func layerName(withTableNamed name: Swift.String) -> Swift.String?
+  final public func getMap() -> Combine.AnyPublisher<ArcGIS.AGSMap, Swift.Error>
+  final public func closePackage()
+}
 public struct Venue {
-  public let resortId: Swift.String?
+  public let resortId: Swift.String
   public let data: Mappy.VenueData?
-  public let maps: [Mappy.VenueMap]?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
 }
 public struct VenueData {
   public let baseElevation: Swift.Int?
@@ -63,75 +300,165 @@ public struct VenueData {
   public let description: Swift.String?
   public let geoReference: Mappy.VenueGeoReference?
   public let terrainPercentage: Mappy.VenueTerrainPercentage?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public let queryParamResortName: Swift.String?
 }
 public struct VenueGeoReference {
-  public let minY: Swift.Float?
-  public let minX: Swift.Float?
-  public let maxY: Swift.Float?
-  public let maxX: Swift.Float?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public let minY: Swift.Double?
+  public let minX: Swift.Double?
+  public let maxY: Swift.Double?
+  public let maxX: Swift.Double?
 }
 public struct VenueTerrainPercentage {
   public let intermediate: Swift.Float?
   public let advanced: Swift.Float?
   public let beginer: Swift.Float?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
 }
-public struct VenueMap {
-  public let mapKey: Swift.String?
-  public let mapType: Mappy.VenueMap.MapType?
-  public enum MapType : Swift.String {
-    case map
-    case scene
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
+public enum VenuesProviderError : Foundation.LocalizedError {
+  case objectNotFound
+  case venuesNotFound
+  case venueNotFound
+  case underlyingError(Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
 }
-public class VenuesService {
+final public class SynchronizedDictionary<Key, Value> : Swift.CustomStringConvertible where Key : Swift.Hashable {
   public init()
-  public func getVenues() -> Combine.AnyPublisher<[Mappy.Venue], Mappy.VenuesProviderError>
-  public func getVenue(venueId: Swift.String) -> Combine.AnyPublisher<Mappy.Venue, Mappy.VenuesProviderError>
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class MappyCore {
-  public static func initialize(clientId: Swift.String, secret: Swift.String, completion: ((Swift.Error?) -> Swift.Void)?)
-  @objc deinit
+extension Mappy.SynchronizedDictionary {
+  final public var first: (key: Key, value: Value)? {
+    get
+  }
+  final public var count: Swift.Int {
+    get
+  }
+  final public var isEmpty: Swift.Bool {
+    get
+  }
+  final public var description: Swift.String {
+    get
+  }
+  final public var keys: Swift.Dictionary<Key, Value>.Keys? {
+    get
+  }
+  final public var values: Swift.Dictionary<Key, Value>.Values? {
+    get
+  }
+}
+extension Mappy.SynchronizedDictionary {
+  final public func first(where predicate: ((key: Key, value: Value)) -> Swift.Bool) -> (key: Key, value: Value)?
+  final public func filter(_ predicate: ((key: Key, value: Value)) -> Swift.Bool) -> [Key : Value]
+  final public func forEach(_ body: ((key: Key, value: Value)) -> Swift.Void)
+}
+extension Mappy.SynchronizedDictionary {
+  final public func removeValue(forKey key: Key, completion: ((Value?) -> Swift.Void)? = nil)
+  final public func removeAll(keepingCapacity keepCapacity: Swift.Bool = false, completion: (() -> Swift.Void)? = nil)
+}
+extension Mappy.SynchronizedDictionary {
+  final public subscript(key: Key) -> Value? {
+    get
+    set
+  }
+  final public func addEntries(from otherDictionary: [Key : Value])
 }
 final public class Map {
   public init(mapInfo: Mappy.Venue)
-  final public func load(completion: @escaping (Swift.Error?) -> Swift.Void)
   @objc deinit
+}
+public struct Feature : Swift.Identifiable, Swift.Equatable, Swift.Hashable {
+  public let id: Foundation.UUID
+  public let category: Mappy.FeatureCategory
+  public var associatedFeatures: Swift.Set<Mappy.Feature>
+  public static func == (a: Mappy.Feature, b: Mappy.Feature) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias ID = Foundation.UUID
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class SceneView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) final public var scene: Mappy.Scene? {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) final public var isPointingNorth: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var onViewpointChange: (() -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-extension Mappy.Venue : Swift.Encodable {}
-extension Mappy.Venue : Swift.Decodable {}
-extension Mappy.VenueData : Swift.Encodable {}
-extension Mappy.VenueData : Swift.Decodable {}
-extension Mappy.VenueGeoReference : Swift.Encodable {}
-extension Mappy.VenueGeoReference : Swift.Decodable {}
-extension Mappy.VenueTerrainPercentage : Swift.Encodable {}
-extension Mappy.VenueTerrainPercentage : Swift.Decodable {}
-extension Mappy.VenueMap : Swift.Encodable {}
-extension Mappy.VenueMap : Swift.Decodable {}
-extension Mappy.VenueMap.MapType : Swift.Encodable {}
-extension Mappy.VenueMap.MapType : Swift.Decodable {}
-extension Mappy.VenueMap.MapType : Swift.Equatable {}
-extension Mappy.VenueMap.MapType : Swift.Hashable {}
-extension Mappy.VenueMap.MapType : Swift.RawRepresentable {}
+public protocol MapSearchGateway {
+  func getSuggestions(text: Swift.String) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
+  func clearCache()
+  func getAll(sorting: Swift.Bool, subsorting: Swift.Bool, ignoreCache: Swift.Bool) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
+  func features(atLocation point: ArcGIS.AGSPoint, withinMeters maxDistance: Swift.Double) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
+  func features(atLocation point: ArcGIS.AGSPoint, withinMeters maxDistance: Swift.Double, completion: @escaping ([Mappy.Feature]) -> Swift.Void)
+}
+public protocol GeoDataCommon : ArcGIS.AGSLoadableBase {
+  var operationalLayers: Foundation.NSMutableArray { get }
+}
+extension ArcGIS.AGSMap : Mappy.GeoDataCommon {
+}
+extension ArcGIS.AGSScene : Mappy.GeoDataCommon {
+}
+extension Mappy.GeoDataCommon {
+  public func featureContainers() -> [Mappy.FeatureLayerContaining]
+}
+public protocol FeatureLayerContaining : ArcGIS.AGSLayer {
+  func featureLayers() -> [ArcGIS.AGSFeatureLayer]
+}
+extension Mappy.FeatureLayerContaining {
+  public func hasFeatureTable(withNameIncludedIn names: [Swift.String]) -> Swift.Bool
+}
+extension ArcGIS.AGSFeatureLayer : Mappy.FeatureLayerContaining {
+  public func featureLayers() -> [ArcGIS.AGSFeatureLayer]
+}
+extension ArcGIS.AGSGroupLayer : Mappy.FeatureLayerContaining {
+  public func featureLayers() -> [ArcGIS.AGSFeatureLayer]
+}
+public struct Bookmark : Swift.Equatable, Swift.Hashable {
+  public enum Category : Swift.String {
+    case village
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let name: Swift.String
+  public let category: Mappy.Bookmark.Category?
+  public static func == (a: Mappy.Bookmark, b: Mappy.Bookmark) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Mappy.Building.Category : Swift.Equatable {}
+extension Mappy.Building.Category : Swift.Hashable {}
+extension Mappy.Building.Category : Swift.RawRepresentable {}
+extension Mappy.SkiLift.LiftType : Swift.Equatable {}
+extension Mappy.SkiLift.LiftType : Swift.Hashable {}
+extension Mappy.SkiLift.LiftType : Swift.RawRepresentable {}
+extension Mappy.SkiLift.PassengerPosition : Swift.Equatable {}
+extension Mappy.SkiLift.PassengerPosition : Swift.Hashable {}
+extension Mappy.SkiLift.PassengerPosition : Swift.RawRepresentable {}
+extension Mappy.BuildingAmenity.Category : Swift.Hashable {}
+extension Mappy.BuildingAmenity.Category : Swift.RawRepresentable {}
+extension Mappy.BuildingAmenity.Subtype : Swift.Equatable {}
+extension Mappy.BuildingAmenity.Subtype : Swift.Hashable {}
+extension Mappy.BuildingAmenity.Subtype : Swift.RawRepresentable {}
+extension Mappy.Environment : Swift.Equatable {}
+extension Mappy.Environment : Swift.Hashable {}
+extension Mappy.Environment : Swift.RawRepresentable {}
+extension Mappy.SkiSlope.Level : Swift.Hashable {}
+extension Mappy.SkiSlope.Level : Swift.RawRepresentable {}
+extension Mappy.SkiSlope.RunType : Swift.Equatable {}
+extension Mappy.SkiSlope.RunType : Swift.Hashable {}
+extension Mappy.SkiSlope.RunType : Swift.RawRepresentable {}
+extension Mappy.Map2DAccessor : Mappy.FeatureAccessing {}
+extension Mappy.Bookmark.Category : Swift.Equatable {}
+extension Mappy.Bookmark.Category : Swift.Hashable {}
+extension Mappy.Bookmark.Category : Swift.RawRepresentable {}
