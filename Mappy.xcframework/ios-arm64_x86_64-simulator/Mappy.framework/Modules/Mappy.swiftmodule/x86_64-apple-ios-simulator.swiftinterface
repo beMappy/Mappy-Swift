@@ -54,12 +54,19 @@ public struct Building : Swift.Equatable, Swift.Hashable {
   public let url: Swift.String?
   public let phone: Swift.String?
   public let facilityId: Swift.String?
+  public static let anyBuilding: Mappy.Building
   public init(name: Swift.String, category: Mappy.Building.Category?, url: Swift.String?, phone: Swift.String?, facilityId: Swift.String?)
   public static func == (a: Mappy.Building, b: Mappy.Building) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
+}
+extension Mappy.Scene {
+  final public func load() -> Combine.AnyPublisher<Swift.Void, Mappy.SceneError>
+  final public func getFeatures() -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
+  final public func getFeatures(category: Mappy.FeatureCategory) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
+  final public func getFeatures(text: Swift.String) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
 }
 public struct SkiLift : Swift.Equatable, Swift.Hashable {
   public enum LiftType : Swift.String {
@@ -96,6 +103,7 @@ public struct SkiLift : Swift.Equatable, Swift.Hashable {
   public let length: Swift.Double?
   public let travelTime: Swift.Double?
   public var liftNumber: Swift.Int?
+  public static let anySkiLift: Mappy.SkiLift
   public init(name: Swift.String, liftNumber: Swift.Int?, liftType: Mappy.SkiLift.LiftType?, passengerPosition: Mappy.SkiLift.PassengerPosition?, length: Swift.Double?, travelTime: Swift.Double?)
   public static func == (a: Mappy.SkiLift, b: Mappy.SkiLift) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
@@ -109,9 +117,20 @@ public class VenuesService {
   public func getVenue(venueId: Swift.String) -> Combine.AnyPublisher<Mappy.Venue?, Mappy.VenuesProviderError>
   @objc deinit
 }
-final public class Scene {
+final public class Scene : Mappy.Loadable {
+  final public var loadStatus: Mappy.LoadStatus {
+    get
+  }
   public init(sceneInfo: Mappy.Venue)
   @objc deinit
+}
+public enum SceneError : Foundation.LocalizedError {
+  case objectNotFound
+  case identifierNotFound
+  case underlyingError(Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
+  }
 }
 public protocol Serializable : Swift.Decodable, Swift.Encodable {
   func serialize() -> Foundation.Data?
@@ -183,12 +202,27 @@ public struct BuildingAmenity : Swift.Equatable, Swift.Hashable {
   public let levelId: Swift.String?
   public let url: Swift.String?
   public let phone: Swift.String?
+  public static let anyBuildingAmenity: Mappy.BuildingAmenity
   public init(name: Swift.String, category: Mappy.BuildingAmenity.Category?, subtype: Mappy.BuildingAmenity.Subtype?, buildingId: Swift.Int?, buildingName: Swift.String?, levelId: Swift.String?, url: Swift.String?, phone: Swift.String?)
   public static func == (a: Mappy.BuildingAmenity, b: Mappy.BuildingAmenity) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
+}
+final public class SceneAccessor {
+  public init(with packageURL: Foundation.URL)
+  @objc deinit
+}
+extension Mappy.SceneAccessor {
+  final public func sharedScene() -> Combine.AnyPublisher<ArcGIS.AGSScene, Swift.Error>
+  final public func sharedLocator() -> Combine.AnyPublisher<ArcGIS.AGSLocatorTask, Swift.Error>
+  final public func sharedRouter() -> Combine.AnyPublisher<ArcGIS.AGSRouteTask, Swift.Error>
+  final public func sharedFloorManager() -> Combine.AnyPublisher<ArcGIS.AGSFloorManager?, Swift.Error>
+  final public func featureLayers(withTablesNamed names: [Swift.String]) -> Combine.AnyPublisher<[Mappy.FeatureLayerContaining], Swift.Error>
+  final public func layerName(withTableNamed name: Swift.String) -> Swift.String?
+  final public func loadedScene() -> Combine.AnyPublisher<ArcGIS.AGSScene, Swift.Error>
+  final public func closePackage()
 }
 public enum FeatureCategory : Swift.Equatable, Swift.Hashable {
   case skiSlope(Mappy.SkiSlope)
@@ -251,8 +285,24 @@ public struct SkiSlope : Swift.Equatable, Swift.Hashable {
   public let averageSpeed: Swift.Double?
   public let travelTime: Swift.Double?
   public let extremeCondition: Swift.Bool?
+  public static let anySkiSlope: Mappy.SkiSlope
   public init(name: Swift.String, level: Mappy.SkiSlope.Level?, runType: Mappy.SkiSlope.RunType?, length: Swift.Double?, averageSlope: Swift.Double?, averageSpeed: Swift.Double?, travelTime: Swift.Double?, extremeCondition: Swift.Bool?)
   public static func == (a: Mappy.SkiSlope, b: Mappy.SkiSlope) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol Loadable {
+  var loadStatus: Mappy.LoadStatus { get }
+}
+public enum LoadStatus {
+  case loaded
+  case loading
+  case failedToLoad
+  case notLoaded
+  case unknown
+  public static func == (a: Mappy.LoadStatus, b: Mappy.LoadStatus) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -269,18 +319,18 @@ public protocol FeatureAccessing {
 extension Mappy.FeatureAccessing {
   public func features(inLayersWithTablesNamed names: [Swift.String]) -> Combine.AnyPublisher<[ArcGIS.AGSFeature], Swift.Error>
 }
-final public class Map2DAccessor {
+final public class MapAccessor {
   public init(with packageURL: Foundation.URL)
   @objc deinit
 }
-extension Mappy.Map2DAccessor {
+extension Mappy.MapAccessor {
   final public func sharedMap() -> Combine.AnyPublisher<ArcGIS.AGSMap, Swift.Error>
   final public func sharedLocator() -> Combine.AnyPublisher<ArcGIS.AGSLocatorTask, Swift.Error>
   final public func sharedRouter() -> Combine.AnyPublisher<ArcGIS.AGSRouteTask, Swift.Error>
   final public func sharedFloorManager() -> Combine.AnyPublisher<ArcGIS.AGSFloorManager?, Swift.Error>
   final public func featureLayers(withTablesNamed names: [Swift.String]) -> Combine.AnyPublisher<[Mappy.FeatureLayerContaining], Swift.Error>
   final public func layerName(withTableNamed name: Swift.String) -> Swift.String?
-  final public func getMap() -> Combine.AnyPublisher<ArcGIS.AGSMap, Swift.Error>
+  final public func loadedMap() -> Combine.AnyPublisher<ArcGIS.AGSMap, Swift.Error>
   final public func closePackage()
 }
 public struct Venue {
@@ -322,6 +372,10 @@ public enum VenuesProviderError : Foundation.LocalizedError {
     get
   }
 }
+extension Mappy.SceneView {
+  @_Concurrency.MainActor(unsafe) final public func setInitialViewpoint()
+  @_Concurrency.MainActor(unsafe) final public func rotateToNorth()
+}
 final public class SynchronizedDictionary<Key, Value> : Swift.CustomStringConvertible where Key : Swift.Hashable {
   public init()
   @objc deinit
@@ -362,9 +416,26 @@ extension Mappy.SynchronizedDictionary {
   }
   final public func addEntries(from otherDictionary: [Key : Value])
 }
-final public class Map {
+final public class Map : Mappy.Loadable {
+  final public var loadStatus: Mappy.LoadStatus {
+    get
+  }
   public init(mapInfo: Mappy.Venue)
   @objc deinit
+}
+public enum MapError : Foundation.LocalizedError {
+  case objectNotFound
+  case identifierNotFound
+  case underlyingError(Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension Mappy.Map {
+  final public func load() -> Combine.AnyPublisher<Swift.Void, Mappy.MapError>
+  final public func getFeatures() -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
+  final public func getFeatures(category: Mappy.FeatureCategory) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
+  final public func getFeatures(text: Swift.String) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
 }
 public struct Feature : Swift.Identifiable, Swift.Equatable, Swift.Hashable {
   public let id: Foundation.UUID
@@ -376,6 +447,10 @@ public struct Feature : Swift.Identifiable, Swift.Equatable, Swift.Hashable {
   public var hashValue: Swift.Int {
     get
   }
+}
+extension Mappy.MapView {
+  @_Concurrency.MainActor(unsafe) final public func setInitialViewpoint()
+  @_Concurrency.MainActor(unsafe) final public func rotateToNorth()
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class SceneView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) final public var scene: Mappy.Scene? {
@@ -391,9 +466,10 @@ public struct Feature : Swift.Identifiable, Swift.Equatable, Swift.Hashable {
   @objc deinit
 }
 public protocol MapSearchGateway {
-  func getSuggestions(text: Swift.String) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
+  func getFeatures(text: Swift.String) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
   func clearCache()
   func getAll(sorting: Swift.Bool, subsorting: Swift.Bool, ignoreCache: Swift.Bool) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
+  func features(category: Mappy.FeatureCategory) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
   func features(atLocation point: ArcGIS.AGSPoint, withinMeters maxDistance: Swift.Double) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
   func features(atLocation point: ArcGIS.AGSPoint, withinMeters maxDistance: Swift.Double, completion: @escaping ([Mappy.Feature]) -> Swift.Void)
 }
@@ -430,6 +506,7 @@ public struct Bookmark : Swift.Equatable, Swift.Hashable {
   }
   public let name: Swift.String
   public let category: Mappy.Bookmark.Category?
+  public static let anyBookmark: Mappy.Bookmark
   public static func == (a: Mappy.Bookmark, b: Mappy.Bookmark) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -450,6 +527,7 @@ extension Mappy.BuildingAmenity.Category : Swift.RawRepresentable {}
 extension Mappy.BuildingAmenity.Subtype : Swift.Equatable {}
 extension Mappy.BuildingAmenity.Subtype : Swift.Hashable {}
 extension Mappy.BuildingAmenity.Subtype : Swift.RawRepresentable {}
+extension Mappy.SceneAccessor : Mappy.FeatureAccessing {}
 extension Mappy.Environment : Swift.Equatable {}
 extension Mappy.Environment : Swift.Hashable {}
 extension Mappy.Environment : Swift.RawRepresentable {}
@@ -458,7 +536,9 @@ extension Mappy.SkiSlope.Level : Swift.RawRepresentable {}
 extension Mappy.SkiSlope.RunType : Swift.Equatable {}
 extension Mappy.SkiSlope.RunType : Swift.Hashable {}
 extension Mappy.SkiSlope.RunType : Swift.RawRepresentable {}
-extension Mappy.Map2DAccessor : Mappy.FeatureAccessing {}
+extension Mappy.LoadStatus : Swift.Equatable {}
+extension Mappy.LoadStatus : Swift.Hashable {}
+extension Mappy.MapAccessor : Mappy.FeatureAccessing {}
 extension Mappy.Bookmark.Category : Swift.Equatable {}
 extension Mappy.Bookmark.Category : Swift.Hashable {}
 extension Mappy.Bookmark.Category : Swift.RawRepresentable {}

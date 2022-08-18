@@ -237,12 +237,14 @@ SWIFT_CLASS("_TtC5Mappy7MapView")
 @end
 
 
+
 /// SceneView is a UI object that helps in rendering the 3D map. Once the scene is loaded, add the scene to SceneView and then you can add the same to your UI hierarchy.
 SWIFT_CLASS("_TtC5Mappy9SceneView")
 @interface SceneView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -488,12 +490,14 @@ SWIFT_CLASS("_TtC5Mappy7MapView")
 @end
 
 
+
 /// SceneView is a UI object that helps in rendering the 3D map. Once the scene is loaded, add the scene to SceneView and then you can add the same to your UI hierarchy.
 SWIFT_CLASS("_TtC5Mappy9SceneView")
 @interface SceneView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
