@@ -197,6 +197,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ArcGIS;
 @import CoreGraphics;
 @import UIKit;
 #endif
@@ -229,7 +230,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class NSCoder;
 
-/// MapView is a UI object that helps in rendering the 2D map. Once the map is loaded, add the map to MapView and then you can add the same to your UI hierarchy.
+/// MapView is an UI class that helps in rendering the 2D map. Once the map is loaded, add the map to MapView and then you can add the same to your UI hierarchy.
 SWIFT_CLASS("_TtC5Mappy7MapView")
 @interface MapView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -237,13 +238,29 @@ SWIFT_CLASS("_TtC5Mappy7MapView")
 @end
 
 
+@class AGSGeoView;
+@class AGSPoint;
 
-/// SceneView is a UI object that helps in rendering the 3D map. Once the scene is loaded, add the scene to SceneView and then you can add the same to your UI hierarchy.
+@interface MapView (SWIFT_EXTENSION(Mappy)) <AGSGeoViewTouchDelegate>
+- (void)geoView:(AGSGeoView * _Nonnull)geoView didTapAtScreenPoint:(CGPoint)screenPoint mapPoint:(AGSPoint * _Nonnull)mapPoint;
+@end
+
+
+
+
+/// SceneView is an UI class that helps in rendering the 3D map. Once the scene is loaded, add the scene to SceneView and then you can add the same to your UI hierarchy.
 SWIFT_CLASS("_TtC5Mappy9SceneView")
 @interface SceneView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+@interface SceneView (SWIFT_EXTENSION(Mappy)) <AGSGeoViewTouchDelegate>
+- (void)geoView:(AGSGeoView * _Nonnull)geoView didTapAtScreenPoint:(CGPoint)screenPoint mapPoint:(AGSPoint * _Nonnull)mapPoint;
+@end
+
 
 
 #if __has_attribute(external_source_symbol)
@@ -450,6 +467,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ArcGIS;
 @import CoreGraphics;
 @import UIKit;
 #endif
@@ -482,7 +500,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class NSCoder;
 
-/// MapView is a UI object that helps in rendering the 2D map. Once the map is loaded, add the map to MapView and then you can add the same to your UI hierarchy.
+/// MapView is an UI class that helps in rendering the 2D map. Once the map is loaded, add the map to MapView and then you can add the same to your UI hierarchy.
 SWIFT_CLASS("_TtC5Mappy7MapView")
 @interface MapView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -490,13 +508,29 @@ SWIFT_CLASS("_TtC5Mappy7MapView")
 @end
 
 
+@class AGSGeoView;
+@class AGSPoint;
 
-/// SceneView is a UI object that helps in rendering the 3D map. Once the scene is loaded, add the scene to SceneView and then you can add the same to your UI hierarchy.
+@interface MapView (SWIFT_EXTENSION(Mappy)) <AGSGeoViewTouchDelegate>
+- (void)geoView:(AGSGeoView * _Nonnull)geoView didTapAtScreenPoint:(CGPoint)screenPoint mapPoint:(AGSPoint * _Nonnull)mapPoint;
+@end
+
+
+
+
+/// SceneView is an UI class that helps in rendering the 3D map. Once the scene is loaded, add the scene to SceneView and then you can add the same to your UI hierarchy.
 SWIFT_CLASS("_TtC5Mappy9SceneView")
 @interface SceneView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+@interface SceneView (SWIFT_EXTENSION(Mappy)) <AGSGeoViewTouchDelegate>
+- (void)geoView:(AGSGeoView * _Nonnull)geoView didTapAtScreenPoint:(CGPoint)screenPoint mapPoint:(AGSPoint * _Nonnull)mapPoint;
+@end
+
 
 
 #if __has_attribute(external_source_symbol)
