@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'Mappy'
-  s.version      = '0.0.5'
+  s.version      = '0.0.6-beta'
   s.summary      = 'Mappy SDKs provide an elegant and composable interface for mapping, geocoding, and routing.'
 
   s.description  = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.author             = { 'Mohamed Afsar Shakeer' => 'afsar@freshworks.io' }
   
-  s.source       = { :git => 'https://github.com/beMappy/Mappy-Swift.git', :tag => '0.0.5' }
+  s.source       = { :git => 'https://github.com/beMappy/Mappy-Swift.git', :tag => '0.0.6-beta' }
 
   s.vendored_frameworks = 'Mappy.xcframework'
  
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'Swinject', '2.8.1' # A lightweight dependency injection framework.
 
-  s.dependency 'CocoaLumberjack/Swift', '3.7.4' # Powerful & flexible logging framework
+  # s.dependency 'CocoaLumberjack/Swift', '3.7.4' # Powerful & flexible logging framework
 
   s.dependency 'ArcGIS-Runtime-SDK-iOS', '100.14' # Mapping and GIS functionality
 
