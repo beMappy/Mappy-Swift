@@ -2,11 +2,13 @@
 // swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Mappy
 import ArcGIS
-import CocoaLumberjackSwift
 import Combine
+import CoreLocation
 import Foundation
 import KeychainAccess
 @_exported import Mappy
+import PusherSwift
+import Reachability
 import Swift
 import Swinject
 import UIKit
@@ -33,6 +35,14 @@ extension Mappy.MapView {
     case onViewpointChange
     case onTap(Mappy.Feature?)
   }
+}
+public struct UserLocation : Mappy.Serializable {
+  public let userId: Swift.String
+  public let lat: Swift.Double
+  public let long: Swift.Double
+  public let unixDate: Swift.Double
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct Building : Swift.Equatable, Swift.Hashable {
   public enum Category : Swift.String {
@@ -67,6 +77,17 @@ extension Mappy.Scene {
   final public func getFeatures() -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
   final public func getFeatures(category: Mappy.FeatureCategory) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
   final public func getFeatures(text: Swift.String, categories: [Mappy.FeatureCategory]? = nil) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
+}
+public struct Group : Swift.Equatable, Swift.Hashable {
+  public let groupId: Swift.String
+  public let groupCode: Swift.String
+  public let name: Swift.String
+  public let users: [Mappy.GroupUser]
+  public static func == (a: Mappy.Group, b: Mappy.Group) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public struct SkiLift : Swift.Equatable, Swift.Hashable {
   public enum LiftType : Swift.String {
@@ -121,7 +142,7 @@ final public class Scene : Mappy.Loadable {
   final public var loadStatus: Mappy.LoadStatus {
     get
   }
-  public init(sceneInfo: Mappy.Venue)
+  public init(sceneInfo: Mappy.SceneInfo)
   @objc deinit
 }
 public enum SceneError : Foundation.LocalizedError {
@@ -131,6 +152,9 @@ public enum SceneError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
+}
+public protocol SceneInfo {
+  var venueId: Swift.String { get }
 }
 public protocol Serializable : Swift.Decodable, Swift.Encodable {
   func serialize() -> Foundation.Data?
@@ -210,12 +234,20 @@ public struct BuildingAmenity : Swift.Equatable, Swift.Hashable {
     get
   }
 }
+public struct UserPinLocation {
+  public let userId: Swift.String
+  public let icon: UIKit.UIImage
+  public let name: Swift.String
+  public let lat: CoreLocation.CLLocationDegrees
+  public let long: CoreLocation.CLLocationDegrees
+  public let unixDate: Swift.Double
+  public init(userId: Swift.String, icon: UIKit.UIImage, name: Swift.String, lat: CoreLocation.CLLocationDegrees, long: CoreLocation.CLLocationDegrees, unixDate: Swift.Double)
+}
 public enum FeatureCategory : Swift.Equatable, Swift.Hashable {
   case skiSlope(Mappy.SkiSlope)
   case skiLift(Mappy.SkiLift)
   case building(Mappy.Building)
   case amenity(Mappy.BuildingAmenity)
-  case bookmark(Mappy.Bookmark)
   public var name: Swift.String {
     get
   }
@@ -231,6 +263,39 @@ public enum Environment : Swift.String, Mappy.Serializable {
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
+  }
+}
+final public class GroupsService {
+  public init()
+  final public func fetchGroups() -> Combine.AnyPublisher<[Mappy.Group], Mappy.GroupsProviderError>
+  final public func fetchGroupInfo(groupId: Swift.String) -> Combine.AnyPublisher<Mappy.Group, Mappy.GroupsProviderError>
+  final public func createGroup(name: Swift.String) -> Combine.AnyPublisher<Mappy.Group, Mappy.GroupsProviderError>
+  final public func updateGroup(groupId: Swift.String, name: Swift.String) -> Combine.AnyPublisher<Mappy.Group, Mappy.GroupsProviderError>
+  final public func deleteGroup(groupId: Swift.String) -> Combine.AnyPublisher<Mappy.Group, Mappy.GroupsProviderError>
+  final public func addUser(userId: Swift.String, groupCode: Swift.String) -> Combine.AnyPublisher<Mappy.Group, Mappy.GroupsProviderError>
+  final public func removeUser(userId: Swift.String, groupId: Swift.String) -> Combine.AnyPublisher<Mappy.Group, Mappy.GroupsProviderError>
+  @objc deinit
+}
+public class GroupLocationService {
+  final public let onEvent: Combine.PassthroughSubject<Mappy.GroupLocationService.Event, Swift.Never>
+  public init()
+  public func shareUserLocation() -> Combine.AnyPublisher<Swift.Void, Mappy.GroupLocationServiceError>
+  public func stopSharingUserLocation()
+  public func listenToGroups() -> Combine.AnyPublisher<Swift.Void, Mappy.GroupLocationServiceError>
+  @objc deinit
+}
+public enum GroupLocationServiceError : Foundation.LocalizedError {
+  case objectNotFound
+  case clientIdNotFound
+  case userNotSharingGroupWithOthers
+  case underlyingError(Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension Mappy.GroupLocationService {
+  public enum Event {
+    case userLocation(Mappy.UserLocation)
   }
 }
 public struct SkiSlope : Swift.Equatable, Swift.Hashable {
@@ -295,14 +360,21 @@ public enum LoadStatus {
   }
 }
 @_hasMissingDesignatedInitializers public class MappyCore {
-  public static func initialize(clientId: Swift.String, secret: Swift.String) -> Combine.AnyPublisher<Swift.Void, Mappy.MappyCoreError>
+  public static func initialize(clientId: Swift.String, secret: Swift.String, mappyUserId: Swift.String?) -> Combine.AnyPublisher<Mappy.MappyMeta, Swift.Never>
   @objc deinit
+}
+public struct MappyMeta {
+  public var mappyUserId: Swift.String?
+  public var error: Mappy.MappyCoreError?
 }
 public enum MappyCoreError : Foundation.LocalizedError {
   case underlyingError(Swift.Error)
   public var errorDescription: Swift.String? {
     get
   }
+}
+extension Swift.Array where Element : Swift.Hashable {
+  public func uniqued() -> [Element]
 }
 public struct Venue {
   public let resortId: Swift.String
@@ -334,15 +406,21 @@ public struct VenueTerrainPercentage {
   public let advanced: Swift.Float?
   public let beginer: Swift.Float?
 }
-public struct VenueMap {
-  public enum MapType : Swift.String {
-    case map
-    case scene
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
+public enum MapType : Swift.String {
+  case map
+  case scene
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Mappy.Venue : Mappy.MapInfo, Mappy.SceneInfo {
+  public var venueId: Swift.String {
+    get
+  }
+  public var region: Mappy.MapRegion {
+    get
   }
 }
 public enum VenuesProviderError : Foundation.LocalizedError {
@@ -358,21 +436,27 @@ extension Mappy.SceneView {
   @_Concurrency.MainActor(unsafe) final public func setInitialViewpoint()
   @_Concurrency.MainActor(unsafe) final public func rotateToNorth()
   @_Concurrency.MainActor(unsafe) final public func select(feature: Mappy.Feature?)
+  @_Concurrency.MainActor(unsafe) final public func displayUserPins(using locations: [Mappy.UserPinLocation])
 }
 final public class Map : Mappy.Loadable {
   final public var loadStatus: Mappy.LoadStatus {
     get
   }
-  public init(mapInfo: Mappy.Venue)
+  public init(mapInfo: Mappy.MapInfo)
   @objc deinit
 }
 public enum MapError : Foundation.LocalizedError {
   case objectNotFound
-  case identifierNotFound
   case underlyingError(Swift.Error)
   public var errorDescription: Swift.String? {
     get
   }
+}
+public protocol MapInfo {
+  var venueId: Swift.String { get }
+  var region: Mappy.MapRegion { get }
+}
+public struct MapRegion {
 }
 extension Mappy.Map {
   final public func load() -> Combine.AnyPublisher<Swift.Void, Mappy.MapError>
@@ -391,10 +475,18 @@ public struct Feature : Swift.Identifiable, Swift.Equatable, Swift.Hashable {
     get
   }
 }
+public enum GroupsProviderError : Foundation.LocalizedError {
+  case objectNotFound
+  case underlyingError(Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
 extension Mappy.MapView {
   @_Concurrency.MainActor(unsafe) final public func setInitialViewpoint()
   @_Concurrency.MainActor(unsafe) final public func rotateToNorth()
   @_Concurrency.MainActor(unsafe) final public func select(feature: Mappy.Feature?)
+  @_Concurrency.MainActor(unsafe) final public func displayUserPins(using locations: [Mappy.UserPinLocation])
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class SceneView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) final public var scene: Mappy.Scene? {
@@ -418,19 +510,20 @@ extension Mappy.SceneView {
     case onTap(Mappy.Feature?)
   }
 }
-public struct Bookmark : Swift.Equatable, Swift.Hashable {
-  public enum Category : Swift.String {
-    case village
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
+public struct GroupUser : Swift.Equatable, Swift.Hashable {
+  public let userId: Swift.String
+  public let location: Mappy.GroupUser.Location?
+  public struct Location : Swift.Equatable, Swift.Hashable {
+    public let unixDate: Foundation.TimeInterval
+    public let lat: Swift.Double
+    public let long: Swift.Double
+    public static func == (a: Mappy.GroupUser.Location, b: Mappy.GroupUser.Location) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
       get
     }
   }
-  public let name: Swift.String
-  public let category: Mappy.Bookmark.Category?
-  public static let any: Mappy.Bookmark
-  public static func == (a: Mappy.Bookmark, b: Mappy.Bookmark) -> Swift.Bool
+  public static func == (a: Mappy.GroupUser, b: Mappy.GroupUser) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -439,6 +532,9 @@ public struct Bookmark : Swift.Equatable, Swift.Hashable {
 extension Mappy.Building.Category : Swift.Equatable {}
 extension Mappy.Building.Category : Swift.Hashable {}
 extension Mappy.Building.Category : Swift.RawRepresentable {}
+extension Mappy.MapType : Swift.Equatable {}
+extension Mappy.MapType : Swift.Hashable {}
+extension Mappy.MapType : Swift.RawRepresentable {}
 extension Mappy.SkiLift.LiftType : Swift.Equatable {}
 extension Mappy.SkiLift.LiftType : Swift.Hashable {}
 extension Mappy.SkiLift.LiftType : Swift.RawRepresentable {}
@@ -460,9 +556,3 @@ extension Mappy.SkiSlope.RunType : Swift.Hashable {}
 extension Mappy.SkiSlope.RunType : Swift.RawRepresentable {}
 extension Mappy.LoadStatus : Swift.Equatable {}
 extension Mappy.LoadStatus : Swift.Hashable {}
-extension Mappy.VenueMap.MapType : Swift.Equatable {}
-extension Mappy.VenueMap.MapType : Swift.Hashable {}
-extension Mappy.VenueMap.MapType : Swift.RawRepresentable {}
-extension Mappy.Bookmark.Category : Swift.Equatable {}
-extension Mappy.Bookmark.Category : Swift.Hashable {}
-extension Mappy.Bookmark.Category : Swift.RawRepresentable {}
