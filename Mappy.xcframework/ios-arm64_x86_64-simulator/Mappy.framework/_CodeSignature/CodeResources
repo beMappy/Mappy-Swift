@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		16MXz7PgXdMV5B3kl1T2OxdZ0r0=
+		WEpq+uUbJk34H32wgsebmHXYnYg=
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RB2RZ5DoZtkvsn7j9SUXZjEwZ1U=
+		F838p5pRt202YHZDUqn/yex6HIU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j/3yQYwt5445ag14hgOolXrXREAjvpeHcF+Y0FY0muE=
+			MfnPGL+M+43kKHFpjlyMVfoQ8DGyIvk6KXZt4kgqvUo=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nxl1zCNBpyZxKzdZOS2SAM42zr+SYqWm5rukX9LNQW8=
+			KY6WgNC4VRzDGqsRxWUD0x9OigWCerUk3EhgPCTE8Bs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
