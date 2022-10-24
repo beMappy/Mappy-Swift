@@ -219,6 +219,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+@class AGSLocation;
+
+@interface AGSLocationDataSource (SWIFT_EXTENSION(Mappy)) <AGSLocationChangeHandlerDelegate>
+- (void)locationDataSource:(AGSLocationDataSource * _Nonnull)locationDataSource locationDidChange:(AGSLocation * _Nonnull)location;
+@end
+
+
+
 
 
 
