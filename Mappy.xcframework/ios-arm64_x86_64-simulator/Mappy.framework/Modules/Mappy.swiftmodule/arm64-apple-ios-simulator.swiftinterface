@@ -287,7 +287,6 @@ public class GroupLocationService {
 }
 public enum GroupLocationServiceError : Foundation.LocalizedError {
   case objectNotFound
-  case locationNotFound
   case clientIdNotFound
   case userIsNotInsideTheVenue
   case underlyingError(Swift.Error)
@@ -379,7 +378,7 @@ extension ArcGIS.AGSLocationDataSource : ArcGIS.AGSLocationChangeHandlerDelegate
   @objc dynamic public func locationDataSource(_ locationDataSource: ArcGIS.AGSLocationDataSource, locationDidChange location: ArcGIS.AGSLocation)
 }
 public struct Venue {
-  public let resortId: Swift.String
+  public let venueId: Swift.String
   public let data: Mappy.VenueData?
 }
 public struct VenueData {
@@ -418,9 +417,6 @@ public enum MapType : Swift.String {
   }
 }
 extension Mappy.Venue : Mappy.MapInfo, Mappy.SceneInfo {
-  public var venueId: Swift.String {
-    get
-  }
   public var region: Mappy.MapRegion {
     get
   }
@@ -479,6 +475,18 @@ public struct Feature : Swift.Identifiable, Swift.Equatable, Swift.Hashable {
 }
 public enum GroupsProviderError : Foundation.LocalizedError {
   case objectNotFound
+  case groupLimitExceeded
+  case groupUsersLimitExceeded
+  case userNotFound
+  case groupNotFound
+  case userAlreadyExists
+  case groupAlreadyExists
+  case groupIsEmpty
+  case userAlreadyInGroup
+  case userNotInGroup
+  case groupCodeInUse
+  case groupCodeNotFound
+  case invalidPayload
   case underlyingError(Swift.Error)
   public var errorDescription: Swift.String? {
     get
