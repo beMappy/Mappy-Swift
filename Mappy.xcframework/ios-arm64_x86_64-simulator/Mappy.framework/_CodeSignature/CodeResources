@@ -4,42 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/NWWebSocket.framework/Info.plist</key>
-		<data>
-		lF4q2OX6GYm5WJtECF+IKpx3oFg=
-		</data>
-		<key>Frameworks/NWWebSocket.framework/NWWebSocket</key>
-		<data>
-		axDgyb+JxDL+jOxhzsMmKHUPIOE=
-		</data>
-		<key>Frameworks/NWWebSocket.framework/_CodeSignature/CodeResources</key>
-		<data>
-		JuKLMcltKQULtMVkNX/VOhIGNNo=
-		</data>
-		<key>Frameworks/PusherSwift.framework/Info.plist</key>
-		<data>
-		4rvbnSWjz0qt3VVzIjQ+YgAq7Qk=
-		</data>
-		<key>Frameworks/PusherSwift.framework/PusherSwift</key>
-		<data>
-		uyL2OEKJsHwfCQllFQ/iEqlXA2k=
-		</data>
-		<key>Frameworks/PusherSwift.framework/_CodeSignature/CodeResources</key>
-		<data>
-		TbWlyVm72xfT4bk6esxG822jV44=
-		</data>
-		<key>Frameworks/TweetNacl.framework/Info.plist</key>
-		<data>
-		3vhVGmZeOsqh2HYyw9nZkHYptoc=
-		</data>
-		<key>Frameworks/TweetNacl.framework/TweetNacl</key>
-		<data>
-		12ZLYX278AFfX3/8xsxhuyfXnlo=
-		</data>
-		<key>Frameworks/TweetNacl.framework/_CodeSignature/CodeResources</key>
-		<data>
-		Hw4ankYRLutH83tp3wVI1f6tcBU=
-		</data>
 		<key>Headers/Mappy-Swift.h</key>
 		<data>
 		eNA29lNGL+XL58Q+/dfGVHFoZsA=
@@ -62,7 +26,7 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ButsWt3SrgoHmeYtEA84zNN3dfI=
+		3vHRS6z3YgJcrGm//sqrqeYqvEo=
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -74,7 +38,7 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ApGBSdZ3zowvgSEgZzHg2Plsq70=
+		wg1j1CUD2biS7YXdc6JlSdd5Bbo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,69 +47,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/NWWebSocket.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bz8drlkUm4S36TTPsSWClpz/QeeBPKguslWqrm5hVQU=
-			</data>
-		</dict>
-		<key>Frameworks/NWWebSocket.framework/NWWebSocket</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KM21KcGdhL2duSbVOSw2q1E2ujMi9T46vzlH480dBP0=
-			</data>
-		</dict>
-		<key>Frameworks/NWWebSocket.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XK+VAZLGFqdGtf8Xo1H0zeVQdbQnMmUMpQSRMSeoeQc=
-			</data>
-		</dict>
-		<key>Frameworks/PusherSwift.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			k1xlAaw2q+5QUzk0zQ7LTIy/sccml8zfIQYMZAJrics=
-			</data>
-		</dict>
-		<key>Frameworks/PusherSwift.framework/PusherSwift</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			47BR+2kcuiAVK8Vt0x/uvNy77LDEqe9/fqngXhbiW8s=
-			</data>
-		</dict>
-		<key>Frameworks/PusherSwift.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SWEurw04gWaxYmWmxxjexMgKDd+AD0D3Q6LhbtS4O4s=
-			</data>
-		</dict>
-		<key>Frameworks/TweetNacl.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LydQspFQRFwoSI8ZpP8VQVMGJMoaQwrz2vK5Jd3PV+A=
-			</data>
-		</dict>
-		<key>Frameworks/TweetNacl.framework/TweetNacl</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			a4Ze1ye8tn3PTvPKxzDwSvjskI/IaNqEWNp3ohrXeMM=
-			</data>
-		</dict>
-		<key>Frameworks/TweetNacl.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JCSxJFZzX0tMC/8oFJah2D5xWKoaQVl5qvHUbznmpj8=
-			</data>
-		</dict>
 		<key>Headers/Mappy-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -178,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xaA1Rvi8fKRUEIB+0YTTxOo1x9xHkZTJhbsgnzP+BWE=
+			ACg1vp8gFq08VkUbMSaFlW/DXyjrIBwosqwUxEDTGok=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -199,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p+IVSUVexdu3Hqu7HCHr58ZQjJ2me+ko3tI1SxTmHVM=
+			K9J85aldBzYL+YDeZduABumKGk57r+DLfzUWrrzrOsU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
