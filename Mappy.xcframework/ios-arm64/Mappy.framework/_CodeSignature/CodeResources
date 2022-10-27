@@ -4,6 +4,42 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/NWWebSocket.framework/Info.plist</key>
+		<data>
+		Os4pUJTeZWvjjqxzCp8NWJUIjvo=
+		</data>
+		<key>Frameworks/NWWebSocket.framework/NWWebSocket</key>
+		<data>
+		GTOQufIBs9xs0q3/k0o5MGXo0Fs=
+		</data>
+		<key>Frameworks/NWWebSocket.framework/_CodeSignature/CodeResources</key>
+		<data>
+		4RqL237MsYeAwCX1uExinSGm6rI=
+		</data>
+		<key>Frameworks/PusherSwift.framework/Info.plist</key>
+		<data>
+		tjDGBjzMA1QAoBvedaraOkCJ9/s=
+		</data>
+		<key>Frameworks/PusherSwift.framework/PusherSwift</key>
+		<data>
+		SaLBuDzmt3RUxNBm/SYgrXJUSHA=
+		</data>
+		<key>Frameworks/PusherSwift.framework/_CodeSignature/CodeResources</key>
+		<data>
+		51rmNDP53101KnvMV6eN9lf7zgY=
+		</data>
+		<key>Frameworks/TweetNacl.framework/Info.plist</key>
+		<data>
+		IrGQVmKko0Ff+2SE8q57tLML398=
+		</data>
+		<key>Frameworks/TweetNacl.framework/TweetNacl</key>
+		<data>
+		Nk6zPRJmvRdXlTit6kdBxneempk=
+		</data>
+		<key>Frameworks/TweetNacl.framework/_CodeSignature/CodeResources</key>
+		<data>
+		VvzTmff0n9HzT6spu1ss4yQ9Cj8=
+		</data>
 		<key>Headers/Mappy-Swift.h</key>
 		<data>
 		K7W4h3XU2+Ebx0TjTzusAZAtdvA=
@@ -26,7 +62,7 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+FTubGmQxuNIGvpGwmitoceALRw=
+		3UEzl5zhxmtklZIMSW/5fYNg438=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,6 +71,69 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/NWWebSocket.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			30Lr5EWM0+ODwfCQ3vb8mpSUumstQ/fPEpwyjsFJcDo=
+			</data>
+		</dict>
+		<key>Frameworks/NWWebSocket.framework/NWWebSocket</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l1RMG2IL9TQpa7wR7u/cZx9EHBnlNrDgQS699BjX7iU=
+			</data>
+		</dict>
+		<key>Frameworks/NWWebSocket.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pfLtxFZUH1i4cqbKaReHrDzXi32WO1s4ED+y9u5xqd4=
+			</data>
+		</dict>
+		<key>Frameworks/PusherSwift.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rEDalqt5eUvy95oUH/vvx4JO7rWpphXRX9sGGBM+2xk=
+			</data>
+		</dict>
+		<key>Frameworks/PusherSwift.framework/PusherSwift</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m/xjkCYsjUJ+ESi9P7WZpRjAKG1Dkx2oaI6S6nNcxj4=
+			</data>
+		</dict>
+		<key>Frameworks/PusherSwift.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UtC8IErWpx4HXk1wwOT4H5aOwOJb9+/4EsnMWDRfGQk=
+			</data>
+		</dict>
+		<key>Frameworks/TweetNacl.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IYccVKVqdFQyz1rLHCNam81BaibHjk3Xyb90Z/nQnjU=
+			</data>
+		</dict>
+		<key>Frameworks/TweetNacl.framework/TweetNacl</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Q1ikQ2PrZeE03AcI7EkCGCIGiFPWanwkzvixkFFsUn8=
+			</data>
+		</dict>
+		<key>Frameworks/TweetNacl.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MwkNCC6Kjb74F2809RrrGXn4Cjni7Gd1qAt46ZLcr0Q=
+			</data>
+		</dict>
 		<key>Headers/Mappy-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -67,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XmL1tBWJbW9Ke+HK1KWjB3QPlACeugR5V/OAXrPGmjM=
+			NH5XU0Ucu/Eyn90nronhHxYB4lLJ2IAFfQzU+VXqszE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
