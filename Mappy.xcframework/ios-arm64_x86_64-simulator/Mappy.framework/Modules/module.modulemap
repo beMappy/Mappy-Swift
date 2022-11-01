@@ -6,6 +6,6 @@ framework module Mappy {
 }
 
 module Mappy.Swift {
-    header "Mappy-Swift.h"
-    requires objc
+  header "Mappy-Swift.h"
+  requires objc
 }

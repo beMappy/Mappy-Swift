@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'Mappy'
-  s.version      = '0.2.8'
+  s.version      = '0.2.8-xc14'
   s.summary      = 'Mappy SDKs provide an elegant and composable interface for mapping, geocoding, and routing.'
 
   s.description  = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.author             = { 'Mohamed Afsar Shakeer' => 'afsar@freshworks.io' }
   
-  s.source       = { :git => 'https://github.com/beMappy/Mappy-Swift.git', :tag => '0.2.8' }
+  s.source       = { :git => 'https://github.com/beMappy/Mappy-Swift.git', :tag => '0.2.8-xc14' }
 
   s.vendored_frameworks = 'Mappy.xcframework'
  
@@ -32,10 +32,10 @@ Pod::Spec.new do |s|
 
   s.dependency 'ZIPFoundation', '0.9.13' # zip and unzip items
 
-  s.dependency 'XCReachabilitySwift', '5.1.0' # To check Internet connection status
+  s.dependency 'XCReachabilitySwift', '5.1.0-xc14' # To check Internet connection status
 
-  s.dependency 'XCPusherSwift', '10.1.1' # Messaging infrastructure
+  s.dependency 'XCPusherSwift', '10.1.1-xc14' # Messaging infrastructure
 
-  s.dependency 'XCCocoaLumberjackSwift', '3.7.4' # Powerful & flexible logging framework
+  s.dependency 'XCCocoaLumberjackSwift', '3.7.4-xc14' # Powerful & flexible logging framework
 
 end
