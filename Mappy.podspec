@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'Mappy'
-  s.version      = '0.2.8-xc14-2'
+  s.version      = '0.2.8-xc14-3'
   s.summary      = 'Mappy SDKs provide an elegant and composable interface for mapping, geocoding, and routing.'
 
   s.description  = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.author             = { 'Mohamed Afsar Shakeer' => 'afsar@freshworks.io' }
   
-  s.source       = { :git => 'https://github.com/beMappy/Mappy-Swift.git', :tag => '0.2.8-xc14-2' }
+  s.source       = { :git => 'https://github.com/beMappy/Mappy-Swift.git', :tag => '0.2.8-xc14-3' }
 
   s.vendored_frameworks = 'Mappy.xcframework'
  
@@ -24,18 +24,18 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13.0'
 
-  s.dependency 'KeychainAccess', '4.2.2' # Simple Swift wrapper for Keychain
+  s.dependency 'XCKeychainAccess', '4.2.2' # Simple Swift wrapper for Keychain
 
-  s.dependency 'Swinject', '2.8.1' # A lightweight dependency injection framework.
+  s.dependency 'XCSwinject', '2.8.2' # A lightweight dependency injection framework.
 
   s.dependency 'ArcGIS-Runtime-SDK-iOS', '100.14' # Mapping and GIS functionality
 
-  s.dependency 'ZIPFoundation', '0.9.13' # zip and unzip items
+  s.dependency 'XCZIPFoundation', '0.9.15' # zip and unzip items
 
-  s.dependency 'XCReachabilitySwift', '5.1.0-xc14-2' # To check Internet connection status
+  s.dependency 'XCReachabilitySwift', '5.1.0-xc14-3' # To check Internet connection status
 
-  s.dependency 'XCPusherSwift', '10.1.1-xc14-2' # Messaging infrastructure
+  s.dependency 'XCPusherSwift', '10.1.1-xc14-4' # Messaging infrastructure
 
-  s.dependency 'XCCocoaLumberjackSwift', '3.7.4-xc14-2' # Powerful & flexible logging framework
+  s.dependency 'XCCocoaLumberjackSwift', '3.7.4-xc14-3' # Powerful & flexible logging framework
 
 end
