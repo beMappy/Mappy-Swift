@@ -257,11 +257,16 @@ using UInt = size_t;
 
 
 
+
+
+
 @class AGSLocation;
 
 @interface AGSLocationDataSource (SWIFT_EXTENSION(Mappy)) <AGSLocationChangeHandlerDelegate>
 - (void)locationDataSource:(AGSLocationDataSource * _Nonnull)locationDataSource locationDidChange:(AGSLocation * _Nonnull)location;
 @end
+
+
 
 
 
@@ -307,6 +312,8 @@ SWIFT_CLASS("_TtC5Mappy9SceneView")
 @interface SceneView (SWIFT_EXTENSION(Mappy)) <AGSGeoViewTouchDelegate>
 - (void)geoView:(AGSGeoView * _Nonnull)geoView didTapAtScreenPoint:(CGPoint)screenPoint mapPoint:(AGSPoint * _Nonnull)mapPoint;
 @end
+
+
 
 
 
@@ -577,11 +584,16 @@ using UInt = size_t;
 
 
 
+
+
+
 @class AGSLocation;
 
 @interface AGSLocationDataSource (SWIFT_EXTENSION(Mappy)) <AGSLocationChangeHandlerDelegate>
 - (void)locationDataSource:(AGSLocationDataSource * _Nonnull)locationDataSource locationDidChange:(AGSLocation * _Nonnull)location;
 @end
+
+
 
 
 
@@ -627,6 +639,8 @@ SWIFT_CLASS("_TtC5Mappy9SceneView")
 @interface SceneView (SWIFT_EXTENSION(Mappy)) <AGSGeoViewTouchDelegate>
 - (void)geoView:(AGSGeoView * _Nonnull)geoView didTapAtScreenPoint:(CGPoint)screenPoint mapPoint:(AGSPoint * _Nonnull)mapPoint;
 @end
+
+
 
 
 

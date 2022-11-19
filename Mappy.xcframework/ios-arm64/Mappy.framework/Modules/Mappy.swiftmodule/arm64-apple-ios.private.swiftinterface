@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Mappy
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
 import ArcGIS
 import CocoaLumberjack
 import CocoaLumberjackSwift
@@ -26,6 +27,10 @@ import _StringProcessing
   @_Concurrency.MainActor(unsafe) final public let event: Combine.PassthroughSubject<Mappy.MapView.Event, Swift.Never>
   @_Concurrency.MainActor(unsafe) final public var isPointingNorth: Swift.Bool {
     get
+  }
+  @_Concurrency.MainActor(unsafe) final public var interactionOptions: Mappy.MapViewInteractionOptions {
+    get
+    set
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -76,11 +81,69 @@ public struct Building : Swift.Equatable, Swift.Hashable {
     get
   }
 }
+@_hasMissingDesignatedInitializers final public class RouteTracker {
+  final public var onEvent: Combine.PassthroughSubject<Mappy.RouteTracker.Event, Swift.Never>
+  final public var recentResponse: Mappy.TurnByTurnNavigationResponse?
+  final public var voiceDirectionsActive: Swift.Bool {
+    get
+    set
+  }
+  final public var currentStep: Mappy.NavigationUpcomingDirection? {
+    get
+  }
+  final public var nextStep: Mappy.NavigationUpcomingDirection? {
+    get
+  }
+  final public var remainingTime: Swift.String {
+    get
+  }
+  final public var routeDifficulty: Mappy.SkiSlope.Level {
+    get
+  }
+  final public var totalRouteDistance: Swift.String {
+    get
+  }
+  final public var startingPoint: Swift.String {
+    get
+  }
+  final public var steps: [Mappy.NavigationStep] {
+    get
+  }
+  final public var endingPoint: Swift.String {
+    get
+  }
+  @objc deinit
+}
+extension Mappy.RouteTracker {
+  public enum Event {
+    case onError(Swift.Error)
+    case onTurnByTurnNavigationResponse(Mappy.TurnByTurnNavigationResponse)
+    case didReroute(Mappy.RouteResponse)
+    case didReachDestination
+  }
+}
+public struct NavigationUpcomingDirection {
+  public var directionManeuverType: Mappy.DirectionManeuverType {
+    get
+  }
+  public let distance: Swift.String
+}
+public enum DirectionManeuverType {
+  case unknown, stop, straight, bearLeft, bearRight, turnLeft, turnRight, sharpLeft, sharpRight, uTurn, ferry, roundabout, highwayMerge, highwayExit, highwayChange, forkCenter, forkLeft, forkRight, depart, tripItem, endOfFerry, rampRight, rampLeft, turnLeftRight, turnRightLeft, turnRightRight, turnLeftLeft, pedestrianRamp, elevator, escalator, stairs, doorPassage
+  public static func == (a: Mappy.DirectionManeuverType, b: Mappy.DirectionManeuverType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 extension Mappy.Scene {
   final public func load() -> Combine.AnyPublisher<Swift.Void, Mappy.SceneError>
   final public func getFeatures() -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
   final public func getFeatures(category: Mappy.FeatureCategory) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
   final public func getFeatures(text: Swift.String, categories: [Mappy.FeatureCategory]? = nil) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
+  final public func getRoutes(from origin: Mappy.Feature, to destination: Mappy.Feature, skiLevel: Mappy.SkiSlope.Level) -> Combine.AnyPublisher<[Mappy.RouteModel], Swift.Error>
+}
+public struct SceneViewInteractionOptions {
 }
 public struct Group : Swift.Equatable, Swift.Hashable {
   public let groupId: Swift.String
@@ -252,6 +315,7 @@ public enum FeatureCategory : Swift.Equatable, Swift.Hashable {
   case skiLift(Mappy.SkiLift)
   case building(Mappy.Building)
   case amenity(Mappy.BuildingAmenity)
+  case point(Mappy.Point)
   public var name: Swift.String {
     get
   }
@@ -308,6 +372,9 @@ public struct SkiSlope : Swift.Equatable, Swift.Hashable {
     public static func < (lhs: Mappy.SkiSlope.Level, rhs: Mappy.SkiSlope.Level) -> Swift.Bool
     case beginner, intermediate, advanced, expert
     public var id: Swift.Int {
+      get
+    }
+    public var name: Swift.String {
       get
     }
     public init?(rawValue: Swift.Int)
@@ -378,6 +445,18 @@ public enum MappyCoreError : Foundation.LocalizedError {
     get
   }
 }
+public struct Point : Swift.Equatable, Swift.Hashable {
+  public let name: Swift.String
+  public let latitude: CoreLocation.CLLocationDegrees
+  public let longitude: CoreLocation.CLLocationDegrees
+  public static let any: Mappy.Point
+  public init(name: Swift.String, latitude: CoreLocation.CLLocationDegrees, longitude: CoreLocation.CLLocationDegrees)
+  public static func == (a: Mappy.Point, b: Mappy.Point) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 extension ArcGIS.AGSLocationDataSource : ArcGIS.AGSLocationChangeHandlerDelegate {
   @objc dynamic public func locationDataSource(_ locationDataSource: ArcGIS.AGSLocationDataSource, locationDidChange location: ArcGIS.AGSLocation)
 }
@@ -439,6 +518,42 @@ extension Mappy.SceneView {
   @_Concurrency.MainActor(unsafe) final public func rotateToNorth()
   @_Concurrency.MainActor(unsafe) final public func select(feature: Mappy.Feature?)
   @_Concurrency.MainActor(unsafe) final public func displayUserPins(using locations: [Mappy.UserPinLocation])
+  @_Concurrency.MainActor(unsafe) final public func display(route: Mappy.RouteResponse?)
+  @_Concurrency.MainActor(unsafe) final public func startNavigation(route: Mappy.RouteResponse) -> Mappy.RouteTracker?
+  @_Concurrency.MainActor(unsafe) final public func stopNavigation()
+}
+extension UIKit.UIColor {
+  public static let routeHighlight: UIKit.UIColor
+  public func withSaturation(setTo saturation: CoreFoundation.CGFloat) -> UIKit.UIColor
+}
+public struct RouteResponse : Swift.Identifiable, Swift.Equatable {
+  public struct RouteStep : Swift.Equatable {
+    public var directionManeuver: Mappy.DirectionManeuver {
+      get
+    }
+    public let feature: Mappy.FeatureCategory
+    public static func == (a: Mappy.RouteResponse.RouteStep, b: Mappy.RouteResponse.RouteStep) -> Swift.Bool
+  }
+  public enum TravelType : Swift.CaseIterable {
+    case beginner, intermediate, advanced, expert, lift
+    public static func == (a: Mappy.RouteResponse.TravelType, b: Mappy.RouteResponse.TravelType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public typealias AllCases = [Mappy.RouteResponse.TravelType]
+    public static var allCases: [Mappy.RouteResponse.TravelType] {
+      get
+    }
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public let id: Foundation.UUID
+  public let origin: Mappy.Feature
+  public let destination: Mappy.Feature
+  public let steps: [Mappy.RouteResponse.RouteStep]
+  public func mostDifficultSkiSlopeLevel() -> Mappy.SkiSlope.Level
+  public func travelTypeRatiosByDuration() -> [Mappy.RouteResponse.TravelType : Swift.Double]
+  public static func == (a: Mappy.RouteResponse, b: Mappy.RouteResponse) -> Swift.Bool
+  public typealias ID = Foundation.UUID
 }
 final public class Map : Mappy.Loadable {
   final public var loadStatus: Mappy.LoadStatus {
@@ -465,15 +580,144 @@ extension Mappy.Map {
   final public func getFeatures() -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
   final public func getFeatures(category: Mappy.FeatureCategory) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
   final public func getFeatures(text: Swift.String, categories: [Mappy.FeatureCategory]? = nil) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
+  final public func getRoutes(from origin: Mappy.Feature, to destination: Mappy.Feature, skiLevel: Mappy.SkiSlope.Level) -> Combine.AnyPublisher<[Mappy.RouteModel], Swift.Error>
 }
 public struct Feature : Swift.Identifiable, Swift.Equatable, Swift.Hashable {
   public let id: Foundation.UUID
   public let category: Mappy.FeatureCategory
   public var associatedFeatures: Swift.Set<Mappy.Feature>
+  public init(point: Mappy.Point)
   public static func == (a: Mappy.Feature, b: Mappy.Feature) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias ID = Foundation.UUID
   public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct TurnByTurnNavigationResponse {
+  public let route: Mappy.RouteResponse
+  public let didReroute: Swift.Bool
+  public var currentStep: Mappy.RouteResponse.RouteStep? {
+    get
+  }
+  public var nextStep: Mappy.RouteResponse.RouteStep? {
+    get
+  }
+}
+public struct RouteStepModel : Swift.Identifiable, Swift.Equatable {
+  public let id: Foundation.UUID
+  public var ratio: Swift.Int
+  public var label: Swift.String
+  public var level: Mappy.SkiSlope.Level?
+  public static func == (a: Mappy.RouteStepModel, b: Mappy.RouteStepModel) -> Swift.Bool
+  public typealias ID = Foundation.UUID
+}
+public struct NavigationStep : Swift.Identifiable {
+  public let id: Foundation.UUID
+  public let feature: Mappy.FeatureCategory
+  public let duration: Swift.String
+  public typealias ID = Foundation.UUID
+}
+public struct RouteModel : Swift.Identifiable, Swift.Equatable {
+  public var id: Foundation.UUID
+  public var distance: Swift.Int
+  public var distanceFormatted: Swift.String
+  public var duration: Swift.Int
+  public var level: Mappy.SkiSlope.Level
+  public var ratios: [Mappy.RouteStepModel]
+  public var routeResponse: Mappy.RouteResponse
+  public var levelLabel: Swift.String
+  public var startingPoint: Swift.String {
+    get
+  }
+  public var steps: [Mappy.NavigationStep] {
+    get
+  }
+  public var endingPoint: Swift.String {
+    get
+  }
+  public static func == (a: Mappy.RouteModel, b: Mappy.RouteModel) -> Swift.Bool
+  public typealias ID = Foundation.UUID
+}
+public struct DirectionManeuver : Swift.Equatable {
+  public var directionEvents: [Mappy.DirectionEvent] {
+    get
+  }
+  public var directionText: Swift.String {
+    get
+  }
+  public var estimatedArriveTime: Foundation.Date? {
+    get
+  }
+  public var estimatedArrivalTimeShift: Swift.Double {
+    get
+  }
+  public var maneuverMessages: [Mappy.DirectionMessage] {
+    get
+  }
+  public var fromLevel: Swift.Int {
+    get
+  }
+  public var directionManeuverType: Mappy.DirectionManeuverType {
+    get
+  }
+  public var toLevel: Swift.Int {
+    get
+  }
+  public var length: Swift.Double {
+    get
+  }
+  public var duration: Swift.Double {
+    get
+  }
+  public static func == (a: Mappy.DirectionManeuver, b: Mappy.DirectionManeuver) -> Swift.Bool
+}
+public protocol DirectionEvent : AnyObject, Swift.Equatable {
+  var estimatedArrivalTime: Foundation.Date? { get }
+  var estimatedArrivalTimeShift: Swift.Double { get }
+  var eventMessages: [Swift.String] { get }
+  var eventText: Swift.String { get }
+}
+extension ArcGIS.AGSDirectionEvent : Mappy.DirectionEvent {
+}
+public enum DirectionMessageType : Swift.Equatable {
+  case unknown
+  @available(*, deprecated, message: "directionMessageTypeLength is no longer supported, use directionManeuver.length instead")
+  case length
+  @available(*, deprecated, message: "directionMessageTypeTime is no longer supported, use directionManeuver.duration instead")
+  case time
+  @available(*, deprecated, message: "directionMessageTypeSummary is no longer supported, use directionManeuver.duration and directionManeuver.length instead")
+  case summary
+  @available(*, deprecated, message: "directionMessageTypeTimeWindow is no longer supported, use Stop.timeWindowStart and Stop.timeWindowEnd instead")
+  case timeWindow
+  @available(*, deprecated, message: "directionMessageTypeViolationTime is no longer supported, use Stop.violationTime instead")
+  case violationTime
+  @available(*, deprecated, message: "directionMessageTypeWaitTime is no longer supported, use Stop.waitTime instead")
+  case waitTime
+  @available(*, deprecated, message: "directionMessageTypeServiceTime is no longer supported, use the difference between DirectionManeuver.duration and Stop.waitTime instead")
+  case serviceTime
+  @available(*, deprecated, message: "directionMessageTypeEstimatedArrivalTime is no longer supported, use DirectionManeuver.estimatedArriveTime instead")
+  case estimatedArrivalTime
+  @available(*, deprecated, message: "directionMessageTypeCumulativeLength is no longer supported, use the sum of previous DirectionManeuver.length instead")
+  case cumulativeLength
+  case streetName
+  case alternativeName
+  case branch
+  case toward
+  case crossStreet
+  case exit
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: Mappy.DirectionMessageType, b: Mappy.DirectionMessageType) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol DirectionMessage : AnyObject, Swift.Equatable {
+  var messageType: Mappy.DirectionMessageType { get }
+  var text: Swift.String { get }
+}
+extension ArcGIS.AGSDirectionMessage : Mappy.DirectionMessage {
+  public var messageType: Mappy.DirectionMessageType {
     get
   }
 }
@@ -501,6 +745,9 @@ extension Mappy.MapView {
   @_Concurrency.MainActor(unsafe) final public func rotateToNorth()
   @_Concurrency.MainActor(unsafe) final public func select(feature: Mappy.Feature?)
   @_Concurrency.MainActor(unsafe) final public func displayUserPins(using locations: [Mappy.UserPinLocation])
+  @_Concurrency.MainActor(unsafe) final public func display(route: Mappy.RouteResponse?)
+  @_Concurrency.MainActor(unsafe) final public func startNavigation(route: Mappy.RouteResponse) -> Mappy.RouteTracker?
+  @_Concurrency.MainActor(unsafe) final public func stopNavigation()
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class SceneView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) final public var scene: Mappy.Scene? {
@@ -510,6 +757,10 @@ extension Mappy.MapView {
   @_Concurrency.MainActor(unsafe) final public let event: Combine.PassthroughSubject<Mappy.SceneView.Event, Swift.Never>
   @_Concurrency.MainActor(unsafe) final public var isPointingNorth: Swift.Bool {
     get
+  }
+  @_Concurrency.MainActor(unsafe) final public var interactionOptions: Mappy.SceneViewInteractionOptions {
+    get
+    set
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -523,6 +774,17 @@ extension Mappy.SceneView {
     case onViewpointChange
     case onTap(Mappy.Feature?)
   }
+}
+public struct MapViewInteractionOptions {
+  public var enabled: Swift.Bool
+  public var rotateEnabled: Swift.Bool
+  public var panEnabled: Swift.Bool
+  public var zoomEnabled: Swift.Bool
+  public var magnifierEnabled: Swift.Bool
+  public var flickEnabled: Swift.Bool
+  public var allowMagnifierToPan: Swift.Bool
+  public var zoomFactor: Swift.Double
+  public var snapToNorthThreshold: Swift.Double
 }
 public struct GroupUser : Swift.Equatable, Swift.Hashable {
   public let userId: Swift.String
@@ -546,6 +808,8 @@ public struct GroupUser : Swift.Equatable, Swift.Hashable {
 extension Mappy.Building.Category : Swift.Equatable {}
 extension Mappy.Building.Category : Swift.Hashable {}
 extension Mappy.Building.Category : Swift.RawRepresentable {}
+extension Mappy.DirectionManeuverType : Swift.Equatable {}
+extension Mappy.DirectionManeuverType : Swift.Hashable {}
 extension Mappy.MapType : Swift.Equatable {}
 extension Mappy.MapType : Swift.Hashable {}
 extension Mappy.MapType : Swift.RawRepresentable {}
@@ -570,3 +834,6 @@ extension Mappy.SkiSlope.RunType : Swift.Hashable {}
 extension Mappy.SkiSlope.RunType : Swift.RawRepresentable {}
 extension Mappy.LoadStatus : Swift.Equatable {}
 extension Mappy.LoadStatus : Swift.Hashable {}
+extension Mappy.RouteResponse.TravelType : Swift.Equatable {}
+extension Mappy.RouteResponse.TravelType : Swift.Hashable {}
+extension Mappy.DirectionMessageType : Swift.Hashable {}
