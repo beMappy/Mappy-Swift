@@ -460,6 +460,10 @@ public struct Point : Swift.Equatable, Swift.Hashable {
 extension ArcGIS.AGSLocationDataSource : ArcGIS.AGSLocationChangeHandlerDelegate {
   @objc dynamic public func locationDataSource(_ locationDataSource: ArcGIS.AGSLocationDataSource, locationDidChange location: ArcGIS.AGSLocation)
 }
+extension UIKit.UIImage {
+  public static let mappyPinSmall: UIKit.UIImage
+  public static let mappyPin: UIKit.UIImage
+}
 public struct Venue {
   public let venueId: Swift.String
   public let data: Mappy.VenueData?
@@ -518,8 +522,8 @@ extension Mappy.SceneView {
   @_Concurrency.MainActor(unsafe) final public func rotateToNorth()
   @_Concurrency.MainActor(unsafe) final public func select(feature: Mappy.Feature?)
   @_Concurrency.MainActor(unsafe) final public func displayUserPins(using locations: [Mappy.UserPinLocation])
-  @_Concurrency.MainActor(unsafe) final public func display(route: Mappy.RouteResponse?)
-  @_Concurrency.MainActor(unsafe) final public func startNavigation(route: Mappy.RouteResponse) -> Mappy.RouteTracker?
+  @_Concurrency.MainActor(unsafe) final public func display(route: Mappy.RouteResponse?, routeHighlightColor: UIKit.UIColor = .routeHighlight, destinationImage: UIKit.UIImage = .mappyPinSmall)
+  @_Concurrency.MainActor(unsafe) final public func startNavigation(route: Mappy.RouteResponse, routeHighlightColor: UIKit.UIColor = .routeHighlight, destinationImage: UIKit.UIImage = .mappyPin) -> Mappy.RouteTracker?
   @_Concurrency.MainActor(unsafe) final public func stopNavigation()
 }
 extension UIKit.UIColor {
@@ -745,8 +749,8 @@ extension Mappy.MapView {
   @_Concurrency.MainActor(unsafe) final public func rotateToNorth()
   @_Concurrency.MainActor(unsafe) final public func select(feature: Mappy.Feature?)
   @_Concurrency.MainActor(unsafe) final public func displayUserPins(using locations: [Mappy.UserPinLocation])
-  @_Concurrency.MainActor(unsafe) final public func display(route: Mappy.RouteResponse?)
-  @_Concurrency.MainActor(unsafe) final public func startNavigation(route: Mappy.RouteResponse) -> Mappy.RouteTracker?
+  @_Concurrency.MainActor(unsafe) final public func display(route: Mappy.RouteResponse?, routeHighlightColor: UIKit.UIColor = .routeHighlight, destinationImage: UIKit.UIImage = .mappyPinSmall)
+  @_Concurrency.MainActor(unsafe) final public func startNavigation(route: Mappy.RouteResponse, routeHighlightColor: UIKit.UIColor = .routeHighlight, destinationImage: UIKit.UIImage = .mappyPin) -> Mappy.RouteTracker?
   @_Concurrency.MainActor(unsafe) final public func stopNavigation()
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class SceneView : UIKit.UIView {

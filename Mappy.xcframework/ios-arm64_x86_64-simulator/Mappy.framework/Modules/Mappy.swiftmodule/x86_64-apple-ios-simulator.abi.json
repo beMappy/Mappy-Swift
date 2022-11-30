@@ -782,7 +782,7 @@
           {
             "kind": "Function",
             "name": "display",
-            "printedName": "display(route:)",
+            "printedName": "display(route:routeHighlightColor:destinationImage:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -802,11 +802,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIImage"
               }
             ],
             "declKind": "Func",
-            "usr": "s:5Mappy7MapViewC7display5routeyAA13RouteResponseVSg_tF",
-            "mangledName": "$s5Mappy7MapViewC7display5routeyAA13RouteResponseVSg_tF",
+            "usr": "s:5Mappy7MapViewC7display5route0E14HighlightColor16destinationImageyAA13RouteResponseVSg_So7UIColorCSo7UIImageCtF",
+            "mangledName": "$s5Mappy7MapViewC7display5route0E14HighlightColor16destinationImageyAA13RouteResponseVSg_So7UIColorCSo7UIImageCtF",
             "moduleName": "Mappy",
             "declAttributes": [
               "Custom",
@@ -819,7 +833,7 @@
           {
             "kind": "Function",
             "name": "startNavigation",
-            "printedName": "startNavigation(route:)",
+            "printedName": "startNavigation(route:routeHighlightColor:destinationImage:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -840,11 +854,25 @@
                 "name": "RouteResponse",
                 "printedName": "Mappy.RouteResponse",
                 "usr": "s:5Mappy13RouteResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIImage"
               }
             ],
             "declKind": "Func",
-            "usr": "s:5Mappy7MapViewC15startNavigation5routeAA12RouteTrackerCSgAA0G8ResponseV_tF",
-            "mangledName": "$s5Mappy7MapViewC15startNavigation5routeAA12RouteTrackerCSgAA0G8ResponseV_tF",
+            "usr": "s:5Mappy7MapViewC15startNavigation5route0F14HighlightColor16destinationImageAA12RouteTrackerCSgAA0K8ResponseV_So7UIColorCSo7UIImageCtF",
+            "mangledName": "$s5Mappy7MapViewC15startNavigation5route0F14HighlightColor16destinationImageAA12RouteTrackerCSgAA0K8ResponseV_So7UIColorCSo7UIImageCtF",
             "moduleName": "Mappy",
             "declAttributes": [
               "Custom",
@@ -24344,7 +24372,7 @@
           {
             "kind": "Function",
             "name": "display",
-            "printedName": "display(route:)",
+            "printedName": "display(route:routeHighlightColor:destinationImage:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -24364,11 +24392,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIImage"
               }
             ],
             "declKind": "Func",
-            "usr": "s:5Mappy9SceneViewC7display5routeyAA13RouteResponseVSg_tF",
-            "mangledName": "$s5Mappy9SceneViewC7display5routeyAA13RouteResponseVSg_tF",
+            "usr": "s:5Mappy9SceneViewC7display5route0E14HighlightColor16destinationImageyAA13RouteResponseVSg_So7UIColorCSo7UIImageCtF",
+            "mangledName": "$s5Mappy9SceneViewC7display5route0E14HighlightColor16destinationImageyAA13RouteResponseVSg_So7UIColorCSo7UIImageCtF",
             "moduleName": "Mappy",
             "declAttributes": [
               "Custom",
@@ -24381,7 +24423,7 @@
           {
             "kind": "Function",
             "name": "startNavigation",
-            "printedName": "startNavigation(route:)",
+            "printedName": "startNavigation(route:routeHighlightColor:destinationImage:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -24402,11 +24444,25 @@
                 "name": "RouteResponse",
                 "printedName": "Mappy.RouteResponse",
                 "usr": "s:5Mappy13RouteResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIImage"
               }
             ],
             "declKind": "Func",
-            "usr": "s:5Mappy9SceneViewC15startNavigation5routeAA12RouteTrackerCSgAA0G8ResponseV_tF",
-            "mangledName": "$s5Mappy9SceneViewC15startNavigation5routeAA12RouteTrackerCSgAA0G8ResponseV_tF",
+            "usr": "s:5Mappy9SceneViewC15startNavigation5route0F14HighlightColor16destinationImageAA12RouteTrackerCSgAA0K8ResponseV_So7UIColorCSo7UIImageCtF",
+            "mangledName": "$s5Mappy9SceneViewC15startNavigation5route0F14HighlightColor16destinationImageAA12RouteTrackerCSgAA0K8ResponseV_So7UIColorCSo7UIImageCtF",
             "moduleName": "Mappy",
             "declAttributes": [
               "Custom",
@@ -26442,6 +26498,204 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "UIImage",
+        "printedName": "UIImage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "mappyPinSmall",
+            "printedName": "mappyPinSmall",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So7UIImageC5MappyE13mappyPinSmallABvpZ",
+            "mangledName": "$sSo7UIImageC5MappyE13mappyPinSmallABvpZ",
+            "moduleName": "Mappy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So7UIImageC5MappyE13mappyPinSmallABvgZ",
+                "mangledName": "$sSo7UIImageC5MappyE13mappyPinSmallABvgZ",
+                "moduleName": "Mappy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mappyPin",
+            "printedName": "mappyPin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So7UIImageC5MappyE8mappyPinABvpZ",
+            "mangledName": "$sSo7UIImageC5MappyE8mappyPinABvpZ",
+            "moduleName": "Mappy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So7UIImageC5MappyE8mappyPinABvgZ",
+                "mangledName": "$sSo7UIImageC5MappyE8mappyPinABvgZ",
+                "moduleName": "Mappy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIImage",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIImage",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByImageLiteral",
+            "printedName": "_ExpressibleByImageLiteral",
+            "usr": "s:s26_ExpressibleByImageLiteralP",
+            "mangledName": "$ss26_ExpressibleByImageLiteralP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "UIColor",
         "printedName": "UIColor",
         "children": [
@@ -27349,49 +27603,49 @@
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
       "kind": "FloatLiteral",
-      "offset": 1548,
+      "offset": 1586,
       "length": 5,
       "value": "181.0"
     },
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
       "kind": "FloatLiteral",
-      "offset": 1554,
+      "offset": 1592,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
       "kind": "FloatLiteral",
-      "offset": 1568,
+      "offset": 1606,
       "length": 5,
       "value": "228.0"
     },
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
       "kind": "FloatLiteral",
-      "offset": 1574,
+      "offset": 1612,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
       "kind": "FloatLiteral",
-      "offset": 1587,
+      "offset": 1625,
       "length": 5,
       "value": "253.0"
     },
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
       "kind": "FloatLiteral",
-      "offset": 1593,
+      "offset": 1631,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1607,
+      "offset": 1645,
       "length": 1,
       "value": "1"
     },
@@ -28693,14 +28947,14 @@
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/UIImage+Ext.swift",
       "kind": "StringLiteral",
-      "offset": 167,
+      "offset": 174,
       "length": 17,
       "value": "\"mappy_pin_small\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/UIImage+Ext.swift",
       "kind": "StringLiteral",
-      "offset": 282,
+      "offset": 296,
       "length": 11,
       "value": "\"mappy_pin\""
     },
@@ -29141,7 +29395,7 @@
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Scene\/SceneView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1600,
+      "offset": 1638,
       "length": 4,
       "value": "2500"
     },
