@@ -10120,6 +10120,459 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "Bookmark",
+        "printedName": "Bookmark",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "any",
+            "printedName": "any",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bookmark",
+                "printedName": "Mappy.Bookmark",
+                "usr": "s:5Mappy8BookmarkV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy8BookmarkV3anyACvpZ",
+            "mangledName": "$s5Mappy8BookmarkV3anyACvpZ",
+            "moduleName": "Mappy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bookmark",
+                    "printedName": "Mappy.Bookmark",
+                    "usr": "s:5Mappy8BookmarkV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy8BookmarkV3anyACvgZ",
+                "mangledName": "$s5Mappy8BookmarkV3anyACvgZ",
+                "moduleName": "Mappy",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Category",
+            "printedName": "Category",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "village",
+                "printedName": "village",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Mappy.Bookmark.Category.Type) -> Mappy.Bookmark.Category",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Category",
+                        "printedName": "Mappy.Bookmark.Category",
+                        "usr": "s:5Mappy8BookmarkV8CategoryO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Mappy.Bookmark.Category.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Category",
+                            "printedName": "Mappy.Bookmark.Category",
+                            "usr": "s:5Mappy8BookmarkV8CategoryO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:5Mappy8BookmarkV8CategoryO7villageyA2EmF",
+                "mangledName": "$s5Mappy8BookmarkV8CategoryO7villageyA2EmF",
+                "moduleName": "Mappy"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Mappy.Bookmark.Category?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Category",
+                        "printedName": "Mappy.Bookmark.Category",
+                        "usr": "s:5Mappy8BookmarkV8CategoryO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:5Mappy8BookmarkV8CategoryO8rawValueAESgSS_tcfc",
+                "mangledName": "$s5Mappy8BookmarkV8CategoryO8rawValueAESgSS_tcfc",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:5Mappy8BookmarkV8CategoryO8rawValueSSvp",
+                "mangledName": "$s5Mappy8BookmarkV8CategoryO8rawValueSSvp",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:5Mappy8BookmarkV8CategoryO8rawValueSSvg",
+                    "mangledName": "$s5Mappy8BookmarkV8CategoryO8rawValueSSvg",
+                    "moduleName": "Mappy",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:5Mappy8BookmarkV8CategoryO",
+            "mangledName": "$s5Mappy8BookmarkV8CategoryO",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy8BookmarkV4nameSSvp",
+            "mangledName": "$s5Mappy8BookmarkV4nameSSvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy8BookmarkV4nameSSvg",
+                "mangledName": "$s5Mappy8BookmarkV4nameSSvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "category",
+            "printedName": "category",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Mappy.Bookmark.Category?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Category",
+                    "printedName": "Mappy.Bookmark.Category",
+                    "usr": "s:5Mappy8BookmarkV8CategoryO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy8BookmarkV8categoryAC8CategoryOSgvp",
+            "mangledName": "$s5Mappy8BookmarkV8categoryAC8CategoryOSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Mappy.Bookmark.Category?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Category",
+                        "printedName": "Mappy.Bookmark.Category",
+                        "usr": "s:5Mappy8BookmarkV8CategoryO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy8BookmarkV8categoryAC8CategoryOSgvg",
+                "mangledName": "$s5Mappy8BookmarkV8categoryAC8CategoryOSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bookmark",
+                "printedName": "Mappy.Bookmark",
+                "usr": "s:5Mappy8BookmarkV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bookmark",
+                "printedName": "Mappy.Bookmark",
+                "usr": "s:5Mappy8BookmarkV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy8BookmarkV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s5Mappy8BookmarkV2eeoiySbAC_ACtFZ",
+            "moduleName": "Mappy",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy8BookmarkV9hashValueSivp",
+            "mangledName": "$s5Mappy8BookmarkV9hashValueSivp",
+            "moduleName": "Mappy",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy8BookmarkV9hashValueSivg",
+                "mangledName": "$s5Mappy8BookmarkV9hashValueSivg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy8BookmarkV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s5Mappy8BookmarkV4hash4intoys6HasherVz_tF",
+            "moduleName": "Mappy",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:5Mappy8BookmarkV",
+        "mangledName": "$s5Mappy8BookmarkV",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "CocoaLumberjack",
         "printedName": "CocoaLumberjack",
@@ -10850,6 +11303,56 @@
             "declKind": "EnumElement",
             "usr": "s:5Mappy15FeatureCategoryO5pointyAcA5PointVcACmF",
             "mangledName": "$s5Mappy15FeatureCategoryO5pointyAcA5PointVcACmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "bookmark",
+            "printedName": "bookmark",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.FeatureCategory.Type) -> (Mappy.Bookmark) -> Mappy.FeatureCategory",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Mappy.Bookmark) -> Mappy.FeatureCategory",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FeatureCategory",
+                        "printedName": "Mappy.FeatureCategory",
+                        "usr": "s:5Mappy15FeatureCategoryO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bookmark",
+                        "printedName": "Mappy.Bookmark",
+                        "usr": "s:5Mappy8BookmarkV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.FeatureCategory.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FeatureCategory",
+                        "printedName": "Mappy.FeatureCategory",
+                        "usr": "s:5Mappy15FeatureCategoryO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy15FeatureCategoryO8bookmarkyAcA8BookmarkVcACmF",
+            "mangledName": "$s5Mappy15FeatureCategoryO8bookmarkyAcA8BookmarkVcACmF",
             "moduleName": "Mappy"
           },
           {
@@ -28581,6 +29084,27 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Bookmark.swift",
+      "kind": "StringLiteral",
+      "offset": 295,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Bookmark.swift",
+      "kind": "StringLiteral",
+      "offset": 411,
+      "length": 14,
+      "value": "\"VillageLabel\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Bookmark.swift",
+      "kind": "StringLiteral",
+      "offset": 411,
+      "length": 14,
+      "value": "\"VillageLabel\""
+    },
+    {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 379,
@@ -28625,30 +29149,37 @@
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
       "kind": "StringLiteral",
-      "offset": 1051,
+      "offset": 1138,
       "length": 15,
       "value": "\"ski_run_query\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
       "kind": "StringLiteral",
-      "offset": 1362,
+      "offset": 1449,
       "length": 12,
       "value": "\"lift_query\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
       "kind": "StringLiteral",
-      "offset": 1500,
+      "offset": 1587,
       "length": 10,
       "value": "\"building\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
       "kind": "StringLiteral",
-      "offset": 1653,
-      "length": 30,
-      "value": "\"building_feature_of_interest\""
+      "offset": 1740,
+      "length": 22,
+      "value": "\"resort_feature_query\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
+      "kind": "StringLiteral",
+      "offset": 1888,
+      "length": 11,
+      "value": "\"bookmarks\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/GroupLocation\/GroupLocationService.swift",
