@@ -73,8 +73,9 @@ public struct Building : Swift.Equatable, Swift.Hashable {
   public let url: Swift.String?
   public let phone: Swift.String?
   public let facilityId: Swift.String?
+  public let foreignId: Swift.String?
   public static let any: Mappy.Building
-  public init(name: Swift.String, category: Mappy.Building.Category?, url: Swift.String?, phone: Swift.String?, facilityId: Swift.String?)
+  public init(name: Swift.String, category: Mappy.Building.Category?, url: Swift.String?, phone: Swift.String?, facilityId: Swift.String?, foreignId: Swift.String?)
   public static func == (a: Mappy.Building, b: Mappy.Building) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -191,8 +192,9 @@ public struct SkiLift : Swift.Equatable, Swift.Hashable {
   public let length: Swift.Double?
   public let travelTime: Swift.Double?
   public var liftNumber: Swift.Int?
+  public let foreignId: Swift.String?
   public static let any: Mappy.SkiLift
-  public init(name: Swift.String, liftNumber: Swift.Int?, liftType: Mappy.SkiLift.LiftType?, passengerPosition: Mappy.SkiLift.PassengerPosition?, length: Swift.Double?, travelTime: Swift.Double?)
+  public init(name: Swift.String, liftNumber: Swift.Int?, liftType: Mappy.SkiLift.LiftType?, passengerPosition: Mappy.SkiLift.PassengerPosition?, length: Swift.Double?, travelTime: Swift.Double?, foreignId: Swift.String?)
   public static func == (a: Mappy.SkiLift, b: Mappy.SkiLift) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -293,8 +295,9 @@ public struct BuildingAmenity : Swift.Equatable, Swift.Hashable {
   public let levelId: Swift.String?
   public let url: Swift.String?
   public let phone: Swift.String?
+  public let foreignId: Swift.String?
   public static let any: Mappy.BuildingAmenity
-  public init(name: Swift.String, category: Mappy.BuildingAmenity.Category?, subtype: Mappy.BuildingAmenity.Subtype?, buildingId: Swift.Int?, buildingName: Swift.String?, levelId: Swift.String?, url: Swift.String?, phone: Swift.String?)
+  public init(name: Swift.String, category: Mappy.BuildingAmenity.Category?, subtype: Mappy.BuildingAmenity.Subtype?, buildingId: Swift.Int?, buildingName: Swift.String?, levelId: Swift.String?, url: Swift.String?, phone: Swift.String?, foreignId: Swift.String?)
   public static func == (a: Mappy.BuildingAmenity, b: Mappy.BuildingAmenity) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -313,6 +316,7 @@ public struct Bookmark : Swift.Equatable, Swift.Hashable {
   }
   public let name: Swift.String
   public let category: Mappy.Bookmark.Category?
+  public let foreignId: Swift.String?
   public static func == (a: Mappy.Bookmark, b: Mappy.Bookmark) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -427,8 +431,9 @@ public struct SkiSlope : Swift.Equatable, Swift.Hashable {
   public let averageSpeed: Swift.Double?
   public let travelTime: Swift.Double?
   public let extremeCondition: Swift.Bool?
+  public let foreignId: Swift.String?
   public static let any: Mappy.SkiSlope
-  public init(name: Swift.String, level: Mappy.SkiSlope.Level?, runType: Mappy.SkiSlope.RunType?, length: Swift.Double?, averageSlope: Swift.Double?, averageSpeed: Swift.Double?, travelTime: Swift.Double?, extremeCondition: Swift.Bool?)
+  public init(name: Swift.String, level: Mappy.SkiSlope.Level?, runType: Mappy.SkiSlope.RunType?, length: Swift.Double?, averageSlope: Swift.Double?, averageSpeed: Swift.Double?, travelTime: Swift.Double?, extremeCondition: Swift.Bool?, foreignId: Swift.String?)
   public static func == (a: Mappy.SkiSlope, b: Mappy.SkiSlope) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {

@@ -2007,6 +2007,67 @@
           },
           {
             "kind": "Var",
+            "name": "foreignId",
+            "printedName": "foreignId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy8BuildingV9foreignIdSSSgvp",
+            "mangledName": "$s5Mappy8BuildingV9foreignIdSSSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy8BuildingV9foreignIdSSSgvg",
+                "mangledName": "$s5Mappy8BuildingV9foreignIdSSSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "any",
             "printedName": "any",
             "children": [
@@ -2055,7 +2116,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(name:category:url:phone:facilityId:)",
+            "printedName": "init(name:category:url:phone:facilityId:foreignId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2124,11 +2185,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5Mappy8BuildingV4name8category3url5phone10facilityIdACSS_AC8CategoryOSgSSSgA2Ltcfc",
-            "mangledName": "$s5Mappy8BuildingV4name8category3url5phone10facilityIdACSS_AC8CategoryOSgSSSgA2Ltcfc",
+            "usr": "s:5Mappy8BuildingV4name8category3url5phone10facilityId07foreignH0ACSS_AC8CategoryOSgSSSgA3Mtcfc",
+            "mangledName": "$s5Mappy8BuildingV4name8category3url5phone10facilityId07foreignH0ACSS_AC8CategoryOSgSSSgA3Mtcfc",
             "moduleName": "Mappy",
             "declAttributes": [
               "AccessControl"
@@ -6305,6 +6380,67 @@
           },
           {
             "kind": "Var",
+            "name": "foreignId",
+            "printedName": "foreignId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy7SkiLiftV9foreignIdSSSgvp",
+            "mangledName": "$s5Mappy7SkiLiftV9foreignIdSSSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy7SkiLiftV9foreignIdSSSgvg",
+                "mangledName": "$s5Mappy7SkiLiftV9foreignIdSSSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "any",
             "printedName": "any",
             "children": [
@@ -6353,7 +6489,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(name:liftNumber:liftType:passengerPosition:length:travelTime:)",
+            "printedName": "init(name:liftNumber:liftType:passengerPosition:length:travelTime:foreignId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6436,11 +6572,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5Mappy7SkiLiftV4name10liftNumber0E4Type17passengerPosition6length10travelTimeACSS_SiSgAC0cG0OSgAC09PassengerI0OSgSdSgAQtcfc",
-            "mangledName": "$s5Mappy7SkiLiftV4name10liftNumber0E4Type17passengerPosition6length10travelTimeACSS_SiSgAC0cG0OSgAC09PassengerI0OSgSdSgAQtcfc",
+            "usr": "s:5Mappy7SkiLiftV4name10liftNumber0E4Type17passengerPosition6length10travelTime9foreignIdACSS_SiSgAC0cG0OSgAC09PassengerI0OSgSdSgARSSSgtcfc",
+            "mangledName": "$s5Mappy7SkiLiftV4name10liftNumber0E4Type17passengerPosition6length10travelTime9foreignIdACSS_SiSgAC0cG0OSgAC09PassengerI0OSgSdSgARSSSgtcfc",
             "moduleName": "Mappy",
             "declAttributes": [
               "AccessControl"
@@ -9817,6 +9967,67 @@
           },
           {
             "kind": "Var",
+            "name": "foreignId",
+            "printedName": "foreignId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy15BuildingAmenityV9foreignIdSSSgvp",
+            "mangledName": "$s5Mappy15BuildingAmenityV9foreignIdSSSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy15BuildingAmenityV9foreignIdSSSgvg",
+                "mangledName": "$s5Mappy15BuildingAmenityV9foreignIdSSSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "any",
             "printedName": "any",
             "children": [
@@ -9865,7 +10076,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(name:category:subtype:buildingId:buildingName:levelId:url:phone:)",
+            "printedName": "init(name:category:subtype:buildingId:buildingName:levelId:url:phone:foreignId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9976,11 +10187,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5Mappy15BuildingAmenityV4name8category7subtype10buildingId0G4Name05levelH03url5phoneACSS_AC8CategoryOSgAC7SubtypeOSgSiSgSSSgA3Stcfc",
-            "mangledName": "$s5Mappy15BuildingAmenityV4name8category7subtype10buildingId0G4Name05levelH03url5phoneACSS_AC8CategoryOSgAC7SubtypeOSgSiSgSSSgA3Stcfc",
+            "usr": "s:5Mappy15BuildingAmenityV4name8category7subtype10buildingId0G4Name05levelH03url5phone07foreignH0ACSS_AC8CategoryOSgAC7SubtypeOSgSiSgSSSgA4Ttcfc",
+            "mangledName": "$s5Mappy15BuildingAmenityV4name8category7subtype10buildingId0G4Name05levelH03url5phone07foreignH0ACSS_AC8CategoryOSgAC7SubtypeOSgSiSgSSSgA4Ttcfc",
             "moduleName": "Mappy",
             "declAttributes": [
               "AccessControl"
@@ -10434,6 +10659,67 @@
                 "declKind": "Accessor",
                 "usr": "s:5Mappy8BookmarkV8categoryAC8CategoryOSgvg",
                 "mangledName": "$s5Mappy8BookmarkV8categoryAC8CategoryOSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "foreignId",
+            "printedName": "foreignId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy8BookmarkV9foreignIdSSSgvp",
+            "mangledName": "$s5Mappy8BookmarkV9foreignIdSSSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy8BookmarkV9foreignIdSSSgvg",
+                "mangledName": "$s5Mappy8BookmarkV9foreignIdSSSgvg",
                 "moduleName": "Mappy",
                 "implicit": true,
                 "accessorKind": "get"
@@ -14146,6 +14432,67 @@
           },
           {
             "kind": "Var",
+            "name": "foreignId",
+            "printedName": "foreignId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy8SkiSlopeV9foreignIdSSSgvp",
+            "mangledName": "$s5Mappy8SkiSlopeV9foreignIdSSSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy8SkiSlopeV9foreignIdSSSgvg",
+                "mangledName": "$s5Mappy8SkiSlopeV9foreignIdSSSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "any",
             "printedName": "any",
             "children": [
@@ -14194,7 +14541,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(name:level:runType:length:averageSlope:averageSpeed:travelTime:extremeCondition:)",
+            "printedName": "init(name:level:runType:length:averageSlope:averageSpeed:travelTime:extremeCondition:foreignId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14305,11 +14652,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5Mappy8SkiSlopeV4name5level7runType6length07averageC00I5Speed10travelTime16extremeConditionACSS_AC5LevelOSgAC03RunG0OSgSdSgA3RSbSgtcfc",
-            "mangledName": "$s5Mappy8SkiSlopeV4name5level7runType6length07averageC00I5Speed10travelTime16extremeConditionACSS_AC5LevelOSgAC03RunG0OSgSdSgA3RSbSgtcfc",
+            "usr": "s:5Mappy8SkiSlopeV4name5level7runType6length07averageC00I5Speed10travelTime16extremeCondition9foreignIdACSS_AC5LevelOSgAC03RunG0OSgSdSgA3SSbSgSSSgtcfc",
+            "mangledName": "$s5Mappy8SkiSlopeV4name5level7runType6length07averageC00I5Speed10travelTime16extremeCondition9foreignIdACSS_AC5LevelOSgAC03RunG0OSgSdSgA3SSbSgSSSgtcfc",
             "moduleName": "Mappy",
             "declAttributes": [
               "AccessControl"
@@ -28260,7 +28621,7 @@
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
-      "offset": 903,
+      "offset": 1042,
       "length": 2,
       "value": "\"\""
     },
@@ -28463,7 +28824,7 @@
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
-      "offset": 1576,
+      "offset": 1715,
       "length": 2,
       "value": "\"\""
     },
@@ -29079,7 +29440,7 @@
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
-      "offset": 3259,
+      "offset": 3398,
       "length": 2,
       "value": "\"\""
     },
@@ -29093,14 +29454,14 @@
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Bookmark.swift",
       "kind": "StringLiteral",
-      "offset": 411,
+      "offset": 427,
       "length": 14,
       "value": "\"VillageLabel\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Bookmark.swift",
       "kind": "StringLiteral",
-      "offset": 411,
+      "offset": 427,
       "length": 14,
       "value": "\"VillageLabel\""
     },
@@ -29359,7 +29720,7 @@
     {
       "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "StringLiteral",
-      "offset": 1972,
+      "offset": 2111,
       "length": 2,
       "value": "\"\""
     },
