@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Mappy
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -388,6 +388,8 @@ public enum GroupLocationServiceError : Foundation.LocalizedError {
 extension Mappy.GroupLocationService {
   public enum Event {
     case userLocation(Mappy.UserLocation)
+    case userAddedToGroup(groupId: Swift.String, userId: Swift.String)
+    case userRemovedFromGroup(groupId: Swift.String, userId: Swift.String)
   }
 }
 public struct SkiSlope : Swift.Equatable, Swift.Hashable {
@@ -531,6 +533,12 @@ extension Mappy.Venue : Mappy.MapInfo, Mappy.SceneInfo {
   public var region: Mappy.MapRegion {
     get
   }
+  public var maxScale: Swift.Double {
+    get
+  }
+  public var minScale: Swift.Double {
+    get
+  }
 }
 public enum VenuesProviderError : Foundation.LocalizedError {
   case objectNotFound
@@ -549,6 +557,7 @@ extension Mappy.SceneView {
   @_Concurrency.MainActor(unsafe) final public func display(route: Mappy.RouteResponse?, routeHighlightColor: UIKit.UIColor = .routeHighlight, destinationImage: UIKit.UIImage = .mappyPinSmall)
   @_Concurrency.MainActor(unsafe) final public func startNavigation(route: Mappy.RouteResponse, routeHighlightColor: UIKit.UIColor = .routeHighlight, destinationImage: UIKit.UIImage = .mappyPin) -> Mappy.RouteTracker?
   @_Concurrency.MainActor(unsafe) final public func stopNavigation()
+  @_Concurrency.MainActor(unsafe) final public func zoomToLocation(latitude: Swift.Double, longitude: Swift.Double)
 }
 extension UIKit.UIColor {
   public static let routeHighlight: UIKit.UIColor
@@ -600,6 +609,8 @@ public enum MapError : Foundation.LocalizedError {
 public protocol MapInfo {
   var venueId: Swift.String { get }
   var region: Mappy.MapRegion { get }
+  var maxScale: Swift.Double { get }
+  var minScale: Swift.Double { get }
 }
 public struct MapRegion {
 }
@@ -776,6 +787,7 @@ extension Mappy.MapView {
   @_Concurrency.MainActor(unsafe) final public func display(route: Mappy.RouteResponse?, routeHighlightColor: UIKit.UIColor = .routeHighlight, destinationImage: UIKit.UIImage = .mappyPinSmall)
   @_Concurrency.MainActor(unsafe) final public func startNavigation(route: Mappy.RouteResponse, routeHighlightColor: UIKit.UIColor = .routeHighlight, destinationImage: UIKit.UIImage = .mappyPin) -> Mappy.RouteTracker?
   @_Concurrency.MainActor(unsafe) final public func stopNavigation()
+  @_Concurrency.MainActor(unsafe) final public func zoomToLocation(latitude: Swift.Double, longitude: Swift.Double)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class SceneView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) final public var scene: Mappy.Scene? {

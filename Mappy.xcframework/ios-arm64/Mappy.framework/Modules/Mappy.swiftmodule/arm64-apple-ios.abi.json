@@ -904,6 +904,40 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "zoomToLocation",
+            "printedName": "zoomToLocation(latitude:longitude:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy7MapViewC14zoomToLocation8latitude9longitudeySd_SdtF",
+            "mangledName": "$s5Mappy7MapViewC14zoomToLocation8latitude9longitudeySd_SdtF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Custom",
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -12855,6 +12889,138 @@
                 "usr": "s:5Mappy20GroupLocationServiceC5EventO04userC0yAeA04UserC0VcAEmF",
                 "mangledName": "$s5Mappy20GroupLocationServiceC5EventO04userC0yAeA04UserC0VcAEmF",
                 "moduleName": "Mappy"
+              },
+              {
+                "kind": "Var",
+                "name": "userAddedToGroup",
+                "printedName": "userAddedToGroup",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Mappy.GroupLocationService.Event.Type) -> (Swift.String, Swift.String) -> Mappy.GroupLocationService.Event",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Swift.String) -> Mappy.GroupLocationService.Event",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "Mappy.GroupLocationService.Event",
+                            "usr": "s:5Mappy20GroupLocationServiceC5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(groupId: Swift.String, userId: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Mappy.GroupLocationService.Event.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "Mappy.GroupLocationService.Event",
+                            "usr": "s:5Mappy20GroupLocationServiceC5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:5Mappy20GroupLocationServiceC5EventO011userAddedToB0yAESS_SStcAEmF",
+                "mangledName": "$s5Mappy20GroupLocationServiceC5EventO011userAddedToB0yAESS_SStcAEmF",
+                "moduleName": "Mappy",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "userRemovedFromGroup",
+                "printedName": "userRemovedFromGroup",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Mappy.GroupLocationService.Event.Type) -> (Swift.String, Swift.String) -> Mappy.GroupLocationService.Event",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Swift.String) -> Mappy.GroupLocationService.Event",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "Mappy.GroupLocationService.Event",
+                            "usr": "s:5Mappy20GroupLocationServiceC5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(groupId: Swift.String, userId: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Mappy.GroupLocationService.Event.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "Mappy.GroupLocationService.Event",
+                            "usr": "s:5Mappy20GroupLocationServiceC5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:5Mappy20GroupLocationServiceC5EventO015userRemovedFromB0yAESS_SStcAEmF",
+                "mangledName": "$s5Mappy20GroupLocationServiceC5EventO015userRemovedFromB0yAESS_SStcAEmF",
+                "moduleName": "Mappy",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               }
             ],
             "declKind": "Enum",
@@ -16508,6 +16674,90 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxScale",
+            "printedName": "maxScale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy5VenueV8maxScaleSdvp",
+            "mangledName": "$s5Mappy5VenueV8maxScaleSdvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy5VenueV8maxScaleSdvg",
+                "mangledName": "$s5Mappy5VenueV8maxScaleSdvg",
+                "moduleName": "Mappy",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minScale",
+            "printedName": "minScale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy5VenueV8minScaleSdvp",
+            "mangledName": "$s5Mappy5VenueV8minScaleSdvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy5VenueV8minScaleSdvg",
+                "mangledName": "$s5Mappy5VenueV8minScaleSdvg",
+                "moduleName": "Mappy",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -19880,6 +20130,90 @@
                 "declKind": "Accessor",
                 "usr": "s:5Mappy7MapInfoP6regionAA0B6RegionVvg",
                 "mangledName": "$s5Mappy7MapInfoP6regionAA0B6RegionVvg",
+                "moduleName": "Mappy",
+                "genericSig": "<τ_0_0 where τ_0_0 : Mappy.MapInfo>",
+                "sugared_genericSig": "<Self where Self : Mappy.MapInfo>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxScale",
+            "printedName": "maxScale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy7MapInfoP8maxScaleSdvp",
+            "mangledName": "$s5Mappy7MapInfoP8maxScaleSdvp",
+            "moduleName": "Mappy",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy7MapInfoP8maxScaleSdvg",
+                "mangledName": "$s5Mappy7MapInfoP8maxScaleSdvg",
+                "moduleName": "Mappy",
+                "genericSig": "<τ_0_0 where τ_0_0 : Mappy.MapInfo>",
+                "sugared_genericSig": "<Self where Self : Mappy.MapInfo>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minScale",
+            "printedName": "minScale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy7MapInfoP8minScaleSdvp",
+            "mangledName": "$s5Mappy7MapInfoP8minScaleSdvp",
+            "moduleName": "Mappy",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy7MapInfoP8minScaleSdvg",
+                "mangledName": "$s5Mappy7MapInfoP8minScaleSdvg",
                 "moduleName": "Mappy",
                 "genericSig": "<τ_0_0 where τ_0_0 : Mappy.MapInfo>",
                 "sugared_genericSig": "<Self where Self : Mappy.MapInfo>",
@@ -25361,6 +25695,40 @@
           },
           {
             "kind": "Function",
+            "name": "zoomToLocation",
+            "printedName": "zoomToLocation(latitude:longitude:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy9SceneViewC14zoomToLocation8latitude9longitudeySd_SdtF",
+            "mangledName": "$s5Mappy9SceneViewC14zoomToLocation8latitude9longitudeySd_SdtF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Custom",
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "geoView",
             "printedName": "geoView(_:didTapAtScreenPoint:mapPoint:)",
             "children": [
@@ -28465,2079 +28833,2079 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
       "kind": "FloatLiteral",
-      "offset": 1586,
+      "offset": 1827,
       "length": 5,
       "value": "181.0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
       "kind": "FloatLiteral",
-      "offset": 1592,
+      "offset": 1833,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
       "kind": "FloatLiteral",
-      "offset": 1606,
+      "offset": 1847,
       "length": 5,
       "value": "228.0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
       "kind": "FloatLiteral",
-      "offset": 1612,
+      "offset": 1853,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
       "kind": "FloatLiteral",
-      "offset": 1625,
+      "offset": 1866,
       "length": 5,
       "value": "253.0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
       "kind": "FloatLiteral",
-      "offset": 1631,
+      "offset": 1872,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1645,
+      "offset": 1886,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Navigation\/MapNavigationWorker.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Navigation\/MapNavigationWorker.swift",
       "kind": "StringLiteral",
       "offset": 205,
       "length": 19,
       "value": "\"Mappy.MapNavigationWorker\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
       "offset": 342,
       "length": 8,
       "value": "\"Chalet\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
       "offset": 377,
       "length": 13,
       "value": "\"Hotel Lobby\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
       "offset": 412,
       "length": 7,
       "value": "\"Lodge\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
       "offset": 446,
       "length": 12,
       "value": "\"Restaurant\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
       "offset": 483,
       "length": 10,
       "value": "\"Restroom\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
       "offset": 519,
       "length": 12,
       "value": "\"Ski Patrol\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
       "offset": 553,
       "length": 7,
       "value": "\"Other\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
       "offset": 342,
       "length": 8,
       "value": "\"Chalet\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
       "offset": 377,
       "length": 13,
       "value": "\"Hotel Lobby\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
       "offset": 412,
       "length": 7,
       "value": "\"Lodge\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
       "offset": 446,
       "length": 12,
       "value": "\"Restaurant\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
       "offset": 483,
       "length": 10,
       "value": "\"Restroom\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
       "offset": 519,
       "length": 12,
       "value": "\"Ski Patrol\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
       "offset": 553,
       "length": 7,
       "value": "\"Other\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Building.swift",
       "kind": "StringLiteral",
       "offset": 1042,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Navigation\/RouteTracker.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Navigation\/RouteTracker.swift",
       "kind": "BooleanLiteral",
       "offset": 1170,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Scene\/SceneViewInteractionOptions.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/SceneViewInteractionOptions.swift",
       "kind": "BooleanLiteral",
       "offset": 473,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Scene\/SceneViewInteractionOptions.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/SceneViewInteractionOptions.swift",
       "kind": "BooleanLiteral",
       "offset": 614,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Scene\/SceneViewInteractionOptions.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/SceneViewInteractionOptions.swift",
       "kind": "FloatLiteral",
       "offset": 795,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Scene\/SceneLocationDisplay.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/SceneLocationDisplay.swift",
       "kind": "IntegerLiteral",
       "offset": 1415,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/DateFormatter+Ext.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/DateFormatter+Ext.swift",
       "kind": "StringLiteral",
       "offset": 257,
       "length": 32,
       "value": "\"yyyy-MM-dd HH:mm:ss✂️ZZZZZ\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 356,
       "length": 14,
       "value": "\"Magic Carpet\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 394,
       "length": 10,
       "value": "\"Tow Rope\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 431,
       "length": 14,
       "value": "\"2 Chair Lift\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 472,
       "length": 14,
       "value": "\"3 Chair Lift\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 513,
       "length": 14,
       "value": "\"4 Chair Lift\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 554,
       "length": 14,
       "value": "\"5 Chair Lift\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 595,
       "length": 14,
       "value": "\"6 Chair Lift\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 633,
       "length": 9,
       "value": "\"Gondola\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 663,
       "length": 6,
       "value": "\"Tram\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 356,
       "length": 14,
       "value": "\"Magic Carpet\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 394,
       "length": 10,
       "value": "\"Tow Rope\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 431,
       "length": 14,
       "value": "\"2 Chair Lift\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 472,
       "length": 14,
       "value": "\"3 Chair Lift\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 513,
       "length": 14,
       "value": "\"4 Chair Lift\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 554,
       "length": 14,
       "value": "\"5 Chair Lift\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 595,
       "length": 14,
       "value": "\"6 Chair Lift\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 633,
       "length": 9,
       "value": "\"Gondola\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 663,
       "length": 6,
       "value": "\"Tram\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 783,
       "length": 5,
       "value": "\"Sit\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 810,
       "length": 7,
       "value": "\"Stand\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 783,
       "length": 5,
       "value": "\"Sit\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 810,
       "length": 7,
       "value": "\"Stand\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiLift.swift",
       "kind": "StringLiteral",
       "offset": 1715,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "FloatLiteral",
       "offset": 863,
       "length": 5,
       "value": "181.0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "FloatLiteral",
       "offset": 869,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "FloatLiteral",
       "offset": 883,
       "length": 5,
       "value": "228.0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "FloatLiteral",
       "offset": 889,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "FloatLiteral",
       "offset": 902,
       "length": 5,
       "value": "253.0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "FloatLiteral",
       "offset": 908,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "IntegerLiteral",
       "offset": 922,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 403,
       "length": 19,
       "value": "\"Food and Beverage\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 445,
       "length": 8,
       "value": "\"Retail\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 478,
       "length": 11,
       "value": "\"First Aid\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 511,
       "length": 7,
       "value": "\"Other\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 549,
       "length": 15,
       "value": "\"Accommodation\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 594,
       "length": 16,
       "value": "\"Guest Services\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 641,
       "length": 16,
       "value": "\"Transportation\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 682,
       "length": 11,
       "value": "\"Base Area\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 720,
       "length": 13,
       "value": "\"Ski Feature\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 761,
       "length": 13,
       "value": "\"Information\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 403,
       "length": 19,
       "value": "\"Food and Beverage\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 445,
       "length": 8,
       "value": "\"Retail\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 478,
       "length": 11,
       "value": "\"First Aid\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 511,
       "length": 7,
       "value": "\"Other\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 549,
       "length": 15,
       "value": "\"Accommodation\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 594,
       "length": 16,
       "value": "\"Guest Services\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 641,
       "length": 16,
       "value": "\"Transportation\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 682,
       "length": 11,
       "value": "\"Base Area\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 720,
       "length": 13,
       "value": "\"Ski Feature\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 761,
       "length": 13,
       "value": "\"Information\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1489,
       "length": 5,
       "value": "\"Bar\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1522,
       "length": 25,
       "value": "\"Full Service Restaurant\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1570,
       "length": 15,
       "value": "\"Casual Dining\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1650,
       "length": 15,
       "value": "\"Ticket Office\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1692,
       "length": 13,
       "value": "\"Rental Shop\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1732,
       "length": 13,
       "value": "\"Repair Shop\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1773,
       "length": 14,
       "value": "\"Retail Store\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1812,
       "length": 11,
       "value": "\"Zip Tours\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1888,
       "length": 12,
       "value": "\"Ski Patrol\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1920,
       "length": 5,
       "value": "\"AED\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1985,
       "length": 10,
       "value": "\"Restroom\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2021,
       "length": 12,
       "value": "\"Ski School\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2058,
       "length": 11,
       "value": "\"Kid Zones\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2093,
       "length": 9,
       "value": "\"Lockers\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2127,
       "length": 11,
       "value": "\"Rest Area\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2168,
       "length": 16,
       "value": "\"ADA Accessible\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2206,
       "length": 7,
       "value": "\"Other\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2241,
       "length": 14,
       "value": "\"Shuttle Stop\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2286,
       "length": 16,
       "value": "\"Transportation\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2326,
       "length": 9,
       "value": "\"Rentals\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2355,
       "length": 5,
       "value": "\"ATM\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2409,
       "length": 7,
       "value": "\"Hotel\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2438,
       "length": 7,
       "value": "\"Condo\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2500,
       "length": 13,
       "value": "\"Information\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2560,
       "length": 11,
       "value": "\"Base Area\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2595,
       "length": 9,
       "value": "\"Village\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2636,
       "length": 19,
       "value": "\"Village_No_Detail\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2707,
       "length": 14,
       "value": "\"Racing Arena\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2749,
       "length": 14,
       "value": "\"Terrain Park\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2820,
       "length": 16,
       "value": "\"Guest Services\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1489,
       "length": 5,
       "value": "\"Bar\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1522,
       "length": 25,
       "value": "\"Full Service Restaurant\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1570,
       "length": 15,
       "value": "\"Casual Dining\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1650,
       "length": 15,
       "value": "\"Ticket Office\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1692,
       "length": 13,
       "value": "\"Rental Shop\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1732,
       "length": 13,
       "value": "\"Repair Shop\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1773,
       "length": 14,
       "value": "\"Retail Store\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1812,
       "length": 11,
       "value": "\"Zip Tours\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1888,
       "length": 12,
       "value": "\"Ski Patrol\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1920,
       "length": 5,
       "value": "\"AED\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 1985,
       "length": 10,
       "value": "\"Restroom\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2021,
       "length": 12,
       "value": "\"Ski School\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2058,
       "length": 11,
       "value": "\"Kid Zones\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2093,
       "length": 9,
       "value": "\"Lockers\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2127,
       "length": 11,
       "value": "\"Rest Area\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2168,
       "length": 16,
       "value": "\"ADA Accessible\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2206,
       "length": 7,
       "value": "\"Other\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2241,
       "length": 14,
       "value": "\"Shuttle Stop\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2286,
       "length": 16,
       "value": "\"Transportation\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2326,
       "length": 9,
       "value": "\"Rentals\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2355,
       "length": 5,
       "value": "\"ATM\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2409,
       "length": 7,
       "value": "\"Hotel\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2438,
       "length": 7,
       "value": "\"Condo\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2500,
       "length": 13,
       "value": "\"Information\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2560,
       "length": 11,
       "value": "\"Base Area\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2595,
       "length": 9,
       "value": "\"Village\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2636,
       "length": 19,
       "value": "\"Village_No_Detail\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2707,
       "length": 14,
       "value": "\"Racing Arena\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2749,
       "length": 14,
       "value": "\"Terrain Park\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 2820,
       "length": 16,
       "value": "\"Guest Services\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",
       "kind": "StringLiteral",
       "offset": 3398,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Bookmark.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Bookmark.swift",
       "kind": "StringLiteral",
       "offset": 295,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Bookmark.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Bookmark.swift",
       "kind": "StringLiteral",
       "offset": 427,
       "length": 14,
       "value": "\"VillageLabel\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Bookmark.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Bookmark.swift",
       "kind": "StringLiteral",
       "offset": 427,
       "length": 14,
       "value": "\"VillageLabel\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/Logger.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 379,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/Logger.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/Logger.swift",
       "kind": "BooleanLiteral",
       "offset": 665,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/Logger.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 1224,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/Logger.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/Logger.swift",
       "kind": "BooleanLiteral",
       "offset": 1510,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/Logger.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 2081,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/Logger.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/Logger.swift",
       "kind": "BooleanLiteral",
       "offset": 2372,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
       "kind": "StringLiteral",
       "offset": 1138,
       "length": 15,
       "value": "\"ski_run_query\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
       "kind": "StringLiteral",
       "offset": 1449,
       "length": 12,
       "value": "\"lift_query\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
       "kind": "StringLiteral",
       "offset": 1587,
       "length": 10,
       "value": "\"building\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
       "kind": "StringLiteral",
       "offset": 1740,
       "length": 22,
       "value": "\"resort_feature_query\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
       "kind": "StringLiteral",
       "offset": 1888,
       "length": 11,
       "value": "\"bookmarks\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/GroupLocation\/GroupLocationService.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/GroupLocation\/GroupLocationService.swift",
       "kind": "IntegerLiteral",
       "offset": 990,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/GroupLocation\/GroupLocationService.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/GroupLocation\/GroupLocationService.swift",
       "kind": "BooleanLiteral",
       "offset": 1255,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/GroupLocation\/GroupLocationService.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/GroupLocation\/GroupLocationService.swift",
       "kind": "BooleanLiteral",
       "offset": 1292,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "IntegerLiteral",
       "offset": 531,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "IntegerLiteral",
       "offset": 534,
       "length": 12,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "IntegerLiteral",
       "offset": 548,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "IntegerLiteral",
       "offset": 558,
       "length": 6,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "IntegerLiteral",
       "offset": 531,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "IntegerLiteral",
       "offset": 534,
       "length": 12,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "IntegerLiteral",
       "offset": 548,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "IntegerLiteral",
       "offset": 558,
       "length": 6,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "IntegerLiteral",
       "offset": 531,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "IntegerLiteral",
       "offset": 534,
       "length": 12,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "IntegerLiteral",
       "offset": 548,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "IntegerLiteral",
       "offset": 558,
       "length": 6,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "StringLiteral",
       "offset": 1070,
       "length": 14,
       "value": "\"Walking Path\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "StringLiteral",
       "offset": 1108,
       "length": 10,
       "value": "\"Main Run\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "StringLiteral",
       "offset": 1149,
       "length": 17,
       "value": "\"Connector Trail\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "StringLiteral",
       "offset": 1194,
       "length": 14,
       "value": "\"Nordic Trail\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "StringLiteral",
       "offset": 1232,
       "length": 9,
       "value": "\"Catwalk\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "StringLiteral",
       "offset": 1070,
       "length": 14,
       "value": "\"Walking Path\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "StringLiteral",
       "offset": 1108,
       "length": 10,
       "value": "\"Main Run\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "StringLiteral",
       "offset": 1149,
       "length": 17,
       "value": "\"Connector Trail\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "StringLiteral",
       "offset": 1194,
       "length": 14,
       "value": "\"Nordic Trail\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "StringLiteral",
       "offset": 1232,
       "length": 9,
       "value": "\"Catwalk\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "StringLiteral",
       "offset": 2111,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
       "kind": "IntegerLiteral",
       "offset": 370,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
       "kind": "IntegerLiteral",
       "offset": 470,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
       "kind": "StringLiteral",
       "offset": 369,
       "length": 27,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
       "kind": "StringLiteral",
       "offset": 395,
       "length": 5,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
       "kind": "StringLiteral",
       "offset": 399,
       "length": 3,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
       "kind": "StringLiteral",
       "offset": 405,
       "length": 12,
       "value": "\"concurrent\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
       "kind": "StringLiteral",
       "offset": 420,
       "length": 3,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
       "kind": "StringLiteral",
       "offset": 426,
       "length": 33,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
       "kind": "StringLiteral",
       "offset": 458,
       "length": 12,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
       "kind": "BooleanLiteral",
       "offset": 651,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Configuration\/Constants.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Configuration\/Constants.swift",
       "kind": "FloatLiteral",
       "offset": 170,
       "length": 4,
       "value": "0.25"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Configuration\/Constants.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Configuration\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 221,
       "length": 18,
       "value": "\"io.bemappy.mappy\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Configuration\/Constants.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Configuration\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 221,
       "length": 18,
       "value": "\"io.bemappy.mappy\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Point.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Point.swift",
       "kind": "StringLiteral",
       "offset": 368,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Point.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Point.swift",
       "kind": "IntegerLiteral",
       "offset": 382,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Features\/Point.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/Point.swift",
       "kind": "IntegerLiteral",
       "offset": 396,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/UIImage+Ext.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIImage+Ext.swift",
       "kind": "StringLiteral",
       "offset": 174,
       "length": 17,
       "value": "\"mappy_pin_small\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/UIImage+Ext.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIImage+Ext.swift",
       "kind": "StringLiteral",
       "offset": 296,
       "length": 11,
       "value": "\"mappy_pin\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Database\/DefaultsDatabaseProvider.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/DefaultsDatabaseProvider.swift",
       "kind": "StringLiteral",
       "offset": 687,
       "length": 14,
       "value": "\"mappy:mp_env\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1707,
       "length": 20,
       "value": "\"GroupLimitExceeded\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1761,
       "length": 25,
       "value": "\"GroupUsersLimitExceeded\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1809,
       "length": 14,
       "value": "\"UserNotFound\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1847,
       "length": 15,
       "value": "\"GroupNotFound\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1890,
       "length": 19,
       "value": "\"UserAlreadyExists\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1938,
       "length": 20,
       "value": "\"GroupAlreadyExists\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1981,
       "length": 14,
       "value": "\"GroupIsEmpty\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 2024,
       "length": 20,
       "value": "\"UserAlreadyInGroup\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 2069,
       "length": 16,
       "value": "\"UserNotInGroup\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 2110,
       "length": 16,
       "value": "\"GroupCodeInUse\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 2154,
       "length": 19,
       "value": "\"GroupCodeNotFound\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 2198,
       "length": 16,
       "value": "\"InvalidPayload\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 2237,
       "length": 14,
       "value": "\"UnknownError\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1707,
       "length": 20,
       "value": "\"GroupLimitExceeded\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1761,
       "length": 25,
       "value": "\"GroupUsersLimitExceeded\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1809,
       "length": 14,
       "value": "\"UserNotFound\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1847,
       "length": 15,
       "value": "\"GroupNotFound\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1890,
       "length": 19,
       "value": "\"UserAlreadyExists\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1938,
       "length": 20,
       "value": "\"GroupAlreadyExists\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1981,
       "length": 14,
       "value": "\"GroupIsEmpty\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 2024,
       "length": 20,
       "value": "\"UserAlreadyInGroup\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 2069,
       "length": 16,
       "value": "\"UserNotInGroup\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 2110,
       "length": 16,
       "value": "\"GroupCodeInUse\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 2154,
       "length": 19,
       "value": "\"GroupCodeNotFound\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 2198,
       "length": 16,
       "value": "\"InvalidPayload\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 2237,
       "length": 14,
       "value": "\"UnknownError\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/LJLogFormatter.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/LJLogFormatter.swift",
       "kind": "StringLiteral",
       "offset": 319,
       "length": 32,
       "value": "\"yyyy-MM-dd HH:mm:ss✂️ZZZZZ\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/LJLogFormatter.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/Logs\/LJLogFormatter.swift",
       "kind": "StringLiteral",
       "offset": 141,
       "length": 14,
       "value": "\"Mappy.LJLogFormatter\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "StringLiteral",
       "offset": 3317,
       "length": 4,
       "value": "\"2d\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "StringLiteral",
       "offset": 3339,
       "length": 4,
       "value": "\"3d\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "StringLiteral",
       "offset": 3317,
       "length": 4,
       "value": "\"2d\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "StringLiteral",
       "offset": 3339,
       "length": 4,
       "value": "\"3d\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedDictionary.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedDictionary.swift",
       "kind": "StringLiteral",
       "offset": 465,
       "length": 3,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedDictionary.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedDictionary.swift",
       "kind": "StringLiteral",
       "offset": 471,
       "length": 12,
       "value": "\"concurrent\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedDictionary.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedDictionary.swift",
       "kind": "StringLiteral",
       "offset": 486,
       "length": 3,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedDictionary.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedDictionary.swift",
       "kind": "StringLiteral",
       "offset": 492,
       "length": 33,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedDictionary.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedDictionary.swift",
       "kind": "StringLiteral",
       "offset": 524,
       "length": 12,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedDictionary.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedDictionary.swift",
       "kind": "BooleanLiteral",
       "offset": 746,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedDictionary.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedDictionary.swift",
       "kind": "BooleanLiteral",
       "offset": 4931,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseService.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseService.swift",
       "kind": "StringLiteral",
       "offset": 331,
       "length": 18,
       "value": "\"io.bemappy.mappy\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/UIColor+Ext.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIColor+Ext.swift",
       "kind": "StringLiteral",
       "offset": 180,
       "length": 16,
       "value": "\"routeHighlight\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Navigation\/TurnByTurnNavigationResponse.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Navigation\/TurnByTurnNavigationResponse.swift",
       "kind": "BooleanLiteral",
       "offset": 1604,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Shared\/Animate.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Shared\/Animate.swift",
       "kind": "Array",
       "offset": 397,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/GroupLocation\/GroupLocationServiceDataSource.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/GroupLocation\/GroupLocationServiceDataSource.swift",
       "kind": "BooleanLiteral",
       "offset": 626,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
       "kind": "IntegerLiteral",
       "offset": 254,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
       "kind": "IntegerLiteral",
       "offset": 307,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
       "kind": "IntegerLiteral",
       "offset": 369,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
       "kind": "IntegerLiteral",
       "offset": 429,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
       "kind": "IntegerLiteral",
       "offset": 495,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
       "kind": "IntegerLiteral",
       "offset": 567,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
       "kind": "IntegerLiteral",
       "offset": 633,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
       "kind": "IntegerLiteral",
       "offset": 704,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
       "kind": "IntegerLiteral",
       "offset": 758,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Pusher\/PusherService.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Pusher\/PusherService.swift",
       "kind": "BooleanLiteral",
       "offset": 911,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Pusher\/PusherService.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Pusher\/PusherService.swift",
       "kind": "StringLiteral",
       "offset": 932,
       "length": 5,
       "value": "\"us3\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Pusher\/PusherService.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Pusher\/PusherService.swift",
       "kind": "BooleanLiteral",
       "offset": 948,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Shared\/GeoViewCommon.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Shared\/GeoViewCommon.swift",
       "kind": "FloatLiteral",
       "offset": 1938,
       "length": 3,
       "value": "0.6"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Shared\/GeoViewCommon.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Shared\/GeoViewCommon.swift",
       "kind": "IntegerLiteral",
       "offset": 1973,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Utilities\/RepeatingTimer.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/RepeatingTimer.swift",
       "kind": "BooleanLiteral",
       "offset": 1064,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/HTTPClient.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/HTTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 298,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/HTTPClient.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/HTTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 356,
       "length": 4,
       "value": "3600"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Scene\/SceneView.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/SceneView.swift",
       "kind": "IntegerLiteral",
       "offset": 1638,
       "length": 4,
       "value": "2500"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/AGSRoute+Ext.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/AGSRoute+Ext.swift",
       "kind": "IntegerLiteral",
       "offset": 593,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/AGSRoute+Ext.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/AGSRoute+Ext.swift",
       "kind": "IntegerLiteral",
       "offset": 616,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/AGSRoute+Ext.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/AGSRoute+Ext.swift",
       "kind": "Dictionary",
       "offset": 1067,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/AGSRoute+Ext.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/AGSRoute+Ext.swift",
       "kind": "StringLiteral",
       "offset": 1228,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/AGSRoute+Ext.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/AGSRoute+Ext.swift",
       "kind": "Array",
       "offset": 1364,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/AGSRoute+Ext.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/AGSRoute+Ext.swift",
       "kind": "Array",
       "offset": 1466,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/AGSRoute+Ext.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/AGSRoute+Ext.swift",
       "kind": "StringLiteral",
       "offset": 1732,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
       "kind": "BooleanLiteral",
       "offset": 457,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
       "kind": "BooleanLiteral",
       "offset": 578,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
       "kind": "BooleanLiteral",
       "offset": 917,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
       "kind": "BooleanLiteral",
       "offset": 1053,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
       "kind": "BooleanLiteral",
       "offset": 1234,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
       "kind": "BooleanLiteral",
       "offset": 1419,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
       "kind": "BooleanLiteral",
       "offset": 1629,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
       "kind": "FloatLiteral",
       "offset": 1817,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapViewInteractionOptions.swift",
       "kind": "FloatLiteral",
       "offset": 2073,
       "length": 4,
       "value": "12.0"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
       "kind": "StringLiteral",
       "offset": 1881,
       "length": 16,
       "value": "\"mappy:clientId\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
       "kind": "StringLiteral",
       "offset": 1987,
       "length": 20,
       "value": "\"mappy:clientSecret\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
       "kind": "StringLiteral",
       "offset": 2098,
       "length": 21,
       "value": "\"mappy:accessTokenBO\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
       "kind": "StringLiteral",
       "offset": 2206,
       "length": 17,
       "value": "\"mappy:licenseBO\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
       "kind": "StringLiteral",
       "offset": 2315,
       "length": 16,
       "value": "\"mappy:mapMeta:\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
       "kind": "StringLiteral",
       "offset": 2425,
       "length": 18,
       "value": "\"mappy:sceneMeta:\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
       "kind": "StringLiteral",
       "offset": 2527,
       "length": 14,
       "value": "\"mappy:userBO\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1146,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1179,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1212,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1246,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1283,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1146,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1179,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1212,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1246,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 1283,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/Double+Ext.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/Double+Ext.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/Double+Ext.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/Double+Ext.swift",
       "kind": "IntegerLiteral",
       "offset": 312,
       "length": 4,
       "value": "5280"
     },
     {
-      "filePath": "\/Users\/afsar\/Development\/Bitbucket\/mappy-ios-sdk-feature-maps\/Mappy\/Mappy\/SDK\/Extensions\/Double+Ext.swift",
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/Double+Ext.swift",
       "kind": "FloatLiteral",
       "offset": 410,
       "length": 7,
