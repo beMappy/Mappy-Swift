@@ -360,10 +360,10 @@ final public class GroupsService {
   public init()
   final public func fetchGroups() -> Combine.AnyPublisher<[Mappy.Group], Mappy.GroupsProviderError>
   final public func fetchGroupInfo(groupId: Swift.String) -> Combine.AnyPublisher<Mappy.Group, Mappy.GroupsProviderError>
-  final public func createGroup(name: Swift.String) -> Combine.AnyPublisher<Mappy.Group, Mappy.GroupsProviderError>
+  final public func createGroup(name: Swift.String, userRole: Swift.String?) -> Combine.AnyPublisher<Mappy.Group, Mappy.GroupsProviderError>
   final public func updateGroup(groupId: Swift.String, name: Swift.String) -> Combine.AnyPublisher<Mappy.Group, Mappy.GroupsProviderError>
   final public func deleteGroup(groupId: Swift.String) -> Combine.AnyPublisher<Mappy.Group, Mappy.GroupsProviderError>
-  final public func addUser(userId: Swift.String, groupCode: Swift.String) -> Combine.AnyPublisher<Mappy.Group, Mappy.GroupsProviderError>
+  final public func addUser(userId: Swift.String, groupCode: Swift.String, userRole: Swift.String?) -> Combine.AnyPublisher<Mappy.Group, Mappy.GroupsProviderError>
   final public func removeUser(userId: Swift.String, groupId: Swift.String) -> Combine.AnyPublisher<Mappy.Group, Mappy.GroupsProviderError>
   @objc deinit
 }
@@ -829,6 +829,7 @@ public struct MapViewInteractionOptions {
 public struct GroupUser : Swift.Equatable, Swift.Hashable {
   public let userId: Swift.String
   public let location: Mappy.GroupUser.Location?
+  public let userRole: Swift.String?
   public struct Location : Swift.Equatable, Swift.Hashable {
     public let unixDate: Foundation.TimeInterval
     public let lat: Swift.Double

@@ -12299,7 +12299,7 @@
           {
             "kind": "Function",
             "name": "createGroup",
-            "printedName": "createGroup(name:)",
+            "printedName": "createGroup(name:userRole:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12326,11 +12326,25 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:5Mappy13GroupsServiceC11createGroup4name7Combine12AnyPublisherVyAA0E0VAA0B13ProviderErrorOGSS_tF",
-            "mangledName": "$s5Mappy13GroupsServiceC11createGroup4name7Combine12AnyPublisherVyAA0E0VAA0B13ProviderErrorOGSS_tF",
+            "usr": "s:5Mappy13GroupsServiceC11createGroup4name8userRole7Combine12AnyPublisherVyAA0E0VAA0B13ProviderErrorOGSS_SSSgtF",
+            "mangledName": "$s5Mappy13GroupsServiceC11createGroup4name8userRole7Combine12AnyPublisherVyAA0E0VAA0B13ProviderErrorOGSS_SSSgtF",
             "moduleName": "Mappy",
             "declAttributes": [
               "Final",
@@ -12434,7 +12448,7 @@
           {
             "kind": "Function",
             "name": "addUser",
-            "printedName": "addUser(userId:groupCode:)",
+            "printedName": "addUser(userId:groupCode:userRole:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12467,11 +12481,25 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:5Mappy13GroupsServiceC7addUser6userId9groupCode7Combine12AnyPublisherVyAA5GroupVAA0B13ProviderErrorOGSS_SStF",
-            "mangledName": "$s5Mappy13GroupsServiceC7addUser6userId9groupCode7Combine12AnyPublisherVyAA5GroupVAA0B13ProviderErrorOGSS_SStF",
+            "usr": "s:5Mappy13GroupsServiceC7addUser6userId9groupCode0F4Role7Combine12AnyPublisherVyAA5GroupVAA0B13ProviderErrorOGSS_S2SSgtF",
+            "mangledName": "$s5Mappy13GroupsServiceC7addUser6userId9groupCode0F4Role7Combine12AnyPublisherVyAA5GroupVAA0B13ProviderErrorOGSS_S2SSgtF",
             "moduleName": "Mappy",
             "declAttributes": [
               "Final",
@@ -27068,6 +27096,66 @@
                 "declKind": "Accessor",
                 "usr": "s:5Mappy9GroupUserV8locationAC8LocationVSgvg",
                 "mangledName": "$s5Mappy9GroupUserV8locationAC8LocationVSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userRole",
+            "printedName": "userRole",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9GroupUserV8userRoleSSSgvp",
+            "mangledName": "$s5Mappy9GroupUserV8userRoleSSSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9GroupUserV8userRoleSSSgvg",
+                "mangledName": "$s5Mappy9GroupUserV8userRoleSSSgvg",
                 "moduleName": "Mappy",
                 "implicit": true,
                 "accessorKind": "get"
