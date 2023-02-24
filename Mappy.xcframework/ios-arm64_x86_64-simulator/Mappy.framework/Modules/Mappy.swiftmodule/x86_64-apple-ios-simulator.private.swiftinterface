@@ -68,14 +68,16 @@ public struct Building : Swift.Equatable, Swift.Hashable {
       get
     }
   }
+  public let buildingId: Swift.Int?
   public let name: Swift.String
   public let category: Mappy.Building.Category?
   public let url: Swift.String?
   public let phone: Swift.String?
   public let facilityId: Swift.String?
   public let foreignId: Swift.String?
+  public let foreignSource: Swift.String?
   public static let any: Mappy.Building
-  public init(name: Swift.String, category: Mappy.Building.Category?, url: Swift.String?, phone: Swift.String?, facilityId: Swift.String?, foreignId: Swift.String?)
+  public init(buildingId: Swift.Int?, name: Swift.String, category: Mappy.Building.Category?, url: Swift.String?, phone: Swift.String?, facilityId: Swift.String?, foreignId: Swift.String?, foreignSource: Swift.String?)
   public static func == (a: Mappy.Building, b: Mappy.Building) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -142,7 +144,6 @@ extension Mappy.Scene {
   final public func getFeatures() -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
   final public func getFeatures(category: Mappy.FeatureCategory) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
   final public func getFeatures(text: Swift.String, categories: [Mappy.FeatureCategory]? = nil) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
-  final public func getRoutes(from origin: Mappy.Feature, to destination: Mappy.Feature, skiLevel: Mappy.SkiSlope.Level) -> Combine.AnyPublisher<[Mappy.RouteModel], Swift.Error>
 }
 public struct SceneViewInteractionOptions {
 }
@@ -193,8 +194,9 @@ public struct SkiLift : Swift.Equatable, Swift.Hashable {
   public let travelTime: Swift.Double?
   public var liftNumber: Swift.Int?
   public let foreignId: Swift.String?
+  public let foreignSource: Swift.String?
   public static let any: Mappy.SkiLift
-  public init(name: Swift.String, liftNumber: Swift.Int?, liftType: Mappy.SkiLift.LiftType?, passengerPosition: Mappy.SkiLift.PassengerPosition?, length: Swift.Double?, travelTime: Swift.Double?, foreignId: Swift.String?)
+  public init(name: Swift.String, liftNumber: Swift.Int?, liftType: Mappy.SkiLift.LiftType?, passengerPosition: Mappy.SkiLift.PassengerPosition?, length: Swift.Double?, travelTime: Swift.Double?, foreignId: Swift.String?, foreignSource: Swift.String?)
   public static func == (a: Mappy.SkiLift, b: Mappy.SkiLift) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -296,8 +298,9 @@ public struct BuildingAmenity : Swift.Equatable, Swift.Hashable {
   public let url: Swift.String?
   public let phone: Swift.String?
   public let foreignId: Swift.String?
+  public let foreignSource: Swift.String?
   public static let any: Mappy.BuildingAmenity
-  public init(name: Swift.String, category: Mappy.BuildingAmenity.Category?, subtype: Mappy.BuildingAmenity.Subtype?, buildingId: Swift.Int?, buildingName: Swift.String?, levelId: Swift.String?, url: Swift.String?, phone: Swift.String?, foreignId: Swift.String?)
+  public init(name: Swift.String, category: Mappy.BuildingAmenity.Category?, subtype: Mappy.BuildingAmenity.Subtype?, buildingId: Swift.Int?, buildingName: Swift.String?, levelId: Swift.String?, url: Swift.String?, phone: Swift.String?, foreignId: Swift.String?, foreignSource: Swift.String?)
   public static func == (a: Mappy.BuildingAmenity, b: Mappy.BuildingAmenity) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -317,6 +320,7 @@ public struct Bookmark : Swift.Equatable, Swift.Hashable {
   public let name: Swift.String
   public let category: Mappy.Bookmark.Category?
   public let foreignId: Swift.String?
+  public let foreignSource: Swift.String?
   public static func == (a: Mappy.Bookmark, b: Mappy.Bookmark) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -434,8 +438,9 @@ public struct SkiSlope : Swift.Equatable, Swift.Hashable {
   public let travelTime: Swift.Double?
   public let extremeCondition: Swift.Bool?
   public let foreignId: Swift.String?
+  public let foreignSource: Swift.String?
   public static let any: Mappy.SkiSlope
-  public init(name: Swift.String, level: Mappy.SkiSlope.Level?, runType: Mappy.SkiSlope.RunType?, length: Swift.Double?, averageSlope: Swift.Double?, averageSpeed: Swift.Double?, travelTime: Swift.Double?, extremeCondition: Swift.Bool?, foreignId: Swift.String?)
+  public init(name: Swift.String, level: Mappy.SkiSlope.Level?, runType: Mappy.SkiSlope.RunType?, length: Swift.Double?, averageSlope: Swift.Double?, averageSpeed: Swift.Double?, travelTime: Swift.Double?, extremeCondition: Swift.Bool?, foreignId: Swift.String?, foreignSource: Swift.String?)
   public static func == (a: Mappy.SkiSlope, b: Mappy.SkiSlope) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -554,9 +559,6 @@ extension Mappy.SceneView {
   @_Concurrency.MainActor(unsafe) final public func rotateToNorth()
   @_Concurrency.MainActor(unsafe) final public func select(feature: Mappy.Feature?)
   @_Concurrency.MainActor(unsafe) final public func displayUserPins(using locations: [Mappy.UserPinLocation])
-  @_Concurrency.MainActor(unsafe) final public func display(route: Mappy.RouteResponse?, routeHighlightColor: UIKit.UIColor = .routeHighlight, destinationImage: UIKit.UIImage = .mappyPinSmall)
-  @_Concurrency.MainActor(unsafe) final public func startNavigation(route: Mappy.RouteResponse, routeHighlightColor: UIKit.UIColor = .routeHighlight, destinationImage: UIKit.UIImage = .mappyPin) -> Mappy.RouteTracker?
-  @_Concurrency.MainActor(unsafe) final public func stopNavigation()
   @_Concurrency.MainActor(unsafe) final public func zoomToLocation(latitude: Swift.Double, longitude: Swift.Double)
 }
 extension UIKit.UIColor {
