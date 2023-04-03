@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'Mappy'
-  s.version      = '0.4.8'
+  s.version      = '0.4.9'
   s.summary      = 'Mappy SDKs provide an elegant and composable interface for mapping, geocoding, and routing.'
 
   s.description  = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.author             = { 'Mohamed Afsar Shakeer' => 'afsar@freshworks.io' }
   
-  s.source       = { :git => 'https://github.com/beMappy/Mappy-Swift.git', :tag => '0.4.8' }
+  s.source       = { :git => 'https://github.com/beMappy/Mappy-Swift.git', :tag => '0.4.9' }
 
   s.vendored_frameworks = 'Mappy.xcframework'
  
