@@ -16,6 +16,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "ArcGIS",
         "printedName": "ArcGIS",
         "declKind": "Import",
@@ -11289,6 +11299,161 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserStatsService",
+        "printedName": "UserStatsService",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserStatsService",
+                "printedName": "Mappy.UserStatsService",
+                "usr": "s:5Mappy16UserStatsServiceC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Mappy16UserStatsServiceCACycfc",
+            "mangledName": "$s5Mappy16UserStatsServiceCACycfc",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchStats",
+            "printedName": "fetchStats(venue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Mappy.UserStats, Mappy.UserStatsProviderError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserStats",
+                    "printedName": "Mappy.UserStats",
+                    "usr": "s:5Mappy9UserStatsV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserStatsProviderError",
+                    "printedName": "Mappy.UserStatsProviderError",
+                    "usr": "s:5Mappy22UserStatsProviderErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Mappy.Venues?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy16UserStatsServiceC05fetchC05venue7Combine12AnyPublisherVyAA0bC0VAA0bC13ProviderErrorOGAA6VenuesOSg_tF",
+            "mangledName": "$s5Mappy16UserStatsServiceC05fetchC05venue7Combine12AnyPublisherVyAA0bC0VAA0bC13ProviderErrorOGAA6VenuesOSg_tF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchStats",
+            "printedName": "fetchStats(userId:venue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Mappy.UserStats, Mappy.UserStatsProviderError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserStats",
+                    "printedName": "Mappy.UserStats",
+                    "usr": "s:5Mappy9UserStatsV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserStatsProviderError",
+                    "printedName": "Mappy.UserStatsProviderError",
+                    "usr": "s:5Mappy22UserStatsProviderErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Mappy.Venues?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy16UserStatsServiceC05fetchC06userId5venue7Combine12AnyPublisherVyAA0bC0VAA0bC13ProviderErrorOGSS_AA6VenuesOSgtF",
+            "mangledName": "$s5Mappy16UserStatsServiceC05fetchC06userId5venue7Combine12AnyPublisherVyAA0bC0VAA0bC13ProviderErrorOGSS_AA6VenuesOSgtF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5Mappy16UserStatsServiceC",
+        "mangledName": "$s5Mappy16UserStatsServiceC",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -13627,6 +13792,734 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "Venues",
+        "printedName": "Venues",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sundance",
+            "printedName": "sundance",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO8sundanceyA2CmF",
+            "mangledName": "$s5Mappy6VenuesO8sundanceyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "vail",
+            "printedName": "vail",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO4vailyA2CmF",
+            "mangledName": "$s5Mappy6VenuesO4vailyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "mtBachelor",
+            "printedName": "mtBachelor",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO10mtBacheloryA2CmF",
+            "mangledName": "$s5Mappy6VenuesO10mtBacheloryA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "deerValley",
+            "printedName": "deerValley",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO10deerValleyyA2CmF",
+            "mangledName": "$s5Mappy6VenuesO10deerValleyyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "mammoth",
+            "printedName": "mammoth",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO7mammothyA2CmF",
+            "mangledName": "$s5Mappy6VenuesO7mammothyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "bigSky",
+            "printedName": "bigSky",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO6bigSkyyA2CmF",
+            "mangledName": "$s5Mappy6VenuesO6bigSkyyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "parkCity",
+            "printedName": "parkCity",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO8parkCityyA2CmF",
+            "mangledName": "$s5Mappy6VenuesO8parkCityyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "beaverCreek",
+            "printedName": "beaverCreek",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO11beaverCreekyA2CmF",
+            "mangledName": "$s5Mappy6VenuesO11beaverCreekyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "telluride",
+            "printedName": "telluride",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO9tellurideyA2CmF",
+            "mangledName": "$s5Mappy6VenuesO9tellurideyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "steamboat",
+            "printedName": "steamboat",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO9steamboatyA2CmF",
+            "mangledName": "$s5Mappy6VenuesO9steamboatyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "whistler",
+            "printedName": "whistler",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO8whistleryA2CmF",
+            "mangledName": "$s5Mappy6VenuesO8whistleryA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "copper",
+            "printedName": "copper",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO6copperyA2CmF",
+            "mangledName": "$s5Mappy6VenuesO6copperyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "snowmass",
+            "printedName": "snowmass",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO8snowmassyA2CmF",
+            "mangledName": "$s5Mappy6VenuesO8snowmassyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "breckenridge",
+            "printedName": "breckenridge",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO12breckenridgeyA2CmF",
+            "mangledName": "$s5Mappy6VenuesO12breckenridgeyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "snowbird",
+            "printedName": "snowbird",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO8snowbirdyA2CmF",
+            "mangledName": "$s5Mappy6VenuesO8snowbirdyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "palisades",
+            "printedName": "palisades",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.Venues.Type) -> Mappy.Venues",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Venues",
+                    "printedName": "Mappy.Venues",
+                    "usr": "s:5Mappy6VenuesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.Venues.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Venues",
+                        "printedName": "Mappy.Venues",
+                        "usr": "s:5Mappy6VenuesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy6VenuesO9palisadesyA2CmF",
+            "mangledName": "$s5Mappy6VenuesO9palisadesyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Venues",
+                "printedName": "Mappy.Venues",
+                "usr": "s:5Mappy6VenuesO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Venues",
+                "printedName": "Mappy.Venues",
+                "usr": "s:5Mappy6VenuesO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy6VenuesO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s5Mappy6VenuesO2eeoiySbAC_ACtFZ",
+            "moduleName": "Mappy",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy6VenuesO9hashValueSivp",
+            "mangledName": "$s5Mappy6VenuesO9hashValueSivp",
+            "moduleName": "Mappy",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy6VenuesO9hashValueSivg",
+                "mangledName": "$s5Mappy6VenuesO9hashValueSivg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy6VenuesO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s5Mappy6VenuesO4hash4intoys6HasherVz_tF",
+            "moduleName": "Mappy",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5Mappy6VenuesO",
+        "mangledName": "$s5Mappy6VenuesO",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "SkiSlope",
         "printedName": "SkiSlope",
         "children": [
@@ -14675,6 +15568,67 @@
           },
           {
             "kind": "Var",
+            "name": "maxSlope",
+            "printedName": "maxSlope",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy8SkiSlopeV03maxC0SdSgvp",
+            "mangledName": "$s5Mappy8SkiSlopeV03maxC0SdSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy8SkiSlopeV03maxC0SdSgvg",
+                "mangledName": "$s5Mappy8SkiSlopeV03maxC0SdSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "averageSlope",
             "printedName": "averageSlope",
             "children": [
@@ -15088,7 +16042,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(name:level:runType:length:averageSlope:averageSpeed:travelTime:extremeCondition:foreignId:foreignSource:)",
+            "printedName": "init(name:level:runType:length:maxSlope:averageSlope:averageSpeed:travelTime:extremeCondition:foreignId:foreignSource:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15126,6 +16080,20 @@
                     "name": "RunType",
                     "printedName": "Mappy.SkiSlope.RunType",
                     "usr": "s:5Mappy8SkiSlopeV7RunTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
                   }
                 ],
                 "usr": "s:Sq"
@@ -15230,8 +16198,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5Mappy8SkiSlopeV4name5level7runType6length07averageC00I5Speed10travelTime16extremeCondition9foreignId0O6SourceACSS_AC5LevelOSgAC03RunG0OSgSdSgA3TSbSgSSSgAVtcfc",
-            "mangledName": "$s5Mappy8SkiSlopeV4name5level7runType6length07averageC00I5Speed10travelTime16extremeCondition9foreignId0O6SourceACSS_AC5LevelOSgAC03RunG0OSgSdSgA3TSbSgSSSgAVtcfc",
+            "usr": "s:5Mappy8SkiSlopeV4name5level7runType6length03maxC007averageC00J5Speed10travelTime16extremeCondition9foreignId0P6SourceACSS_AC5LevelOSgAC03RunG0OSgSdSgA4USbSgSSSgAWtcfc",
+            "mangledName": "$s5Mappy8SkiSlopeV4name5level7runType6length03maxC007averageC00J5Speed10travelTime16extremeCondition9foreignId0P6SourceACSS_AC5LevelOSgAC03RunG0OSgSdSgA4USbSgSSSgAWtcfc",
             "moduleName": "Mappy",
             "declAttributes": [
               "AccessControl"
@@ -18935,6 +19903,510 @@
         "moduleName": "Mappy",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserStats",
+        "printedName": "UserStats",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "minAltitudeFt",
+            "printedName": "minAltitudeFt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9UserStatsV13minAltitudeFtSiSgvp",
+            "mangledName": "$s5Mappy9UserStatsV13minAltitudeFtSiSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9UserStatsV13minAltitudeFtSiSgvg",
+                "mangledName": "$s5Mappy9UserStatsV13minAltitudeFtSiSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxAltitude",
+            "printedName": "maxAltitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9UserStatsV11maxAltitudeSiSgvp",
+            "mangledName": "$s5Mappy9UserStatsV11maxAltitudeSiSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9UserStatsV11maxAltitudeSiSgvg",
+                "mangledName": "$s5Mappy9UserStatsV11maxAltitudeSiSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minSpeed",
+            "printedName": "minSpeed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9UserStatsV8minSpeedSiSgvp",
+            "mangledName": "$s5Mappy9UserStatsV8minSpeedSiSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9UserStatsV8minSpeedSiSgvg",
+                "mangledName": "$s5Mappy9UserStatsV8minSpeedSiSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxSpeed",
+            "printedName": "maxSpeed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9UserStatsV8maxSpeedSiSgvp",
+            "mangledName": "$s5Mappy9UserStatsV8maxSpeedSiSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9UserStatsV8maxSpeedSiSgvg",
+                "mangledName": "$s5Mappy9UserStatsV8maxSpeedSiSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "distance",
+            "printedName": "distance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9UserStatsV8distanceSiSgvp",
+            "mangledName": "$s5Mappy9UserStatsV8distanceSiSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9UserStatsV8distanceSiSgvg",
+                "mangledName": "$s5Mappy9UserStatsV8distanceSiSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeSkied",
+            "printedName": "timeSkied",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9UserStatsV9timeSkiedSiSgvp",
+            "mangledName": "$s5Mappy9UserStatsV9timeSkiedSiSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9UserStatsV9timeSkiedSiSgvg",
+                "mangledName": "$s5Mappy9UserStatsV9timeSkiedSiSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "trackDuration",
+            "printedName": "trackDuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9UserStatsV13trackDurationSiSgvp",
+            "mangledName": "$s5Mappy9UserStatsV13trackDurationSiSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9UserStatsV13trackDurationSiSgvg",
+                "mangledName": "$s5Mappy9UserStatsV13trackDurationSiSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "trackCount",
+            "printedName": "trackCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9UserStatsV10trackCountSiSgvp",
+            "mangledName": "$s5Mappy9UserStatsV10trackCountSiSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9UserStatsV10trackCountSiSgvg",
+                "mangledName": "$s5Mappy9UserStatsV10trackCountSiSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:5Mappy9UserStatsV",
+        "mangledName": "$s5Mappy9UserStatsV",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -24601,6 +26073,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Reachability",
         "printedName": "Reachability",
         "declKind": "Import",
@@ -27116,6 +28598,241 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserStatsProviderError",
+        "printedName": "UserStatsProviderError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "objectNotFound",
+            "printedName": "objectNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.UserStatsProviderError.Type) -> Mappy.UserStatsProviderError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserStatsProviderError",
+                    "printedName": "Mappy.UserStatsProviderError",
+                    "usr": "s:5Mappy22UserStatsProviderErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.UserStatsProviderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserStatsProviderError",
+                        "printedName": "Mappy.UserStatsProviderError",
+                        "usr": "s:5Mappy22UserStatsProviderErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy22UserStatsProviderErrorO14objectNotFoundyA2CmF",
+            "mangledName": "$s5Mappy22UserStatsProviderErrorO14objectNotFoundyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidPayload",
+            "printedName": "invalidPayload",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.UserStatsProviderError.Type) -> Mappy.UserStatsProviderError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserStatsProviderError",
+                    "printedName": "Mappy.UserStatsProviderError",
+                    "usr": "s:5Mappy22UserStatsProviderErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.UserStatsProviderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserStatsProviderError",
+                        "printedName": "Mappy.UserStatsProviderError",
+                        "usr": "s:5Mappy22UserStatsProviderErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy22UserStatsProviderErrorO14invalidPayloadyA2CmF",
+            "mangledName": "$s5Mappy22UserStatsProviderErrorO14invalidPayloadyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "underlyingError",
+            "printedName": "underlyingError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.UserStatsProviderError.Type) -> (Swift.Error) -> Mappy.UserStatsProviderError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> Mappy.UserStatsProviderError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserStatsProviderError",
+                        "printedName": "Mappy.UserStatsProviderError",
+                        "usr": "s:5Mappy22UserStatsProviderErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.UserStatsProviderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserStatsProviderError",
+                        "printedName": "Mappy.UserStatsProviderError",
+                        "usr": "s:5Mappy22UserStatsProviderErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy22UserStatsProviderErrorO010underlyingE0yACs0E0_pcACmF",
+            "mangledName": "$s5Mappy22UserStatsProviderErrorO010underlyingE0yACs0E0_pcACmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy22UserStatsProviderErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s5Mappy22UserStatsProviderErrorO16errorDescriptionSSSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy22UserStatsProviderErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s5Mappy22UserStatsProviderErrorO16errorDescriptionSSSgvg",
+                "moduleName": "Mappy",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5Mappy22UserStatsProviderErrorO",
+        "mangledName": "$s5Mappy22UserStatsProviderErrorO",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -27179,6 +28896,462 @@
         "moduleName": "Mappy",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ValueWrapper",
+        "printedName": "ValueWrapper",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "stringValue",
+            "printedName": "stringValue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.ValueWrapper.Type) -> (Swift.String) -> Mappy.ValueWrapper",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> Mappy.ValueWrapper",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ValueWrapper",
+                        "printedName": "Mappy.ValueWrapper",
+                        "usr": "s:5Mappy12ValueWrapperO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.ValueWrapper.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ValueWrapper",
+                        "printedName": "Mappy.ValueWrapper",
+                        "usr": "s:5Mappy12ValueWrapperO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy12ValueWrapperO06stringB0yACSScACmF",
+            "mangledName": "$s5Mappy12ValueWrapperO06stringB0yACSScACmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "intValue",
+            "printedName": "intValue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.ValueWrapper.Type) -> (Swift.Int) -> Mappy.ValueWrapper",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> Mappy.ValueWrapper",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ValueWrapper",
+                        "printedName": "Mappy.ValueWrapper",
+                        "usr": "s:5Mappy12ValueWrapperO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.ValueWrapper.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ValueWrapper",
+                        "printedName": "Mappy.ValueWrapper",
+                        "usr": "s:5Mappy12ValueWrapperO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy12ValueWrapperO03intB0yACSicACmF",
+            "mangledName": "$s5Mappy12ValueWrapperO03intB0yACSicACmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "doubleValue",
+            "printedName": "doubleValue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.ValueWrapper.Type) -> (Swift.Double) -> Mappy.ValueWrapper",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Double) -> Mappy.ValueWrapper",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ValueWrapper",
+                        "printedName": "Mappy.ValueWrapper",
+                        "usr": "s:5Mappy12ValueWrapperO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.ValueWrapper.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ValueWrapper",
+                        "printedName": "Mappy.ValueWrapper",
+                        "usr": "s:5Mappy12ValueWrapperO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy12ValueWrapperO06doubleB0yACSdcACmF",
+            "mangledName": "$s5Mappy12ValueWrapperO06doubleB0yACSdcACmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "boolValue",
+            "printedName": "boolValue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.ValueWrapper.Type) -> (Swift.Bool) -> Mappy.ValueWrapper",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> Mappy.ValueWrapper",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ValueWrapper",
+                        "printedName": "Mappy.ValueWrapper",
+                        "usr": "s:5Mappy12ValueWrapperO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.ValueWrapper.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ValueWrapper",
+                        "printedName": "Mappy.ValueWrapper",
+                        "usr": "s:5Mappy12ValueWrapperO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy12ValueWrapperO04boolB0yACSbcACmF",
+            "mangledName": "$s5Mappy12ValueWrapperO04boolB0yACSbcACmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ValueWrapper",
+                "printedName": "Mappy.ValueWrapper",
+                "usr": "s:5Mappy12ValueWrapperO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Mappy12ValueWrapperO4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5Mappy12ValueWrapperO4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy12ValueWrapperO6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5Mappy12ValueWrapperO6encode2toys7Encoder_p_tKF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "intValue",
+            "printedName": "intValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy12ValueWrapperO03intB0SiSgvp",
+            "mangledName": "$s5Mappy12ValueWrapperO03intB0SiSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy12ValueWrapperO03intB0SiSgvg",
+                "mangledName": "$s5Mappy12ValueWrapperO03intB0SiSgvg",
+                "moduleName": "Mappy",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "doubleValue",
+            "printedName": "doubleValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy12ValueWrapperO06doubleB0SdSgvp",
+            "mangledName": "$s5Mappy12ValueWrapperO06doubleB0SdSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy12ValueWrapperO06doubleB0SdSgvg",
+                "mangledName": "$s5Mappy12ValueWrapperO06doubleB0SdSgvg",
+                "moduleName": "Mappy",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy12ValueWrapperO11descriptionSSvp",
+            "mangledName": "$s5Mappy12ValueWrapperO11descriptionSSvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy12ValueWrapperO11descriptionSSvg",
+                "mangledName": "$s5Mappy12ValueWrapperO11descriptionSSvg",
+                "moduleName": "Mappy",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5Mappy12ValueWrapperO",
+        "mangledName": "$s5Mappy12ValueWrapperO",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
         ]
       },
       {
@@ -30418,7 +32591,7 @@
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/SkiSlope.swift",
       "kind": "StringLiteral",
-      "offset": 2149,
+      "offset": 2232,
       "length": 2,
       "value": "\"\""
     },

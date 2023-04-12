@@ -327,6 +327,12 @@ public struct Bookmark : Swift.Equatable, Swift.Hashable {
     get
   }
 }
+final public class UserStatsService {
+  public init()
+  final public func fetchStats(venue: Mappy.Venues?) -> Combine.AnyPublisher<Mappy.UserStats, Mappy.UserStatsProviderError>
+  final public func fetchStats(userId: Swift.String, venue: Mappy.Venues?) -> Combine.AnyPublisher<Mappy.UserStats, Mappy.UserStatsProviderError>
+  @objc deinit
+}
 public struct UserPinLocation {
   public let userId: Swift.String
   public let icon: UIKit.UIImage
@@ -396,6 +402,29 @@ extension Mappy.GroupLocationService {
     case userRemovedFromGroup(groupId: Swift.String, userId: Swift.String)
   }
 }
+public enum Venues {
+  case sundance
+  case vail
+  case mtBachelor
+  case deerValley
+  case mammoth
+  case bigSky
+  case parkCity
+  case beaverCreek
+  case telluride
+  case steamboat
+  case whistler
+  case copper
+  case snowmass
+  case breckenridge
+  case snowbird
+  case palisades
+  public static func == (a: Mappy.Venues, b: Mappy.Venues) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct SkiSlope : Swift.Equatable, Swift.Hashable {
   public enum Level : Swift.Int, Swift.Comparable, Swift.CaseIterable, Swift.Identifiable {
     public static func < (lhs: Mappy.SkiSlope.Level, rhs: Mappy.SkiSlope.Level) -> Swift.Bool
@@ -433,6 +462,7 @@ public struct SkiSlope : Swift.Equatable, Swift.Hashable {
   public let level: Mappy.SkiSlope.Level?
   public let runType: Mappy.SkiSlope.RunType?
   public let length: Swift.Double?
+  public let maxSlope: Swift.Double?
   public let averageSlope: Swift.Double?
   public let averageSpeed: Swift.Double?
   public let travelTime: Swift.Double?
@@ -440,7 +470,7 @@ public struct SkiSlope : Swift.Equatable, Swift.Hashable {
   public let foreignId: Swift.String?
   public let foreignSource: Swift.String?
   public static let any: Mappy.SkiSlope
-  public init(name: Swift.String, level: Mappy.SkiSlope.Level?, runType: Mappy.SkiSlope.RunType?, length: Swift.Double?, averageSlope: Swift.Double?, averageSpeed: Swift.Double?, travelTime: Swift.Double?, extremeCondition: Swift.Bool?, foreignId: Swift.String?, foreignSource: Swift.String?)
+  public init(name: Swift.String, level: Mappy.SkiSlope.Level?, runType: Mappy.SkiSlope.RunType?, length: Swift.Double?, maxSlope: Swift.Double?, averageSlope: Swift.Double?, averageSpeed: Swift.Double?, travelTime: Swift.Double?, extremeCondition: Swift.Bool?, foreignId: Swift.String?, foreignSource: Swift.String?)
   public static func == (a: Mappy.SkiSlope, b: Mappy.SkiSlope) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -560,6 +590,16 @@ extension Mappy.SceneView {
   @_Concurrency.MainActor(unsafe) final public func select(feature: Mappy.Feature?)
   @_Concurrency.MainActor(unsafe) final public func displayUserPins(using locations: [Mappy.UserPinLocation])
   @_Concurrency.MainActor(unsafe) final public func zoomToLocation(latitude: Swift.Double, longitude: Swift.Double)
+}
+public struct UserStats {
+  public let minAltitudeFt: Swift.Int?
+  public let maxAltitude: Swift.Int?
+  public let minSpeed: Swift.Int?
+  public let maxSpeed: Swift.Int?
+  public let distance: Swift.Int?
+  public let timeSkied: Swift.Int?
+  public let trackDuration: Swift.Int?
+  public let trackCount: Swift.Int?
 }
 extension UIKit.UIColor {
   public static let routeHighlight: UIKit.UIColor
@@ -828,6 +868,31 @@ public struct MapViewInteractionOptions {
   public var zoomFactor: Swift.Double
   public var snapToNorthThreshold: Swift.Double
 }
+public enum UserStatsProviderError : Foundation.LocalizedError {
+  case objectNotFound
+  case invalidPayload
+  case underlyingError(Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public enum ValueWrapper : Swift.Codable, Swift.CustomStringConvertible {
+  case stringValue(Swift.String)
+  case intValue(Swift.Int)
+  case doubleValue(Swift.Double)
+  case boolValue(Swift.Bool)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var intValue: Swift.Int? {
+    get
+  }
+  public var doubleValue: Swift.Double? {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+}
 public struct GroupUser : Swift.Equatable, Swift.Hashable {
   public let userId: Swift.String
   public let location: Mappy.GroupUser.Location?
@@ -873,6 +938,8 @@ extension Mappy.Bookmark.Category : Swift.RawRepresentable {}
 extension Mappy.Environment : Swift.Equatable {}
 extension Mappy.Environment : Swift.Hashable {}
 extension Mappy.Environment : Swift.RawRepresentable {}
+extension Mappy.Venues : Swift.Equatable {}
+extension Mappy.Venues : Swift.Hashable {}
 extension Mappy.SkiSlope.Level : Swift.Hashable {}
 extension Mappy.SkiSlope.Level : Swift.RawRepresentable {}
 extension Mappy.SkiSlope.RunType : Swift.Equatable {}
