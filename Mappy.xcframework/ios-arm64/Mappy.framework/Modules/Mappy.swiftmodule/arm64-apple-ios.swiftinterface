@@ -327,12 +327,6 @@ public struct Bookmark : Swift.Equatable, Swift.Hashable {
     get
   }
 }
-final public class UserStatsService {
-  public init()
-  final public func fetchStats(venue: Mappy.Venues?) -> Combine.AnyPublisher<Mappy.UserStats, Mappy.UserStatsProviderError>
-  final public func fetchStats(userId: Swift.String, venue: Mappy.Venues?) -> Combine.AnyPublisher<Mappy.UserStats, Mappy.UserStatsProviderError>
-  @objc deinit
-}
 public struct UserPinLocation {
   public let userId: Swift.String
   public let icon: UIKit.UIImage
@@ -400,29 +394,6 @@ extension Mappy.GroupLocationService {
     case userLocation(Mappy.UserLocation)
     case userAddedToGroup(groupId: Swift.String, userId: Swift.String)
     case userRemovedFromGroup(groupId: Swift.String, userId: Swift.String)
-  }
-}
-public enum Venues {
-  case sundance
-  case vail
-  case mtBachelor
-  case deerValley
-  case mammoth
-  case bigSky
-  case parkCity
-  case beaverCreek
-  case telluride
-  case steamboat
-  case whistler
-  case copper
-  case snowmass
-  case breckenridge
-  case snowbird
-  case palisades
-  public static func == (a: Mappy.Venues, b: Mappy.Venues) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
   }
 }
 public struct SkiSlope : Swift.Equatable, Swift.Hashable {
@@ -525,6 +496,19 @@ extension UIKit.UIImage {
   public static let mappyPinSmall: UIKit.UIImage
   public static let mappyPin: UIKit.UIImage
 }
+public enum StatsProviderError : Foundation.LocalizedError {
+  case objectNotFound
+  case invalidPayload
+  case underlyingError(Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+final public class StatsService {
+  public init()
+  final public func getUserStats(userId: Swift.String?, venueId: Swift.String?, startTime: Foundation.TimeInterval?, endTime: Foundation.TimeInterval?) -> Combine.AnyPublisher<Mappy.UserStats, Mappy.StatsProviderError>
+  @objc deinit
+}
 public struct Venue {
   public let venueId: Swift.String
   public let data: Mappy.VenueData?
@@ -592,13 +576,13 @@ extension Mappy.SceneView {
   @_Concurrency.MainActor(unsafe) final public func zoomToLocation(latitude: Swift.Double, longitude: Swift.Double)
 }
 public struct UserStats {
-  public let minAltitudeFt: Swift.Int?
-  public let maxAltitude: Swift.Int?
-  public let minSpeed: Swift.Int?
-  public let maxSpeed: Swift.Int?
-  public let distance: Swift.Int?
-  public let timeSkied: Swift.Int?
-  public let trackDuration: Swift.Int?
+  public let miniumumAltitudeInMetres: Swift.Double?
+  public let maximumAltitudeInMetres: Swift.Double?
+  public let minimumSpeedInMilesPerHour: Swift.Double?
+  public let maximumSpeedInMilesPerHour: Swift.Double?
+  public let distanceInMetres: Swift.Double?
+  public let timeSkiedInSeconds: Swift.Double?
+  public let trackDurationInSeconds: Swift.Double?
   public let trackCount: Swift.Int?
 }
 extension UIKit.UIColor {
@@ -868,14 +852,6 @@ public struct MapViewInteractionOptions {
   public var zoomFactor: Swift.Double
   public var snapToNorthThreshold: Swift.Double
 }
-public enum UserStatsProviderError : Foundation.LocalizedError {
-  case objectNotFound
-  case invalidPayload
-  case underlyingError(Swift.Error)
-  public var errorDescription: Swift.String? {
-    get
-  }
-}
 public enum ValueWrapper : Swift.Codable, Swift.CustomStringConvertible {
   case stringValue(Swift.String)
   case intValue(Swift.Int)
@@ -938,8 +914,6 @@ extension Mappy.Bookmark.Category : Swift.RawRepresentable {}
 extension Mappy.Environment : Swift.Equatable {}
 extension Mappy.Environment : Swift.Hashable {}
 extension Mappy.Environment : Swift.RawRepresentable {}
-extension Mappy.Venues : Swift.Equatable {}
-extension Mappy.Venues : Swift.Hashable {}
 extension Mappy.SkiSlope.Level : Swift.Hashable {}
 extension Mappy.SkiSlope.Level : Swift.RawRepresentable {}
 extension Mappy.SkiSlope.RunType : Swift.Equatable {}
