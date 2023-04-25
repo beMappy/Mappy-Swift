@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		CP4phLKUHmVjHmem1C9d+B0p3B4=
+		2tfyVrGpb1SCytpIK0SGoSwKVOc=
 		</data>
 		<key>Headers/Mappy-Swift.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		8CfkEZAjR+0p27IgJaqt9VHF4Ys=
+		m4Wpn0WvMM5UUDxPBOIR4fnpK7k=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Pzub53g7BYwLSI+AkMbygj6Rs+o=
+		mqkJQObzq216eIcyEgtvl+0TGEA=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Pzub53g7BYwLSI+AkMbygj6Rs+o=
+		mqkJQObzq216eIcyEgtvl+0TGEA=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		d3Xp6MHjZfUnM1pu2TPGo9L2jSA=
+		3DfSOKAOlkkbICPWt8I9Z7sG6PI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hFlRj2g7Sa8oX37UURFze/5NT/ZxnAYHBkmz8QPitWA=
+			Ow1sh/eHScZVbey4egEFNnULwsC+7PWAj2SL9CpoQo0=
 			</data>
 		</dict>
 		<key>Headers/Mappy-Swift.h</key>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0lGOc71F7Au9YgG2jYqgpEsRz7rT6tLOMdlEeSYaDOU=
+			i037uGk4U6sGl7p91rT/Yt17lDQGxHVMyrkPb1eEZdo=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gMC/lmaX6p7WdgyLozrrnsPyiHHvSvDtz2A0oXvbLys=
+			ktX+eo1/Dvpxb7eWuM0uIp6DcXfOyi86vvdT2TClXqs=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gMC/lmaX6p7WdgyLozrrnsPyiHHvSvDtz2A0oXvbLys=
+			ktX+eo1/Dvpxb7eWuM0uIp6DcXfOyi86vvdT2TClXqs=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SMQSsXtLUT3PeHSwZG2EJYRo5C+LDYjDEcjClLwgPbQ=
+			DmwCcIRHRE/riNjyQy6HFtj8TDHLaekKmGZl057VBH0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
