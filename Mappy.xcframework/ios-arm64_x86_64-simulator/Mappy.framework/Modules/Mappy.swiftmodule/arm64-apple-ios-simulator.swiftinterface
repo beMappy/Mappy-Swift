@@ -581,7 +581,7 @@ public struct UserStats {
   public let minimumSpeedInMilesPerHour: Swift.Double?
   public let maximumSpeedInMilesPerHour: Swift.Double?
   public let distanceInMetres: Swift.Double?
-  public let timeSkiedInSeconds: Swift.Double?
+  public let timeSkiedInMilliSeconds: Swift.Double?
   public let trackDurationInMilliSeconds: Swift.Double?
   public let trackCount: Swift.Int?
 }

@@ -19704,8 +19704,8 @@
           },
           {
             "kind": "Var",
-            "name": "timeSkiedInSeconds",
-            "printedName": "timeSkiedInSeconds",
+            "name": "timeSkiedInMilliSeconds",
+            "printedName": "timeSkiedInMilliSeconds",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -19723,8 +19723,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5Mappy9UserStatsV18timeSkiedInSecondsSdSgvp",
-            "mangledName": "$s5Mappy9UserStatsV18timeSkiedInSecondsSdSgvp",
+            "usr": "s:5Mappy9UserStatsV23timeSkiedInMilliSecondsSdSgvp",
+            "mangledName": "$s5Mappy9UserStatsV23timeSkiedInMilliSecondsSdSgvp",
             "moduleName": "Mappy",
             "declAttributes": [
               "HasStorage",
@@ -19754,8 +19754,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5Mappy9UserStatsV18timeSkiedInSecondsSdSgvg",
-                "mangledName": "$s5Mappy9UserStatsV18timeSkiedInSecondsSdSgvg",
+                "usr": "s:5Mappy9UserStatsV23timeSkiedInMilliSecondsSdSgvg",
+                "mangledName": "$s5Mappy9UserStatsV23timeSkiedInMilliSecondsSdSgvg",
                 "moduleName": "Mappy",
                 "implicit": true,
                 "accessorKind": "get"
