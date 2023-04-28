@@ -31653,20 +31653,20 @@
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
       "kind": "StringLiteral",
       "offset": 1587,
-      "length": 10,
-      "value": "\"building\""
+      "length": 17,
+      "value": "\"building_resort\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
       "kind": "StringLiteral",
-      "offset": 1740,
+      "offset": 1747,
       "length": 22,
       "value": "\"resort_feature_query\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/FeatureCategory.swift",
       "kind": "StringLiteral",
-      "offset": 1888,
+      "offset": 1895,
       "length": 11,
       "value": "\"bookmarks\""
     },

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		CP4phLKUHmVjHmem1C9d+B0p3B4=
+		2tfyVrGpb1SCytpIK0SGoSwKVOc=
 		</data>
 		<key>Headers/Mappy-Swift.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5AgkA/G/zFT7FRlQPKUK8ADAuwY=
+		sOyWamIaPhMdVkUAt97GK6ut4kY=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HmTap9rBefKWhKAWjC+8SEItM9U=
+		GFX2Qb+dauyMXcUTE0cwtw0Ty70=
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5AgkA/G/zFT7FRlQPKUK8ADAuwY=
+		sOyWamIaPhMdVkUAt97GK6ut4kY=
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		O+NPsuppjowVoWsKXa0NNE86rjA=
+		6ae63HxdMvIAsKeVCPzNaLUlXfk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hFlRj2g7Sa8oX37UURFze/5NT/ZxnAYHBkmz8QPitWA=
+			Ow1sh/eHScZVbey4egEFNnULwsC+7PWAj2SL9CpoQo0=
 			</data>
 		</dict>
 		<key>Headers/Mappy-Swift.h</key>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kVVZpW4/KHtv/ZNrFVxAj2qCTJ2XJp4ep3TGh5/QUiw=
+			SzhAUU70FMvvRlGuzRL1eSAqYZexisX3ZOILlvr2lB4=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -120,14 +120,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			upUp3z5SSkAzui1k25ov/ZUJKaSUMg5gz/p3TwAhC7w=
+			iLRASdZZKxgNK8lvU7AmMOgdlL20W9I2cnAmP3MoYo8=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kVVZpW4/KHtv/ZNrFVxAj2qCTJ2XJp4ep3TGh5/QUiw=
+			SzhAUU70FMvvRlGuzRL1eSAqYZexisX3ZOILlvr2lB4=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b4QMmo96qcOSdptHg6Dwv27uHSIrBDgUY2ijAgIKh2k=
+			HjZqYPxVmX2nYJA2IG7xbXC6M4Jfzwn4cBaAf/NxjU0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
