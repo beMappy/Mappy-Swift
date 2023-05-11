@@ -317,6 +317,7 @@ SWIFT_CLASS("_TtC5Mappy9SceneView")
 
 
 
+
 #endif
 #if defined(__cplusplus)
 #endif
@@ -639,6 +640,7 @@ SWIFT_CLASS("_TtC5Mappy9SceneView")
 @interface SceneView (SWIFT_EXTENSION(Mappy)) <AGSGeoViewTouchDelegate>
 - (void)geoView:(AGSGeoView * _Nonnull)geoView didTapAtScreenPoint:(CGPoint)screenPoint mapPoint:(AGSPoint * _Nonnull)mapPoint;
 @end
+
 
 
 

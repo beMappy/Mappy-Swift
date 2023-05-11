@@ -15,6 +15,243 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "TrackingProvider",
+        "printedName": "TrackingProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "appTrackingInfo",
+            "printedName": "appTrackingInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Mappy.AppTrackingInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AppTrackingInfo",
+                    "printedName": "Mappy.AppTrackingInfo",
+                    "usr": "s:5Mappy15AppTrackingInfoV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy16TrackingProviderP03appB4InfoAA03AppbE0VSgvp",
+            "mangledName": "$s5Mappy16TrackingProviderP03appB4InfoAA03AppbE0VSgvp",
+            "moduleName": "Mappy",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Mappy.AppTrackingInfo?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AppTrackingInfo",
+                        "printedName": "Mappy.AppTrackingInfo",
+                        "usr": "s:5Mappy15AppTrackingInfoV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy16TrackingProviderP03appB4InfoAA03AppbE0VSgvg",
+                "mangledName": "$s5Mappy16TrackingProviderP03appB4InfoAA03AppbE0VSgvg",
+                "moduleName": "Mappy",
+                "genericSig": "<τ_0_0 where τ_0_0 : Mappy.TrackingProvider>",
+                "sugared_genericSig": "<Self where Self : Mappy.TrackingProvider>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Mappy.AppTrackingInfo?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AppTrackingInfo",
+                        "printedName": "Mappy.AppTrackingInfo",
+                        "usr": "s:5Mappy15AppTrackingInfoV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy16TrackingProviderP03appB4InfoAA03AppbE0VSgvs",
+                "mangledName": "$s5Mappy16TrackingProviderP03appB4InfoAA03AppbE0VSgvs",
+                "moduleName": "Mappy",
+                "genericSig": "<τ_0_0 where τ_0_0 : Mappy.TrackingProvider>",
+                "sugared_genericSig": "<Self where Self : Mappy.TrackingProvider>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy16TrackingProviderP03appB4InfoAA03AppbE0VSgvM",
+                "mangledName": "$s5Mappy16TrackingProviderP03appB4InfoAA03AppbE0VSgvM",
+                "moduleName": "Mappy",
+                "genericSig": "<τ_0_0 where τ_0_0 : Mappy.TrackingProvider>",
+                "sugared_genericSig": "<Self where Self : Mappy.TrackingProvider>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isTracking",
+            "printedName": "isTracking",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy16TrackingProviderP02isB0Sbvp",
+            "mangledName": "$s5Mappy16TrackingProviderP02isB0Sbvp",
+            "moduleName": "Mappy",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy16TrackingProviderP02isB0Sbvg",
+                "mangledName": "$s5Mappy16TrackingProviderP02isB0Sbvg",
+                "moduleName": "Mappy",
+                "genericSig": "<τ_0_0 where τ_0_0 : Mappy.TrackingProvider>",
+                "sugared_genericSig": "<Self where Self : Mappy.TrackingProvider>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "resume",
+            "printedName": "resume(appTrackingInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Mappy.AppTrackingInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AppTrackingInfo",
+                    "printedName": "Mappy.AppTrackingInfo",
+                    "usr": "s:5Mappy15AppTrackingInfoV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy16TrackingProviderP6resume03appB4InfoyAA03AppbF0VSg_tF",
+            "mangledName": "$s5Mappy16TrackingProviderP6resume03appB4InfoyAA03AppbF0VSg_tF",
+            "moduleName": "Mappy",
+            "genericSig": "<τ_0_0 where τ_0_0 : Mappy.TrackingProvider>",
+            "sugared_genericSig": "<Self where Self : Mappy.TrackingProvider>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "suspend",
+            "printedName": "suspend()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy16TrackingProviderP7suspendyyF",
+            "mangledName": "$s5Mappy16TrackingProviderP7suspendyyF",
+            "moduleName": "Mappy",
+            "genericSig": "<τ_0_0 where τ_0_0 : Mappy.TrackingProvider>",
+            "sugared_genericSig": "<Self where Self : Mappy.TrackingProvider>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:5Mappy16TrackingProviderP",
+        "mangledName": "$s5Mappy16TrackingProviderP",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "ArcGIS",
         "printedName": "ArcGIS",
@@ -47,6 +284,16 @@
         "printedName": "ArcGIS",
         "declKind": "Import",
         "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -11210,6 +11457,115 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "AppTrackingInfo",
+        "printedName": "AppTrackingInfo",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(username:groupIDs:selectedVenue:difficultyPreference:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppTrackingInfo",
+                "printedName": "Mappy.AppTrackingInfo",
+                "usr": "s:5Mappy15AppTrackingInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Mappy15AppTrackingInfoV8username8groupIDs13selectedVenue20difficultyPreferenceACSSSg_SaySSGSgA2Htcfc",
+            "mangledName": "$s5Mappy15AppTrackingInfoV8username8groupIDs13selectedVenue20difficultyPreferenceACSSSg_SaySSGSgA2Htcfc",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:5Mappy15AppTrackingInfoV",
+        "mangledName": "$s5Mappy15AppTrackingInfoV",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
@@ -12141,6 +12497,341 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrackingService",
+        "printedName": "TrackingService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "appTrackingInfo",
+            "printedName": "appTrackingInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Mappy.AppTrackingInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AppTrackingInfo",
+                    "printedName": "Mappy.AppTrackingInfo",
+                    "usr": "s:5Mappy15AppTrackingInfoV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy15TrackingServiceC03appB4InfoAA03AppbE0VSgvp",
+            "mangledName": "$s5Mappy15TrackingServiceC03appB4InfoAA03AppbE0VSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Mappy.AppTrackingInfo?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AppTrackingInfo",
+                        "printedName": "Mappy.AppTrackingInfo",
+                        "usr": "s:5Mappy15AppTrackingInfoV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy15TrackingServiceC03appB4InfoAA03AppbE0VSgvg",
+                "mangledName": "$s5Mappy15TrackingServiceC03appB4InfoAA03AppbE0VSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Mappy.AppTrackingInfo?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AppTrackingInfo",
+                        "printedName": "Mappy.AppTrackingInfo",
+                        "usr": "s:5Mappy15AppTrackingInfoV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy15TrackingServiceC03appB4InfoAA03AppbE0VSgvs",
+                "mangledName": "$s5Mappy15TrackingServiceC03appB4InfoAA03AppbE0VSgvs",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy15TrackingServiceC03appB4InfoAA03AppbE0VSgvM",
+                "mangledName": "$s5Mappy15TrackingServiceC03appB4InfoAA03AppbE0VSgvM",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isTracking",
+            "printedName": "isTracking",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy15TrackingServiceC02isB0Sbvp",
+            "mangledName": "$s5Mappy15TrackingServiceC02isB0Sbvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy15TrackingServiceC02isB0Sbvg",
+                "mangledName": "$s5Mappy15TrackingServiceC02isB0Sbvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "current",
+            "printedName": "current",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrackingService",
+                "printedName": "Mappy.TrackingService",
+                "usr": "s:5Mappy15TrackingServiceC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy15TrackingServiceC7currentACvpZ",
+            "mangledName": "$s5Mappy15TrackingServiceC7currentACvpZ",
+            "moduleName": "Mappy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrackingService",
+                    "printedName": "Mappy.TrackingService",
+                    "usr": "s:5Mappy15TrackingServiceC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy15TrackingServiceC7currentACvgZ",
+                "mangledName": "$s5Mappy15TrackingServiceC7currentACvgZ",
+                "moduleName": "Mappy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "resume",
+            "printedName": "resume(appTrackingInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Mappy.AppTrackingInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AppTrackingInfo",
+                    "printedName": "Mappy.AppTrackingInfo",
+                    "usr": "s:5Mappy15AppTrackingInfoV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy15TrackingServiceC6resume03appB4InfoyAA03AppbF0VSg_tF",
+            "mangledName": "$s5Mappy15TrackingServiceC6resume03appB4InfoyAA03AppbF0VSg_tF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "suspend",
+            "printedName": "suspend()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy15TrackingServiceC7suspendyyF",
+            "mangledName": "$s5Mappy15TrackingServiceC7suspendyyF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5Mappy15TrackingServiceC",
+        "mangledName": "$s5Mappy15TrackingServiceC",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "TrackingProvider",
+            "printedName": "TrackingProvider",
+            "usr": "s:5Mappy16TrackingProviderP",
+            "mangledName": "$s5Mappy16TrackingProviderP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "Environment",
         "printedName": "Environment",
@@ -12436,6 +13127,16 @@
       },
       {
         "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -12457,6 +13158,16 @@
         "printedName": "ArcGIS",
         "declKind": "Import",
         "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -15900,7 +16611,7 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(clientId:secret:mappyUserId:)",
+            "printedName": "initialize(clientId:secret:mappyUserId:deferTracking:appTrackingInfo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15947,11 +16658,33 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Mappy.AppTrackingInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AppTrackingInfo",
+                    "printedName": "Mappy.AppTrackingInfo",
+                    "usr": "s:5Mappy15AppTrackingInfoV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:5Mappy0A4CoreC10initialize8clientId6secret09mappyUserE07Combine12AnyPublisherVyAA0A4MetaVs5NeverOGSS_S2SSgtFZ",
-            "mangledName": "$s5Mappy0A4CoreC10initialize8clientId6secret09mappyUserE07Combine12AnyPublisherVyAA0A4MetaVs5NeverOGSS_S2SSgtFZ",
+            "usr": "s:5Mappy0A4CoreC10initialize8clientId6secret09mappyUserE013deferTracking03appJ4Info7Combine12AnyPublisherVyAA0A4MetaVs5NeverOGSS_S2SSgSbAA03AppjL0VSgtFZ",
+            "mangledName": "$s5Mappy0A4CoreC10initialize8clientId6secret09mappyUserE013deferTracking03appJ4Info7Combine12AnyPublisherVyAA0A4MetaVs5NeverOGSS_S2SSgSbAA03AppjL0VSgtFZ",
             "moduleName": "Mappy",
             "static": true,
             "declAttributes": [
@@ -16392,6 +17125,30 @@
         "kind": "Import",
         "name": "ArcGIS",
         "printedName": "ArcGIS",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "Mappy"
       },
@@ -16875,6 +17632,30 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Mappy"
       },
       {
         "kind": "Import",
@@ -19083,6 +19864,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -19889,6 +20680,16 @@
         "moduleName": "Mappy",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -25599,6 +26400,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "ArcGIS",
         "printedName": "ArcGIS",
         "declKind": "Import",
@@ -25637,6 +26448,30 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Mappy"
       },
       {
         "kind": "Import",
@@ -29688,6 +30523,679 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "Array",
+        "printedName": "Array",
+        "declKind": "Struct",
+        "usr": "s:Sa",
+        "mangledName": "$sSa",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Element>",
+        "declAttributes": [
+          "Frozen"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_DestructorSafeContainer",
+            "printedName": "_DestructorSafeContainer",
+            "usr": "s:s24_DestructorSafeContainerP",
+            "mangledName": "$ss24_DestructorSafeContainerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Serializable",
+            "printedName": "Serializable",
+            "usr": "s:5Mappy12SerializableP",
+            "mangledName": "$s5Mappy12SerializableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ArrayProtocol",
+            "printedName": "_ArrayProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Buffer",
+                "printedName": "_Buffer",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_ArrayBuffer",
+                    "printedName": "Swift._ArrayBuffer<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s12_ArrayBufferV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s14_ArrayProtocolP",
+            "mangledName": "$ss14_ArrayProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RandomAccessCollection",
+            "printedName": "RandomAccessCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sk",
+            "mangledName": "$sSk"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableCollection",
+            "printedName": "MutableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SM",
+            "mangledName": "$sSM"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BidirectionalCollection",
+            "printedName": "BidirectionalCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SK",
+            "mangledName": "$sSK"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexingIterator",
+                    "printedName": "Swift.IndexingIterator<[τ_0_0]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[τ_0_0]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s16IndexingIteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexingIterator",
+                    "printedName": "Swift.IndexingIterator<[τ_0_0]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[τ_0_0]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s16IndexingIteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByArrayLiteral",
+            "printedName": "ExpressibleByArrayLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ArrayLiteralElement",
+                "printedName": "ArrayLiteralElement",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s25ExpressibleByArrayLiteralP",
+            "mangledName": "$ss25ExpressibleByArrayLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RangeReplaceableCollection",
+            "printedName": "RangeReplaceableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sm",
+            "mangledName": "$sSm"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasContiguousBytes",
+            "printedName": "_HasContiguousBytes",
+            "usr": "s:s19_HasContiguousBytesP",
+            "mangledName": "$ss19_HasContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Regions",
+                "printedName": "Regions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "EncodableWithConfiguration",
+            "printedName": "EncodableWithConfiguration",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "EncodingConfiguration",
+                "printedName": "EncodingConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.EncodingConfiguration"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation26EncodableWithConfigurationP",
+            "mangledName": "$s10Foundation26EncodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DecodableWithConfiguration",
+            "printedName": "DecodableWithConfiguration",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "DecodingConfiguration",
+                "printedName": "DecodingConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.DecodingConfiguration"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation26DecodableWithConfigurationP",
+            "mangledName": "$s10Foundation26DecodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ContiguousBytes",
+            "printedName": "ContiguousBytes",
+            "usr": "s:10Foundation15ContiguousBytesP",
+            "mangledName": "$s10Foundation15ContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BSON",
+            "printedName": "BSON",
+            "usr": "s:10RealmSwift4BSONP",
+            "mangledName": "$s10RealmSwift4BSONP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PartitionValue",
+            "printedName": "PartitionValue",
+            "usr": "s:10RealmSwift14PartitionValueP",
+            "mangledName": "$s10RealmSwift14PartitionValueP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "UIColor",
         "printedName": "UIColor",
         "children": [
@@ -30592,6 +32100,1518 @@
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 443,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "IntegerLiteral",
+      "offset": 535,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 948,
+      "length": 9,
+      "value": "\"iPod5,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1004,
+      "length": 29,
+      "value": "\"iPod touch (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1051,
+      "length": 9,
+      "value": "\"iPod7,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1107,
+      "length": 29,
+      "value": "\"iPod touch (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1154,
+      "length": 9,
+      "value": "\"iPod9,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1210,
+      "length": 29,
+      "value": "\"iPod touch (7th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1257,
+      "length": 11,
+      "value": "\"iPhone3,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1270,
+      "length": 11,
+      "value": "\"iPhone3,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1283,
+      "length": 11,
+      "value": "\"iPhone3,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1313,
+      "length": 10,
+      "value": "\"iPhone 4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1341,
+      "length": 11,
+      "value": "\"iPhone4,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1397,
+      "length": 11,
+      "value": "\"iPhone 4s\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1426,
+      "length": 11,
+      "value": "\"iPhone5,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1439,
+      "length": 11,
+      "value": "\"iPhone5,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1482,
+      "length": 10,
+      "value": "\"iPhone 5\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1510,
+      "length": 11,
+      "value": "\"iPhone5,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1523,
+      "length": 11,
+      "value": "\"iPhone5,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1566,
+      "length": 11,
+      "value": "\"iPhone 5c\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1595,
+      "length": 11,
+      "value": "\"iPhone6,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1608,
+      "length": 11,
+      "value": "\"iPhone6,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1651,
+      "length": 11,
+      "value": "\"iPhone 5s\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1680,
+      "length": 11,
+      "value": "\"iPhone7,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1736,
+      "length": 10,
+      "value": "\"iPhone 6\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1764,
+      "length": 11,
+      "value": "\"iPhone7,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1820,
+      "length": 15,
+      "value": "\"iPhone 6 Plus\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1853,
+      "length": 11,
+      "value": "\"iPhone8,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1909,
+      "length": 11,
+      "value": "\"iPhone 6s\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1938,
+      "length": 11,
+      "value": "\"iPhone8,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 1994,
+      "length": 16,
+      "value": "\"iPhone 6s Plus\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2028,
+      "length": 11,
+      "value": "\"iPhone9,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2041,
+      "length": 11,
+      "value": "\"iPhone9,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2084,
+      "length": 10,
+      "value": "\"iPhone 7\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2112,
+      "length": 11,
+      "value": "\"iPhone9,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2125,
+      "length": 11,
+      "value": "\"iPhone9,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2168,
+      "length": 15,
+      "value": "\"iPhone 7 Plus\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2201,
+      "length": 12,
+      "value": "\"iPhone10,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2215,
+      "length": 12,
+      "value": "\"iPhone10,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2257,
+      "length": 10,
+      "value": "\"iPhone 8\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2285,
+      "length": 12,
+      "value": "\"iPhone10,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2299,
+      "length": 12,
+      "value": "\"iPhone10,5\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2341,
+      "length": 15,
+      "value": "\"iPhone 8 Plus\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2374,
+      "length": 12,
+      "value": "\"iPhone10,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2388,
+      "length": 12,
+      "value": "\"iPhone10,6\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2430,
+      "length": 10,
+      "value": "\"iPhone X\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2458,
+      "length": 12,
+      "value": "\"iPhone11,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2514,
+      "length": 11,
+      "value": "\"iPhone XS\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2543,
+      "length": 12,
+      "value": "\"iPhone11,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2557,
+      "length": 12,
+      "value": "\"iPhone11,6\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2599,
+      "length": 15,
+      "value": "\"iPhone XS Max\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2632,
+      "length": 12,
+      "value": "\"iPhone11,8\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2688,
+      "length": 11,
+      "value": "\"iPhone XR\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2717,
+      "length": 12,
+      "value": "\"iPhone12,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2773,
+      "length": 11,
+      "value": "\"iPhone 11\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2802,
+      "length": 12,
+      "value": "\"iPhone12,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2858,
+      "length": 15,
+      "value": "\"iPhone 11 Pro\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2891,
+      "length": 12,
+      "value": "\"iPhone12,5\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2947,
+      "length": 19,
+      "value": "\"iPhone 11 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 2984,
+      "length": 12,
+      "value": "\"iPhone13,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3040,
+      "length": 16,
+      "value": "\"iPhone 12 mini\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3074,
+      "length": 12,
+      "value": "\"iPhone13,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3130,
+      "length": 11,
+      "value": "\"iPhone 12\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3159,
+      "length": 12,
+      "value": "\"iPhone13,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3215,
+      "length": 15,
+      "value": "\"iPhone 12 Pro\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3248,
+      "length": 12,
+      "value": "\"iPhone13,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3304,
+      "length": 19,
+      "value": "\"iPhone 12 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3341,
+      "length": 12,
+      "value": "\"iPhone14,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3397,
+      "length": 16,
+      "value": "\"iPhone 13 mini\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3431,
+      "length": 12,
+      "value": "\"iPhone14,5\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3487,
+      "length": 11,
+      "value": "\"iPhone 13\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3516,
+      "length": 12,
+      "value": "\"iPhone14,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3572,
+      "length": 15,
+      "value": "\"iPhone 13 Pro\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3605,
+      "length": 12,
+      "value": "\"iPhone14,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3661,
+      "length": 19,
+      "value": "\"iPhone 13 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3698,
+      "length": 12,
+      "value": "\"iPhone14,7\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3754,
+      "length": 11,
+      "value": "\"iPhone 14\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3783,
+      "length": 12,
+      "value": "\"iPhone14,8\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3839,
+      "length": 16,
+      "value": "\"iPhone 14 Plus\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3873,
+      "length": 12,
+      "value": "\"iPhone15,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3929,
+      "length": 15,
+      "value": "\"iPhone 14 Pro\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 3962,
+      "length": 12,
+      "value": "\"iPhone15,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4018,
+      "length": 19,
+      "value": "\"iPhone 14 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4055,
+      "length": 11,
+      "value": "\"iPhone8,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4111,
+      "length": 11,
+      "value": "\"iPhone SE\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4140,
+      "length": 12,
+      "value": "\"iPhone12,8\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4196,
+      "length": 28,
+      "value": "\"iPhone SE (2nd generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4242,
+      "length": 12,
+      "value": "\"iPhone14,6\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4298,
+      "length": 28,
+      "value": "\"iPhone SE (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4344,
+      "length": 9,
+      "value": "\"iPad2,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4355,
+      "length": 9,
+      "value": "\"iPad2,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4366,
+      "length": 9,
+      "value": "\"iPad2,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4377,
+      "length": 9,
+      "value": "\"iPad2,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4400,
+      "length": 8,
+      "value": "\"iPad 2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4426,
+      "length": 9,
+      "value": "\"iPad3,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4437,
+      "length": 9,
+      "value": "\"iPad3,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4448,
+      "length": 9,
+      "value": "\"iPad3,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4482,
+      "length": 23,
+      "value": "\"iPad (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4523,
+      "length": 9,
+      "value": "\"iPad3,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4534,
+      "length": 9,
+      "value": "\"iPad3,5\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4545,
+      "length": 9,
+      "value": "\"iPad3,6\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4579,
+      "length": 23,
+      "value": "\"iPad (4th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4620,
+      "length": 10,
+      "value": "\"iPad6,11\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4632,
+      "length": 10,
+      "value": "\"iPad6,12\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4676,
+      "length": 23,
+      "value": "\"iPad (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4717,
+      "length": 9,
+      "value": "\"iPad7,5\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4728,
+      "length": 9,
+      "value": "\"iPad7,6\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4773,
+      "length": 23,
+      "value": "\"iPad (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4814,
+      "length": 10,
+      "value": "\"iPad7,11\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4826,
+      "length": 10,
+      "value": "\"iPad7,12\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4870,
+      "length": 23,
+      "value": "\"iPad (7th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4911,
+      "length": 10,
+      "value": "\"iPad11,6\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4923,
+      "length": 10,
+      "value": "\"iPad11,7\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 4967,
+      "length": 23,
+      "value": "\"iPad (8th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5008,
+      "length": 10,
+      "value": "\"iPad12,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5020,
+      "length": 10,
+      "value": "\"iPad12,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5064,
+      "length": 23,
+      "value": "\"iPad (9th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5105,
+      "length": 11,
+      "value": "\"iPad13,18\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5118,
+      "length": 11,
+      "value": "\"iPad13,19\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5161,
+      "length": 24,
+      "value": "\"iPad (10th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5203,
+      "length": 9,
+      "value": "\"iPad4,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5214,
+      "length": 9,
+      "value": "\"iPad4,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5225,
+      "length": 9,
+      "value": "\"iPad4,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5259,
+      "length": 10,
+      "value": "\"iPad Air\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5287,
+      "length": 9,
+      "value": "\"iPad5,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5298,
+      "length": 9,
+      "value": "\"iPad5,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5343,
+      "length": 12,
+      "value": "\"iPad Air 2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5373,
+      "length": 10,
+      "value": "\"iPad11,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5385,
+      "length": 10,
+      "value": "\"iPad11,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5429,
+      "length": 27,
+      "value": "\"iPad Air (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5474,
+      "length": 10,
+      "value": "\"iPad13,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5486,
+      "length": 10,
+      "value": "\"iPad13,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5530,
+      "length": 27,
+      "value": "\"iPad Air (4th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5575,
+      "length": 11,
+      "value": "\"iPad13,16\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5588,
+      "length": 11,
+      "value": "\"iPad13,17\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5631,
+      "length": 27,
+      "value": "\"iPad Air (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5676,
+      "length": 9,
+      "value": "\"iPad2,5\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5687,
+      "length": 9,
+      "value": "\"iPad2,6\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5698,
+      "length": 9,
+      "value": "\"iPad2,7\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5732,
+      "length": 11,
+      "value": "\"iPad mini\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5761,
+      "length": 9,
+      "value": "\"iPad4,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5772,
+      "length": 9,
+      "value": "\"iPad4,5\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5783,
+      "length": 9,
+      "value": "\"iPad4,6\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5817,
+      "length": 13,
+      "value": "\"iPad mini 2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5848,
+      "length": 9,
+      "value": "\"iPad4,7\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5859,
+      "length": 9,
+      "value": "\"iPad4,8\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5870,
+      "length": 9,
+      "value": "\"iPad4,9\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5904,
+      "length": 13,
+      "value": "\"iPad mini 3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5935,
+      "length": 9,
+      "value": "\"iPad5,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5946,
+      "length": 9,
+      "value": "\"iPad5,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 5991,
+      "length": 13,
+      "value": "\"iPad mini 4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6022,
+      "length": 10,
+      "value": "\"iPad11,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6034,
+      "length": 10,
+      "value": "\"iPad11,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6078,
+      "length": 28,
+      "value": "\"iPad mini (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6124,
+      "length": 10,
+      "value": "\"iPad14,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6136,
+      "length": 10,
+      "value": "\"iPad14,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6180,
+      "length": 28,
+      "value": "\"iPad mini (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6226,
+      "length": 9,
+      "value": "\"iPad6,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6237,
+      "length": 9,
+      "value": "\"iPad6,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6282,
+      "length": 21,
+      "value": "\"iPad Pro (9.7-inch)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6321,
+      "length": 9,
+      "value": "\"iPad7,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6332,
+      "length": 9,
+      "value": "\"iPad7,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6377,
+      "length": 22,
+      "value": "\"iPad Pro (10.5-inch)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6417,
+      "length": 9,
+      "value": "\"iPad8,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6428,
+      "length": 9,
+      "value": "\"iPad8,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6439,
+      "length": 9,
+      "value": "\"iPad8,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6450,
+      "length": 9,
+      "value": "\"iPad8,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6473,
+      "length": 37,
+      "value": "\"iPad Pro (11-inch) (1st generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6528,
+      "length": 9,
+      "value": "\"iPad8,9\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6539,
+      "length": 10,
+      "value": "\"iPad8,10\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6584,
+      "length": 37,
+      "value": "\"iPad Pro (11-inch) (2nd generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6639,
+      "length": 10,
+      "value": "\"iPad13,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6651,
+      "length": 10,
+      "value": "\"iPad13,5\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6663,
+      "length": 10,
+      "value": "\"iPad13,6\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6675,
+      "length": 10,
+      "value": "\"iPad13,7\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6695,
+      "length": 37,
+      "value": "\"iPad Pro (11-inch) (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6750,
+      "length": 10,
+      "value": "\"iPad14,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6762,
+      "length": 10,
+      "value": "\"iPad14,4\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6806,
+      "length": 37,
+      "value": "\"iPad Pro (11-inch) (4th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6861,
+      "length": 9,
+      "value": "\"iPad6,7\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6872,
+      "length": 9,
+      "value": "\"iPad6,8\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6917,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (1st generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6974,
+      "length": 9,
+      "value": "\"iPad7,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 6985,
+      "length": 9,
+      "value": "\"iPad7,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7030,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (2nd generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7087,
+      "length": 9,
+      "value": "\"iPad8,5\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7098,
+      "length": 9,
+      "value": "\"iPad8,6\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7109,
+      "length": 9,
+      "value": "\"iPad8,7\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7120,
+      "length": 9,
+      "value": "\"iPad8,8\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7143,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7200,
+      "length": 10,
+      "value": "\"iPad8,11\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7212,
+      "length": 10,
+      "value": "\"iPad8,12\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7256,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (4th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7313,
+      "length": 10,
+      "value": "\"iPad13,8\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7325,
+      "length": 10,
+      "value": "\"iPad13,9\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7337,
+      "length": 11,
+      "value": "\"iPad13,10\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7350,
+      "length": 11,
+      "value": "\"iPad13,11\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7369,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7426,
+      "length": 10,
+      "value": "\"iPad14,5\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7438,
+      "length": 10,
+      "value": "\"iPad14,6\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7482,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7539,
+      "length": 12,
+      "value": "\"AppleTV5,3\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7595,
+      "length": 10,
+      "value": "\"Apple TV\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7623,
+      "length": 12,
+      "value": "\"AppleTV6,2\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7679,
+      "length": 13,
+      "value": "\"Apple TV 4K\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7710,
+      "length": 19,
+      "value": "\"AudioAccessory1,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7766,
+      "length": 9,
+      "value": "\"HomePod\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7793,
+      "length": 19,
+      "value": "\"AudioAccessory5,1\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7849,
+      "length": 14,
+      "value": "\"HomePod mini\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7881,
+      "length": 6,
+      "value": "\"i386\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7889,
+      "length": 8,
+      "value": "\"x86_64\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7899,
+      "length": 7,
+      "value": "\"arm64\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 7937,
+      "length": 104,
+      "value": "\"Simulator \""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 8000,
+      "length": 28,
+      "value": "\"SIMULATOR_MODEL_IDENTIFIER\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 8033,
+      "length": 5,
+      "value": "\"iOS\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIDevice+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 8040,
+      "length": 1,
+      "value": "\"\""
+    },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView.swift",
       "kind": "FloatLiteral",
@@ -31671,6 +34691,48 @@
       "value": "\"bookmarks\""
     },
     {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/TrackingService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 484,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
+      "kind": "StringLiteral",
+      "offset": 256,
+      "length": 8,
+      "value": "\"serial\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
+      "kind": "StringLiteral",
+      "offset": 267,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
+      "kind": "StringLiteral",
+      "offset": 273,
+      "length": 33,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
+      "kind": "StringLiteral",
+      "offset": 305,
+      "length": 12,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/GroupLocation\/GroupLocationService.swift",
       "kind": "IntegerLiteral",
       "offset": 990,
@@ -31855,16 +34917,30 @@
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 370,
+      "offset": 709,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 470,
+      "offset": 809,
       "length": 2,
       "value": "10"
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 6475,
+      "length": 39,
+      "value": "\"locationManagerDidChangeAuthorization\""
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/MappyCore.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1178,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/SynchronizedArray.swift",
@@ -32378,6 +35454,13 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbPoster.swift",
+      "kind": "IntegerLiteral",
+      "offset": 224,
+      "length": 2,
+      "value": "10"
+    },
+    {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Shared\/GeoViewCommon.swift",
       "kind": "FloatLiteral",
       "offset": 1938,
@@ -32583,70 +35666,70 @@
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1146,
+      "offset": 1235,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1179,
+      "offset": 1268,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1212,
+      "offset": 1301,
       "length": 5,
       "value": "\"PUT\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1246,
+      "offset": 1335,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1283,
+      "offset": 1372,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1146,
+      "offset": 1235,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1179,
+      "offset": 1268,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1212,
+      "offset": 1301,
       "length": 5,
       "value": "\"PUT\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1246,
+      "offset": 1335,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPRequestProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1283,
+      "offset": 1372,
       "length": 8,
       "value": "\"DELETE\""
     },

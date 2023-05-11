@@ -13,12 +13,19 @@ import KeychainAccess
 @_exported import Mappy
 import PusherSwift
 import Reachability
+import RealmSwift
 import Swift
 import Swinject
 import UIKit
 import ZIPFoundation
 import _Concurrency
 import _StringProcessing
+public protocol TrackingProvider {
+  var appTrackingInfo: Mappy.AppTrackingInfo? { get set }
+  var isTracking: Swift.Bool { get }
+  func resume(appTrackingInfo: Mappy.AppTrackingInfo?)
+  func suspend()
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class MapView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) final public var map: Mappy.Map? {
     get
@@ -327,6 +334,9 @@ public struct Bookmark : Swift.Equatable, Swift.Hashable {
     get
   }
 }
+public struct AppTrackingInfo {
+  public init(username: Swift.String?, groupIDs: [Swift.String]?, selectedVenue: Swift.String?, difficultyPreference: Swift.String?)
+}
 public struct UserPinLocation {
   public let userId: Swift.String
   public let icon: UIKit.UIImage
@@ -351,6 +361,16 @@ public enum FeatureCategory : Swift.Equatable, Swift.Hashable {
   public var hashValue: Swift.Int {
     get
   }
+}
+@_hasMissingDesignatedInitializers final public class TrackingService : Mappy.TrackingProvider {
+  final public var appTrackingInfo: Mappy.AppTrackingInfo?
+  final public var isTracking: Swift.Bool {
+    get
+  }
+  public static let current: Mappy.TrackingService
+  final public func resume(appTrackingInfo: Mappy.AppTrackingInfo?)
+  final public func suspend()
+  @objc deinit
 }
 public enum Environment : Swift.String, Mappy.Serializable {
   case DEV, TST, STG, PRD
@@ -464,7 +484,7 @@ public enum LoadStatus {
   }
 }
 @_hasMissingDesignatedInitializers public class MappyCore {
-  public static func initialize(clientId: Swift.String, secret: Swift.String, mappyUserId: Swift.String?) -> Combine.AnyPublisher<Mappy.MappyMeta, Swift.Never>
+  public static func initialize(clientId: Swift.String, secret: Swift.String, mappyUserId: Swift.String?, deferTracking: Swift.Bool = false, appTrackingInfo: Mappy.AppTrackingInfo? = nil) -> Combine.AnyPublisher<Mappy.MappyMeta, Swift.Never>
   @objc deinit
 }
 public struct MappyMeta {
@@ -508,6 +528,8 @@ final public class StatsService {
   public init()
   final public func getUserStats(userId: Swift.String?, venueId: Swift.String?, startTime: Foundation.TimeInterval?, endTime: Foundation.TimeInterval?) -> Combine.AnyPublisher<Mappy.UserStats, Mappy.StatsProviderError>
   @objc deinit
+}
+extension Swift.Array : Mappy.Serializable where Element : Swift.Decodable, Element : Swift.Encodable {
 }
 public struct Venue {
   public let venueId: Swift.String
