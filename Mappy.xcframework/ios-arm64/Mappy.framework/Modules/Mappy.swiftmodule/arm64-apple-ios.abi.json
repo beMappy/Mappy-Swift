@@ -19449,6 +19449,39 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "contains",
+            "printedName": "contains(latitude:longitude:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy17VenueGeoReferenceV8contains8latitude9longitudeSbSd_SdtF",
+            "mangledName": "$s5Mappy17VenueGeoReferenceV8contains8latitude9longitudeSbSd_SdtF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -22386,6 +22419,184 @@
         "kind": "TypeDecl",
         "name": "MapRegion",
         "printedName": "MapRegion",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "xMin",
+            "printedName": "xMin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9MapRegionV4xMinSdvp",
+            "mangledName": "$s5Mappy9MapRegionV4xMinSdvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9MapRegionV4xMinSdvg",
+                "mangledName": "$s5Mappy9MapRegionV4xMinSdvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "yMin",
+            "printedName": "yMin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9MapRegionV4yMinSdvp",
+            "mangledName": "$s5Mappy9MapRegionV4yMinSdvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9MapRegionV4yMinSdvg",
+                "mangledName": "$s5Mappy9MapRegionV4yMinSdvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "xMax",
+            "printedName": "xMax",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9MapRegionV4xMaxSdvp",
+            "mangledName": "$s5Mappy9MapRegionV4xMaxSdvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9MapRegionV4xMaxSdvg",
+                "mangledName": "$s5Mappy9MapRegionV4xMaxSdvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "yMax",
+            "printedName": "yMax",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9MapRegionV4yMaxSdvp",
+            "mangledName": "$s5Mappy9MapRegionV4yMaxSdvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9MapRegionV4yMaxSdvg",
+                "mangledName": "$s5Mappy9MapRegionV4yMaxSdvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
         "declKind": "Struct",
         "usr": "s:5Mappy9MapRegionV",
         "mangledName": "$s5Mappy9MapRegionV",
@@ -35260,28 +35471,28 @@
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "StringLiteral",
-      "offset": 3317,
+      "offset": 3667,
       "length": 4,
       "value": "\"2d\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "StringLiteral",
-      "offset": 3339,
+      "offset": 3689,
       "length": 4,
       "value": "\"3d\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "StringLiteral",
-      "offset": 3317,
+      "offset": 3667,
       "length": 4,
       "value": "\"2d\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "StringLiteral",
-      "offset": 3339,
+      "offset": 3689,
       "length": 4,
       "value": "\"3d\""
     },
