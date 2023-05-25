@@ -154,6 +154,17 @@ extension Mappy.Scene {
 }
 public struct SceneViewInteractionOptions {
 }
+public protocol TracksProvider {
+  func fetchUserTracks(userId: Swift.String?, venueId: Swift.String, startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval) -> Combine.AnyPublisher<ArcGIS.AGSFeatureLayer, Mappy.TracksProviderError>
+}
+public enum TracksProviderError : Foundation.LocalizedError {
+  case objectNotFound
+  case requestConfigFailure
+  case underlyingError(Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
 public struct Group : Swift.Equatable, Swift.Hashable {
   public let groupId: Swift.String
   public let groupCode: Swift.String
@@ -363,11 +374,11 @@ public enum FeatureCategory : Swift.Equatable, Swift.Hashable {
   }
 }
 @_hasMissingDesignatedInitializers final public class TrackingService : Mappy.TrackingProvider {
+  public static let current: Mappy.TrackingProvider
   final public var appTrackingInfo: Mappy.AppTrackingInfo?
   final public var isTracking: Swift.Bool {
     get
   }
-  public static let current: Mappy.TrackingService
   final public func resume(appTrackingInfo: Mappy.AppTrackingInfo?)
   final public func suspend()
   @objc deinit
@@ -867,6 +878,11 @@ extension Mappy.SceneView {
     case onViewpointChange
     case onTap(Mappy.Feature?)
   }
+}
+final public class TracksService : Mappy.TracksProvider {
+  public init()
+  final public func fetchUserTracks(userId: Swift.String?, venueId: Swift.String, startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval) -> Combine.AnyPublisher<ArcGIS.AGSFeatureLayer, Mappy.TracksProviderError>
+  @objc deinit
 }
 public struct MapViewInteractionOptions {
   public var enabled: Swift.Bool
