@@ -1185,6 +1185,186 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isUserTrackRendered",
+            "printedName": "isUserTrackRendered",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy7MapViewC19isUserTrackRenderedSbvp",
+            "mangledName": "$s5Mappy7MapViewC19isUserTrackRenderedSbvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy7MapViewC19isUserTrackRenderedSbvg",
+                "mangledName": "$s5Mappy7MapViewC19isUserTrackRenderedSbvg",
+                "moduleName": "Mappy",
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "renderUserTrack",
+            "printedName": "renderUserTrack(startTime:endTime:userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<(), Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy7MapViewC15renderUserTrack9startTime03endH06userId7Combine12AnyPublisherVyyts5Error_pGSd_SdSSSgtF",
+            "mangledName": "$s5Mappy7MapViewC15renderUserTrack9startTime03endH06userId7Combine12AnyPublisherVyyts5Error_pGSd_SdSSSgtF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showUserTrack",
+            "printedName": "showUserTrack()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy7MapViewC13showUserTrackyyF",
+            "mangledName": "$s5Mappy7MapViewC13showUserTrackyyF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hideUserTrack",
+            "printedName": "hideUserTrack()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy7MapViewC13hideUserTrackyyF",
+            "mangledName": "$s5Mappy7MapViewC13hideUserTrackyyF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeUserTrack",
+            "printedName": "removeUserTrack()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy7MapViewC15removeUserTrackyyF",
+            "mangledName": "$s5Mappy7MapViewC15removeUserTrackyyF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -5537,6 +5717,43 @@
             "declKind": "EnumElement",
             "usr": "s:5Mappy19TracksProviderErrorO20requestConfigFailureyA2CmF",
             "mangledName": "$s5Mappy19TracksProviderErrorO20requestConfigFailureyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "unableToLoadTracks",
+            "printedName": "unableToLoadTracks",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.TracksProviderError.Type) -> Mappy.TracksProviderError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TracksProviderError",
+                    "printedName": "Mappy.TracksProviderError",
+                    "usr": "s:5Mappy19TracksProviderErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.TracksProviderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TracksProviderError",
+                        "printedName": "Mappy.TracksProviderError",
+                        "usr": "s:5Mappy19TracksProviderErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy19TracksProviderErrorO012unableToLoadB0yA2CmF",
+            "mangledName": "$s5Mappy19TracksProviderErrorO012unableToLoadB0yA2CmF",
             "moduleName": "Mappy"
           },
           {
@@ -23623,6 +23840,30 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "ArcGIS",
+        "printedName": "ArcGIS",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -29594,6 +29835,30 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "ArcGIS",
+        "printedName": "ArcGIS",
+        "declKind": "Import",
+        "moduleName": "Mappy"
       },
       {
         "kind": "Import",
@@ -36045,6 +36310,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/SceneView+Tracks.swift",
+      "kind": "StringLiteral",
+      "offset": 204,
+      "length": 18,
+      "value": "\"mappy.user.track\""
+    },
+    {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Shared\/Animate.swift",
       "kind": "Array",
       "offset": 397,
@@ -36309,6 +36581,13 @@
       "offset": 2073,
       "length": 4,
       "value": "12.0"
+    },
+    {
+      "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView+Tracks.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
+      "length": 18,
+      "value": "\"mappy.user.track\""
     },
     {
       "filePath": "\/Users\/afsar\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",

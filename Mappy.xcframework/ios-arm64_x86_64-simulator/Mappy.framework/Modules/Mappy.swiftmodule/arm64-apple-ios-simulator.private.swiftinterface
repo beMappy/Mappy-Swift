@@ -160,6 +160,7 @@ public protocol TracksProvider {
 public enum TracksProviderError : Foundation.LocalizedError {
   case objectNotFound
   case requestConfigFailure
+  case unableToLoadTracks
   case underlyingError(Swift.Error)
   public var errorDescription: Swift.String? {
     get
@@ -894,6 +895,15 @@ public struct MapViewInteractionOptions {
   public var allowMagnifierToPan: Swift.Bool
   public var zoomFactor: Swift.Double
   public var snapToNorthThreshold: Swift.Double
+}
+extension Mappy.MapView {
+  @_Concurrency.MainActor(unsafe) final public var isUserTrackRendered: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public func renderUserTrack(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, userId: Swift.String? = nil) -> Combine.AnyPublisher<Swift.Void, Swift.Error>
+  @_Concurrency.MainActor(unsafe) final public func showUserTrack()
+  @_Concurrency.MainActor(unsafe) final public func hideUserTrack()
+  @_Concurrency.MainActor(unsafe) final public func removeUserTrack()
 }
 public enum ValueWrapper : Swift.Codable, Swift.CustomStringConvertible {
   case stringValue(Swift.String)

@@ -300,6 +300,7 @@ SWIFT_CLASS("_TtC5Mappy7MapView")
 
 
 
+
 /// SceneView is an UI class that helps in rendering the 3D map. Once the scene is loaded, add the scene to SceneView and then you can add the same to your UI hierarchy.
 SWIFT_CLASS("_TtC5Mappy9SceneView")
 @interface SceneView : UIView
@@ -312,6 +313,7 @@ SWIFT_CLASS("_TtC5Mappy9SceneView")
 @interface SceneView (SWIFT_EXTENSION(Mappy)) <AGSGeoViewTouchDelegate>
 - (void)geoView:(AGSGeoView * _Nonnull)geoView didTapAtScreenPoint:(CGPoint)screenPoint mapPoint:(AGSPoint * _Nonnull)mapPoint;
 @end
+
 
 
 
@@ -628,6 +630,7 @@ SWIFT_CLASS("_TtC5Mappy7MapView")
 
 
 
+
 /// SceneView is an UI class that helps in rendering the 3D map. Once the scene is loaded, add the scene to SceneView and then you can add the same to your UI hierarchy.
 SWIFT_CLASS("_TtC5Mappy9SceneView")
 @interface SceneView : UIView
@@ -640,6 +643,7 @@ SWIFT_CLASS("_TtC5Mappy9SceneView")
 @interface SceneView (SWIFT_EXTENSION(Mappy)) <AGSGeoViewTouchDelegate>
 - (void)geoView:(AGSGeoView * _Nonnull)geoView didTapAtScreenPoint:(CGPoint)screenPoint mapPoint:(AGSPoint * _Nonnull)mapPoint;
 @end
+
 
 
 
