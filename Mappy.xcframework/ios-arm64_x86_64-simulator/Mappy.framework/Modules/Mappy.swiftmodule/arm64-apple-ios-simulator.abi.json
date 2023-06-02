@@ -1241,12 +1241,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "AnyPublisher",
-                "printedName": "Combine.AnyPublisher<(), Swift.Error>",
+                "printedName": "Combine.AnyPublisher<Mappy.MapView.UserTrackRenderingStatus, Swift.Error>",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
+                    "name": "UserTrackRenderingStatus",
+                    "printedName": "Mappy.MapView.UserTrackRenderingStatus",
+                    "usr": "s:5Mappy7MapViewC24UserTrackRenderingStatusO"
                   },
                   {
                     "kind": "TypeNominal",
@@ -1286,8 +1287,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:5Mappy7MapViewC15renderUserTrack9startTime03endH06userId7Combine12AnyPublisherVyyts5Error_pGSd_SdSSSgtF",
-            "mangledName": "$s5Mappy7MapViewC15renderUserTrack9startTime03endH06userId7Combine12AnyPublisherVyyts5Error_pGSd_SdSSSgtF",
+            "usr": "s:5Mappy7MapViewC15renderUserTrack9startTime03endH06userId7Combine12AnyPublisherVyAC0eF15RenderingStatusOs5Error_pGSd_SdSSSgtF",
+            "mangledName": "$s5Mappy7MapViewC15renderUserTrack9startTime03endH06userId7Combine12AnyPublisherVyAC0eF15RenderingStatusOs5Error_pGSd_SdSSSgtF",
             "moduleName": "Mappy",
             "declAttributes": [
               "Custom",
@@ -1365,6 +1366,204 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "UserTrackRenderingStatus",
+            "printedName": "UserTrackRenderingStatus",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "normal",
+                "printedName": "normal",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Mappy.MapView.UserTrackRenderingStatus.Type) -> Mappy.MapView.UserTrackRenderingStatus",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserTrackRenderingStatus",
+                        "printedName": "Mappy.MapView.UserTrackRenderingStatus",
+                        "usr": "s:5Mappy7MapViewC24UserTrackRenderingStatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Mappy.MapView.UserTrackRenderingStatus.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UserTrackRenderingStatus",
+                            "printedName": "Mappy.MapView.UserTrackRenderingStatus",
+                            "usr": "s:5Mappy7MapViewC24UserTrackRenderingStatusO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:5Mappy7MapViewC24UserTrackRenderingStatusO6normalyA2EmF",
+                "mangledName": "$s5Mappy7MapViewC24UserTrackRenderingStatusO6normalyA2EmF",
+                "moduleName": "Mappy"
+              },
+              {
+                "kind": "Var",
+                "name": "empty",
+                "printedName": "empty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Mappy.MapView.UserTrackRenderingStatus.Type) -> Mappy.MapView.UserTrackRenderingStatus",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserTrackRenderingStatus",
+                        "printedName": "Mappy.MapView.UserTrackRenderingStatus",
+                        "usr": "s:5Mappy7MapViewC24UserTrackRenderingStatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Mappy.MapView.UserTrackRenderingStatus.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UserTrackRenderingStatus",
+                            "printedName": "Mappy.MapView.UserTrackRenderingStatus",
+                            "usr": "s:5Mappy7MapViewC24UserTrackRenderingStatusO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:5Mappy7MapViewC24UserTrackRenderingStatusO5emptyyA2EmF",
+                "mangledName": "$s5Mappy7MapViewC24UserTrackRenderingStatusO5emptyyA2EmF",
+                "moduleName": "Mappy"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserTrackRenderingStatus",
+                    "printedName": "Mappy.MapView.UserTrackRenderingStatus",
+                    "usr": "s:5Mappy7MapViewC24UserTrackRenderingStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserTrackRenderingStatus",
+                    "printedName": "Mappy.MapView.UserTrackRenderingStatus",
+                    "usr": "s:5Mappy7MapViewC24UserTrackRenderingStatusO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:5Mappy7MapViewC24UserTrackRenderingStatusO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s5Mappy7MapViewC24UserTrackRenderingStatusO2eeoiySbAE_AEtFZ",
+                "moduleName": "Mappy",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:5Mappy7MapViewC24UserTrackRenderingStatusO9hashValueSivp",
+                "mangledName": "$s5Mappy7MapViewC24UserTrackRenderingStatusO9hashValueSivp",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:5Mappy7MapViewC24UserTrackRenderingStatusO9hashValueSivg",
+                    "mangledName": "$s5Mappy7MapViewC24UserTrackRenderingStatusO9hashValueSivg",
+                    "moduleName": "Mappy",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:5Mappy7MapViewC24UserTrackRenderingStatusO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s5Mappy7MapViewC24UserTrackRenderingStatusO4hash4intoys6HasherVz_tF",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:5Mappy7MapViewC24UserTrackRenderingStatusO",
+            "mangledName": "$s5Mappy7MapViewC24UserTrackRenderingStatusO",
+            "moduleName": "Mappy",
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -5565,8 +5764,8 @@
         "children": [
           {
             "kind": "Function",
-            "name": "fetchUserTracks",
-            "printedName": "fetchUserTracks(userId:venueId:startTime:endTime:)",
+            "name": "renderUserTracks",
+            "printedName": "renderUserTracks(on:layerId:userId:venueId:startTime:endTime:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5587,6 +5786,18 @@
                   }
                 ],
                 "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AGSGeoModel",
+                "printedName": "ArcGIS.AGSGeoModel",
+                "usr": "c:objc(cs)AGSGeoModel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -5622,8 +5833,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:5Mappy14TracksProviderP09fetchUserB06userId05venueG09startTime03endJ07Combine12AnyPublisherVySo15AGSFeatureLayerCAA0bC5ErrorOGSSSg_SSS2dtF",
-            "mangledName": "$s5Mappy14TracksProviderP09fetchUserB06userId05venueG09startTime03endJ07Combine12AnyPublisherVySo15AGSFeatureLayerCAA0bC5ErrorOGSSSg_SSS2dtF",
+            "usr": "s:5Mappy14TracksProviderP010renderUserB02on7layerId04userH005venueH09startTime03endL07Combine12AnyPublisherVySo15AGSFeatureLayerCAA0bC5ErrorOGSo11AGSGeoModelC_S2SSgSSS2dtF",
+            "mangledName": "$s5Mappy14TracksProviderP010renderUserB02on7layerId04userH005venueH09startTime03endL07Combine12AnyPublisherVySo15AGSFeatureLayerCAA0bC5ErrorOGSo11AGSGeoModelC_S2SSgSSS2dtF",
             "moduleName": "Mappy",
             "genericSig": "<τ_0_0 where τ_0_0 : Mappy.TracksProvider>",
             "sugared_genericSig": "<Self where Self : Mappy.TracksProvider>",
@@ -28899,8 +29110,8 @@
           },
           {
             "kind": "Function",
-            "name": "fetchUserTracks",
-            "printedName": "fetchUserTracks(userId:venueId:startTime:endTime:)",
+            "name": "renderUserTracks",
+            "printedName": "renderUserTracks(on:layerId:userId:venueId:startTime:endTime:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -28921,6 +29132,18 @@
                   }
                 ],
                 "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AGSGeoModel",
+                "printedName": "ArcGIS.AGSGeoModel",
+                "usr": "c:objc(cs)AGSGeoModel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -28956,8 +29179,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:5Mappy13TracksServiceC09fetchUserB06userId05venueG09startTime03endJ07Combine12AnyPublisherVySo15AGSFeatureLayerCAA0B13ProviderErrorOGSSSg_SSS2dtF",
-            "mangledName": "$s5Mappy13TracksServiceC09fetchUserB06userId05venueG09startTime03endJ07Combine12AnyPublisherVySo15AGSFeatureLayerCAA0B13ProviderErrorOGSSSg_SSS2dtF",
+            "usr": "s:5Mappy13TracksServiceC010renderUserB02on7layerId04userH005venueH09startTime03endL07Combine12AnyPublisherVySo15AGSFeatureLayerCAA0B13ProviderErrorOGSo11AGSGeoModelC_S2SSgSSS2dtF",
+            "mangledName": "$s5Mappy13TracksServiceC010renderUserB02on7layerId04userH005venueH09startTime03endL07Combine12AnyPublisherVySo15AGSFeatureLayerCAA0B13ProviderErrorOGSo11AGSGeoModelC_S2SSgSSS2dtF",
             "moduleName": "Mappy",
             "declAttributes": [
               "Final",

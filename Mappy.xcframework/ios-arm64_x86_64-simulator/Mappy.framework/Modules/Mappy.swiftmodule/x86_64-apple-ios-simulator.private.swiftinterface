@@ -155,7 +155,7 @@ extension Mappy.Scene {
 public struct SceneViewInteractionOptions {
 }
 public protocol TracksProvider {
-  func fetchUserTracks(userId: Swift.String?, venueId: Swift.String, startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval) -> Combine.AnyPublisher<ArcGIS.AGSFeatureLayer, Mappy.TracksProviderError>
+  func renderUserTracks(on geoModel: ArcGIS.AGSGeoModel, layerId: Swift.String, userId: Swift.String?, venueId: Swift.String, startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval) -> Combine.AnyPublisher<ArcGIS.AGSFeatureLayer, Mappy.TracksProviderError>
 }
 public enum TracksProviderError : Foundation.LocalizedError {
   case objectNotFound
@@ -882,7 +882,7 @@ extension Mappy.SceneView {
 }
 final public class TracksService : Mappy.TracksProvider {
   public init()
-  final public func fetchUserTracks(userId: Swift.String?, venueId: Swift.String, startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval) -> Combine.AnyPublisher<ArcGIS.AGSFeatureLayer, Mappy.TracksProviderError>
+  final public func renderUserTracks(on geoModel: ArcGIS.AGSGeoModel, layerId: Swift.String, userId: Swift.String?, venueId: Swift.String, startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval) -> Combine.AnyPublisher<ArcGIS.AGSFeatureLayer, Mappy.TracksProviderError>
   @objc deinit
 }
 public struct MapViewInteractionOptions {
@@ -900,10 +900,18 @@ extension Mappy.MapView {
   @_Concurrency.MainActor(unsafe) final public var isUserTrackRendered: Swift.Bool {
     get
   }
-  @_Concurrency.MainActor(unsafe) final public func renderUserTrack(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, userId: Swift.String? = nil) -> Combine.AnyPublisher<Swift.Void, Swift.Error>
+  @_Concurrency.MainActor(unsafe) final public func renderUserTrack(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, userId: Swift.String? = nil) -> Combine.AnyPublisher<Mappy.MapView.UserTrackRenderingStatus, Swift.Error>
   @_Concurrency.MainActor(unsafe) final public func showUserTrack()
   @_Concurrency.MainActor(unsafe) final public func hideUserTrack()
   @_Concurrency.MainActor(unsafe) final public func removeUserTrack()
+  public enum UserTrackRenderingStatus {
+    case normal, empty
+    public static func == (a: Mappy.MapView.UserTrackRenderingStatus, b: Mappy.MapView.UserTrackRenderingStatus) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
 }
 public enum ValueWrapper : Swift.Codable, Swift.CustomStringConvertible {
   case stringValue(Swift.String)
@@ -977,3 +985,5 @@ extension Mappy.LoadStatus : Swift.Hashable {}
 extension Mappy.RouteResponse.TravelType : Swift.Equatable {}
 extension Mappy.RouteResponse.TravelType : Swift.Hashable {}
 extension Mappy.DirectionMessageType : Swift.Hashable {}
+extension Mappy.MapView.UserTrackRenderingStatus : Swift.Equatable {}
+extension Mappy.MapView.UserTrackRenderingStatus : Swift.Hashable {}

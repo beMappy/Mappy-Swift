@@ -22,23 +22,23 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		lRwrLijxu0CV0N5CW7JV5G7QcqA=
+		hLpbT7O8ekiXjxcjwpIRq266K+Q=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		X0Wqm/JbqUmVqwWUy9gHYNtrKxs=
+		2IXjC/JROug1YvIF+V/jjfAiOC0=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		Odc/TI5U207SLCRt7cwUU59TTzg=
+		ltLGAfwj8twLVeaN0aHdWTq9Y9A=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		X0Wqm/JbqUmVqwWUy9gHYNtrKxs=
+		2IXjC/JROug1YvIF+V/jjfAiOC0=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		SgzQEYRGvcE8t9ha6Qkb8jEJjLQ=
+		Z+9wn/jphvCVWwWd4Usub3rHSzA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,35 +72,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yQxfiRlNmbkR5BLT/6QfIUg4y7Cp+4y8n3vGv3o71K8=
+			Uimu3wGV9T78b5moNar7Dpuz105tkfj7e+gHfdpp5HA=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PYM9upzzlrS2y5ape2JT7yOjz2Qap3Imh6Pv4Kl4SHY=
+			l1hGEYzRsWCc5E6oxwNG+3w8wYLdDnYiyboEon4oP1w=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GiJPF70+lbEngbrCw4oxdlk/nsp72qBfQ1FzpmsBoNs=
+			n3xh3IB7uiaF2LDQzHcu/FQq/VHAGsCJvmvNkn6Uya8=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PYM9upzzlrS2y5ape2JT7yOjz2Qap3Imh6Pv4Kl4SHY=
+			l1hGEYzRsWCc5E6oxwNG+3w8wYLdDnYiyboEon4oP1w=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EVQohEMVyGISrUwvPcZkWfalvgkfmi36PfDsew7n30I=
+			bq/5wmAo7RvRy5lLEjdCie7FKJDySXWf3DDl1bDncGE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
