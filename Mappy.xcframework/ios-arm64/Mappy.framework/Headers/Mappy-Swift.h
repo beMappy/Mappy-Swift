@@ -232,6 +232,7 @@ using UInt = size_t;
 #endif
 @import ArcGIS;
 @import CoreFoundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -316,6 +317,19 @@ SWIFT_CLASS("_TtC5Mappy9SceneView")
 
 
 
+
+
+SWIFT_CLASS("_TtC5Mappy13TracksService")
+@interface TracksService : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class AGSAuthenticationManager;
+@class AGSAuthenticationChallenge;
+
+@interface TracksService (SWIFT_EXTENSION(Mappy)) <AGSAuthenticationManagerDelegate>
+- (void)authenticationManager:(AGSAuthenticationManager * _Nonnull)authenticationManager didReceiveAuthenticationChallenge:(AGSAuthenticationChallenge * _Nonnull)challenge;
+@end
 
 
 

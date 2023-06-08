@@ -880,10 +880,13 @@ extension Mappy.SceneView {
     case onTap(Mappy.Feature?)
   }
 }
-final public class TracksService : Mappy.TracksProvider {
-  public init()
+@objc @_inheritsConvenienceInitializers final public class TracksService : ObjectiveC.NSObject, Mappy.TracksProvider {
+  @objc override dynamic public init()
   final public func renderUserTracks(on geoModel: ArcGIS.AGSGeoModel, layerId: Swift.String, userId: Swift.String?, venueId: Swift.String, startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval) -> Combine.AnyPublisher<ArcGIS.AGSFeatureLayer, Mappy.TracksProviderError>
   @objc deinit
+}
+extension Mappy.TracksService : ArcGIS.AGSAuthenticationManagerDelegate {
+  @objc final public func authenticationManager(_ authenticationManager: ArcGIS.AGSAuthenticationManager, didReceive challenge: ArcGIS.AGSAuthenticationChallenge)
 }
 public struct MapViewInteractionOptions {
   public var enabled: Swift.Bool

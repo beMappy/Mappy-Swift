@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'Mappy'
-  s.version      = '0.8.0-beta3'
+  s.version      = '0.8.0'
   s.summary      = 'Mappy SDKs provide an elegant and composable interface for mapping, geocoding, and routing.'
 
   s.description  = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.author             = { 'Mohamed Afsar Shakeer' => 'afsar@freshworks.io' }
   
-  s.source       = { :git => 'https://github.com/beMappy/Mappy-Swift.git', :tag => '0.8.0-beta3' }
+  s.source       = { :git => 'https://github.com/beMappy/Mappy-Swift.git', :tag => '0.8.0' }
 
   s.vendored_frameworks = 'Mappy.xcframework'
  
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'XCSwinject', '2.8.2' # A lightweight dependency injection framework.
 
-  s.dependency 'ArcGIS-Runtime-SDK-iOS', '100.15' # Mapping and GIS functionality
+  s.dependency 'ArcGIS-Runtime-SDK-iOS', '100.15.2' # Mapping and GIS functionality
 
   s.dependency 'XCZIPFoundation', '0.9.15' # zip and unzip items
 
