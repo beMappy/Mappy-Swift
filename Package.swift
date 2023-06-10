@@ -19,7 +19,6 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/Esri/arcgis-runtime-ios/", exact: "100.15.2"),  // Mapping and GIS functionality
         .package(url: "https://github.com/beMappy/CocoaLumberjackSwift/", branch: "SPM"), // Powerful & flexible logging framework
-//        .package(url: "https://github.com/beMappy/CocoaLumberjack/", branch: "SPM"), // Powerful & flexible logging framework
         .package(url: "https://github.com/beMappy/Mappy-KeychainAccess/", branch: "SPM"), // Simple Swift wrapper for Keychain
         .package(url: "https://github.com/beMappy/Swinject/", branch: "SPM"), // A lightweight dependency injection framework.
         .package(url: "https://github.com/beMappy/ZIPFoundation/", branch: "SPM"), // zip and unzip items
@@ -27,9 +26,7 @@ let package = Package(
         .package(url: "https://github.com/beMappy/PusherSwift/", branch: "SPM"), // Messaging infrastructure
         
         // !!!: to be replaced with the real beMappy ones, these are here because of permissions problems
-        .package(url: "https://github.com/thisma/Realm", branch: "SPM"),
         .package(url: "https://github.com/thisma/RealmSwift", branch: "SPM"),
-//        .package(url: "https://github.com/beMappy/RealmSwift/", branch: "SPM"), // Database
         /*
         .package(url: "https://github.com/beMappy/CocoaLumberjackSwift/", exact: "3.7.4-xc14-3"), // Powerful & flexible logging framework
         .package(url: "https://github.com/beMappy/Mappy-KeychainAccess/", exact: "4.2.2"), // Simple Swift wrapper for Keychain
@@ -54,7 +51,6 @@ let package = Package(
                 .product(name: "ZIPFoundation", package: "ZIPFoundation"),
                 .product(name: "Reachability", package: "Reachability.swift"),
                 .product(name: "PusherSwift", package: "PusherSwift"),
-                .product(name: "Realm", package: "Realm"),
                 .product(name: "RealmSwift", package: "RealmSwift"),
             ]),
         .binaryTarget(name: "Mappy", path: "./Mappy.xcframework"),
