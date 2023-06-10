@@ -14,7 +14,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "Mappy",
-            targets: ["MappyWrapper"]),
+            targets: ["MappyWrapper", "Mappy"]),
     ],
     dependencies: [
         .package(url: "https://github.com/Esri/arcgis-runtime-ios/", exact: "100.15.2"),  // Mapping and GIS functionality
