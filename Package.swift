@@ -22,9 +22,7 @@ let package = Package(
         .package(url: "https://github.com/beMappy/ZIPFoundation/", branch: "SPM"), // zip and unzip items
         .package(url: "https://github.com/beMappy/Reachability.swift/", branch: "SPM"), // To check Internet connection status
         .package(url: "https://github.com/beMappy/PusherSwift/", branch: "SPM"), // Messaging infrastructure
-        
-        // !!!: to be replaced with the real beMappy ones, these are here because of permissions problems
-        .package(url: "https://github.com/thisma/RealmSwift", branch: "SPM"),
+        .package(url: "https://github.com/beMappy/RealmSwift", branch: "SPM"),
         /*
         .package(url: "https://github.com/beMappy/CocoaLumberjackSwift/", exact: "3.7.4-xc14-3"), // Powerful & flexible logging framework
         .package(url: "https://github.com/beMappy/Mappy-KeychainAccess/", exact: "4.2.2"), // Simple Swift wrapper for Keychain
