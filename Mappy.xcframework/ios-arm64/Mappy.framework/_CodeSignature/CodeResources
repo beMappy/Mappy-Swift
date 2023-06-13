@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		2tfyVrGpb1SCytpIK0SGoSwKVOc=
+		CP4phLKUHmVjHmem1C9d+B0p3B4=
 		</data>
 		<key>Headers/Mappy-Swift.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		wa+Kh/S9xj7w9YPhZqbfu3UyawA=
+		gHYcTRVyeSni0pbTSgtq7TG7ILk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ow1sh/eHScZVbey4egEFNnULwsC+7PWAj2SL9CpoQo0=
+			hFlRj2g7Sa8oX37UURFze/5NT/ZxnAYHBkmz8QPitWA=
 			</data>
 		</dict>
 		<key>Headers/Mappy-Swift.h</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oSaK16q3vP7/t+HE+KYUsZ50SKJMrF1L7g/LG/bPBb4=
+			45TZy/7jDdz0F18vb6HeXqkBFqDvG3X88dZiJuk0vTw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
