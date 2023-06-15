@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		CP4phLKUHmVjHmem1C9d+B0p3B4=
+		2tfyVrGpb1SCytpIK0SGoSwKVOc=
 		</data>
 		<key>Headers/Mappy-Swift.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		c0WW5PGZnkwlv+Vmm7mr57QVH+w=
+		C3J6iPmw8IIuQZVIzB+5TUg/u8I=
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cdxUnPDN7aEGMcxMYnHpcsefX8Y=
+		9kl++rJYHuLFF54MyX8BwusxYEc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hFlRj2g7Sa8oX37UURFze/5NT/ZxnAYHBkmz8QPitWA=
+			Ow1sh/eHScZVbey4egEFNnULwsC+7PWAj2SL9CpoQo0=
 			</data>
 		</dict>
 		<key>Headers/Mappy-Swift.h</key>
@@ -120,7 +120,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MH68yGKKJcSN5ZFsTfhPmEwQig7KBvP2FpkNNtUCNG4=
+			XUeJKdrWNLjVBrtcIftO+i3zkstDZdWzraOSPNMxVfY=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zPOWPSfgXSzZaBTs0sZP0ZKukiKvLw4iIQEjeuXIcAQ=
+			3AaY7D/iVpuIKl2pHoV+2A7q8uBVR377WIXqVon7WhE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
