@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Mappy
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -57,8 +57,8 @@ public struct UserLocation : Mappy.Serializable {
   public let lat: Swift.Double
   public let long: Swift.Double
   public let unixDate: Swift.Double
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct Building : Swift.Equatable, Swift.Hashable {
   public enum Category : Swift.String {
@@ -126,7 +126,7 @@ public struct Building : Swift.Equatable, Swift.Hashable {
 }
 extension Mappy.RouteTracker {
   public enum Event {
-    case onError(Swift.Error)
+    case onError(any Swift.Error)
     case onTurnByTurnNavigationResponse(Mappy.TurnByTurnNavigationResponse)
     case didReroute(Mappy.RouteResponse)
     case didReachDestination
@@ -148,9 +148,9 @@ public enum DirectionManeuverType {
 }
 extension Mappy.Scene {
   final public func load() -> Combine.AnyPublisher<Swift.Void, Mappy.SceneError>
-  final public func getFeatures() -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
-  final public func getFeatures(category: Mappy.FeatureCategory) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
-  final public func getFeatures(text: Swift.String, categories: [Mappy.FeatureCategory]? = nil) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
+  final public func getFeatures() -> Combine.AnyPublisher<[Mappy.Feature], any Swift.Error>
+  final public func getFeatures(category: Mappy.FeatureCategory) -> Combine.AnyPublisher<[Mappy.Feature], any Swift.Error>
+  final public func getFeatures(text: Swift.String, categories: [Mappy.FeatureCategory]? = nil) -> Combine.AnyPublisher<[Mappy.Feature], any Swift.Error>
 }
 public struct SceneViewInteractionOptions {
 }
@@ -161,7 +161,7 @@ public enum TracksProviderError : Foundation.LocalizedError {
   case objectNotFound
   case requestConfigFailure
   case unableToLoadTracks
-  case underlyingError(Swift.Error)
+  case underlyingError(any Swift.Error)
   public var errorDescription: Swift.String? {
     get
   }
@@ -232,19 +232,20 @@ final public class Scene : Mappy.Loadable {
   final public var loadStatus: Mappy.LoadStatus {
     get
   }
-  public init(sceneInfo: Mappy.SceneInfo)
+  public init(sceneInfo: any Mappy.SceneInfo)
   @objc deinit
 }
 public enum SceneError : Foundation.LocalizedError {
   case objectNotFound
   case identifierNotFound
-  case underlyingError(Swift.Error)
+  case underlyingError(any Swift.Error)
   public var errorDescription: Swift.String? {
     get
   }
 }
 public protocol SceneInfo {
   var venueId: Swift.String { get }
+  var initialExtent3DBookmark: Swift.String? { get }
 }
 public protocol Serializable : Swift.Decodable, Swift.Encodable {
   func serialize() -> Foundation.Data?
@@ -375,7 +376,7 @@ public enum FeatureCategory : Swift.Equatable, Swift.Hashable {
   }
 }
 @_hasMissingDesignatedInitializers final public class TrackingService : Mappy.TrackingProvider {
-  public static let current: Mappy.TrackingProvider
+  public static let current: any Mappy.TrackingProvider
   final public var appTrackingInfo: Mappy.AppTrackingInfo?
   final public var isTracking: Swift.Bool {
     get
@@ -416,7 +417,7 @@ public enum GroupLocationServiceError : Foundation.LocalizedError {
   case objectNotFound
   case clientIdNotFound
   case userIsNotInsideTheVenue
-  case underlyingError(Swift.Error)
+  case underlyingError(any Swift.Error)
   public var errorDescription: Swift.String? {
     get
   }
@@ -504,7 +505,7 @@ public struct MappyMeta {
   public var error: Mappy.MappyCoreError?
 }
 public enum MappyCoreError : Foundation.LocalizedError {
-  case underlyingError(Swift.Error)
+  case underlyingError(any Swift.Error)
   public var errorDescription: Swift.String? {
     get
   }
@@ -531,7 +532,7 @@ extension UIKit.UIImage {
 public enum StatsProviderError : Foundation.LocalizedError {
   case objectNotFound
   case invalidPayload
-  case underlyingError(Swift.Error)
+  case underlyingError(any Swift.Error)
   public var errorDescription: Swift.String? {
     get
   }
@@ -561,6 +562,8 @@ public struct VenueData {
   public let geoReference: Mappy.VenueGeoReference?
   public let terrainPercentage: Mappy.VenueTerrainPercentage?
   public let queryParamResortName: Swift.String?
+  public let initialExtent2DBookmark: Swift.String?
+  public let initialExtent3DBookmark: Swift.String?
 }
 public struct VenueGeoReference {
   public let minY: Swift.Double?
@@ -584,6 +587,12 @@ public enum MapType : Swift.String {
   }
 }
 extension Mappy.Venue : Mappy.MapInfo, Mappy.SceneInfo {
+  public var initialExtent2DBookmark: Swift.String? {
+    get
+  }
+  public var initialExtent3DBookmark: Swift.String? {
+    get
+  }
   public var region: Mappy.MapRegion {
     get
   }
@@ -598,7 +607,7 @@ public enum VenuesProviderError : Foundation.LocalizedError {
   case objectNotFound
   case venuesNotFound
   case venueNotFound
-  case underlyingError(Swift.Error)
+  case underlyingError(any Swift.Error)
   public var errorDescription: Swift.String? {
     get
   }
@@ -657,12 +666,12 @@ final public class Map : Mappy.Loadable {
   final public var loadStatus: Mappy.LoadStatus {
     get
   }
-  public init(mapInfo: Mappy.MapInfo)
+  public init(mapInfo: any Mappy.MapInfo)
   @objc deinit
 }
 public enum MapError : Foundation.LocalizedError {
   case objectNotFound
-  case underlyingError(Swift.Error)
+  case underlyingError(any Swift.Error)
   public var errorDescription: Swift.String? {
     get
   }
@@ -672,6 +681,7 @@ public protocol MapInfo {
   var region: Mappy.MapRegion { get }
   var maxScale: Swift.Double { get }
   var minScale: Swift.Double { get }
+  var initialExtent2DBookmark: Swift.String? { get }
 }
 public struct MapRegion {
   public let xMin: Swift.Double
@@ -681,10 +691,10 @@ public struct MapRegion {
 }
 extension Mappy.Map {
   final public func load() -> Combine.AnyPublisher<Swift.Void, Mappy.MapError>
-  final public func getFeatures() -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
-  final public func getFeatures(category: Mappy.FeatureCategory) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
-  final public func getFeatures(text: Swift.String, categories: [Mappy.FeatureCategory]? = nil) -> Combine.AnyPublisher<[Mappy.Feature], Swift.Error>
-  final public func getRoutes(from origin: Mappy.Feature, to destination: Mappy.Feature, skiLevel: Mappy.SkiSlope.Level) -> Combine.AnyPublisher<[Mappy.RouteModel], Swift.Error>
+  final public func getFeatures() -> Combine.AnyPublisher<[Mappy.Feature], any Swift.Error>
+  final public func getFeatures(category: Mappy.FeatureCategory) -> Combine.AnyPublisher<[Mappy.Feature], any Swift.Error>
+  final public func getFeatures(text: Swift.String, categories: [Mappy.FeatureCategory]? = nil) -> Combine.AnyPublisher<[Mappy.Feature], any Swift.Error>
+  final public func getRoutes(from origin: Mappy.Feature, to destination: Mappy.Feature, skiLevel: Mappy.SkiSlope.Level) -> Combine.AnyPublisher<[Mappy.RouteModel], any Swift.Error>
 }
 public struct Feature : Swift.Identifiable, Swift.Equatable, Swift.Hashable {
   public let id: Foundation.UUID
@@ -744,7 +754,7 @@ public struct RouteModel : Swift.Identifiable, Swift.Equatable {
   public typealias ID = Foundation.UUID
 }
 public struct DirectionManeuver : Swift.Equatable {
-  public var directionEvents: [Mappy.DirectionEvent] {
+  public var directionEvents: [any Mappy.DirectionEvent] {
     get
   }
   public var directionText: Swift.String {
@@ -756,7 +766,7 @@ public struct DirectionManeuver : Swift.Equatable {
   public var estimatedArrivalTimeShift: Swift.Double {
     get
   }
-  public var maneuverMessages: [Mappy.DirectionMessage] {
+  public var maneuverMessages: [any Mappy.DirectionMessage] {
     get
   }
   public var fromLevel: Swift.Int {
@@ -839,7 +849,7 @@ public enum GroupsProviderError : Foundation.LocalizedError {
   case groupCodeInUse
   case groupCodeNotFound
   case invalidPayload
-  case underlyingError(Swift.Error)
+  case underlyingError(any Swift.Error)
   public var errorDescription: Swift.String? {
     get
   }
@@ -903,7 +913,7 @@ extension Mappy.MapView {
   @_Concurrency.MainActor(unsafe) final public var isUserTrackRendered: Swift.Bool {
     get
   }
-  @_Concurrency.MainActor(unsafe) final public func renderUserTrack(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, userId: Swift.String? = nil) -> Combine.AnyPublisher<Mappy.MapView.UserTrackRenderingStatus, Swift.Error>
+  @_Concurrency.MainActor(unsafe) final public func renderUserTrack(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, userId: Swift.String? = nil) -> Combine.AnyPublisher<Mappy.MapView.UserTrackRenderingStatus, any Swift.Error>
   @_Concurrency.MainActor(unsafe) final public func showUserTrack()
   @_Concurrency.MainActor(unsafe) final public func hideUserTrack()
   @_Concurrency.MainActor(unsafe) final public func removeUserTrack()
@@ -921,8 +931,8 @@ public enum ValueWrapper : Swift.Codable, Swift.CustomStringConvertible {
   case intValue(Swift.Int)
   case doubleValue(Swift.Double)
   case boolValue(Swift.Bool)
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public var intValue: Swift.Int? {
     get
   }
