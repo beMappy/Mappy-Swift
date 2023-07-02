@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		xkTFglzU2GtaPqGxlCOEmB8IFv8=
+		DEvOEMKxh3aow1qAxZiMcv9V/rM=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		1AviM3RTkB5G2HbFR+227JYwFRs=
+		sbhheMly10acgkt5023cLPG8m/0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,7 +72,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QTdvO5eql5+AcxX+CMVJ1H4jBea8GtG3iBkjjYBQq/Y=
+			HdNsnh6QJSSkVnb7oKkDXLgR/3fcOExor+bTvlQukCM=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VkMc/Sip67M+iJ727Y0WJINfPV9e5y6Ej7x6x/odkbA=
+			3VcM2I9Za8QPAI/ZG+SYaTuRFEuSaayQAAqUV4RFSV8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -36359,28 +36359,28 @@
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "BooleanLiteral",
-      "offset": 10780,
+      "offset": 10848,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "StringLiteral",
-      "offset": 11792,
+      "offset": 12032,
       "length": 16,
       "value": "\">=2.0.0 <6.0.0\""
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "StringLiteral",
-      "offset": 13410,
+      "offset": 13650,
       "length": 5,
       "value": "\"map\""
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "StringLiteral",
-      "offset": 13503,
+      "offset": 13743,
       "length": 7,
       "value": "\"scene\""
     },
@@ -39124,56 +39124,63 @@
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 398,
+      "offset": 417,
       "length": 28,
       "value": "\"venues\/\""
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 416,
+      "offset": 435,
       "length": 1,
       "value": "\"\/map-meta\""
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 763,
+      "offset": 794,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 777,
+      "offset": 808,
       "length": 7,
       "value": "\"range\""
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 869,
+      "offset": 824,
+      "length": 8,
+      "value": "\"userId\""
+    },
+    {
+      "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsEndpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 918,
       "length": 16,
       "value": "\"currentVersion\""
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1176,
+      "offset": 1228,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1193,
+      "offset": 1245,
       "length": 17,
       "value": "\"Bearer \""
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1209,
+      "offset": 1261,
       "length": 13,
       "value": "\"\""
     },
