@@ -8895,6 +8895,43 @@
           },
           {
             "kind": "Function",
+            "name": "toDictionary",
+            "printedName": "toDictionary()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy12SerializablePAAE12toDictionarySDySSypGyF",
+            "mangledName": "$s5Mappy12SerializablePAAE12toDictionarySDySSypGyF",
+            "moduleName": "Mappy",
+            "genericSig": "<τ_0_0 where τ_0_0 : Mappy.Serializable>",
+            "sugared_genericSig": "<Self where Self : Mappy.Serializable>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "jsonString",
             "printedName": "jsonString()",
             "children": [
@@ -8921,6 +8958,39 @@
             "sugared_genericSig": "<Self where Self : Mappy.Serializable>",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Mappy12SerializablePAAE4fromxSgyp_tcfc",
+            "mangledName": "$s5Mappy12SerializablePAAE4fromxSgyp_tcfc",
+            "moduleName": "Mappy",
+            "genericSig": "<τ_0_0 where τ_0_0 : Mappy.Serializable>",
+            "sugared_genericSig": "<Self where Self : Mappy.Serializable>",
+            "isFromExtension": true,
+            "init_kind": "Convenience"
           }
         ],
         "declKind": "Protocol",
@@ -24613,6 +24683,51 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(xMin:yMin:xMax:yMax:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MapRegion",
+                "printedName": "Mappy.MapRegion",
+                "usr": "s:5Mappy9MapRegionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Mappy9MapRegionV4xMin01yD04xMax01yE0ACSd_S3dtcfc",
+            "mangledName": "$s5Mappy9MapRegionV4xMin01yD04xMax01yE0ACSd_S3dtcfc",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Struct",
@@ -37627,6 +37742,13 @@
       "offset": 1353,
       "length": 23,
       "value": "\"Identifier Not Found.\""
+    },
+    {
+      "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/Serializable.swift",
+      "kind": "Dictionary",
+      "offset": 609,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/BuildingAmenity.swift",

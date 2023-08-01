@@ -252,7 +252,9 @@ public protocol Serializable : Swift.Decodable, Swift.Encodable {
 }
 extension Mappy.Serializable {
   public func serialize() -> Foundation.Data?
+  public func toDictionary() -> [Swift.String : Any]
   public func jsonString() -> Swift.String?
+  public init?(from: Any)
 }
 public struct BuildingAmenity : Swift.Equatable, Swift.Hashable {
   public enum Category : Swift.String, Swift.Comparable {
@@ -703,6 +705,7 @@ public struct MapRegion {
   public let yMin: Swift.Double
   public let xMax: Swift.Double
   public let yMax: Swift.Double
+  public init(xMin: Swift.Double, yMin: Swift.Double, xMax: Swift.Double, yMax: Swift.Double)
 }
 extension Mappy.Map {
   final public func load() -> Combine.AnyPublisher<Swift.Void, Mappy.MapError>
