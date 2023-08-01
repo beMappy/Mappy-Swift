@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'Mappy'
-  s.version      = '0.8.6'
+  s.version      = '0.8.7-beta1'
   s.summary      = 'Mappy SDKs provide an elegant and composable interface for mapping, geocoding, and routing.'
 
   s.description  = <<-DESC

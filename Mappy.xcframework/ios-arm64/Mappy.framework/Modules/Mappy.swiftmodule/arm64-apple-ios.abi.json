@@ -8890,9 +8890,35 @@
             "moduleName": "Mappy",
             "genericSig": "<τ_0_0 where τ_0_0 : Mappy.Serializable>",
             "sugared_genericSig": "<Self where Self : Mappy.Serializable>",
-            "declAttributes": [
-              "AccessControl"
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "jsonString",
+            "printedName": "jsonString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
             ],
+            "declKind": "Func",
+            "usr": "s:5Mappy12SerializablePAAE10jsonStringSSSgyF",
+            "mangledName": "$s5Mappy12SerializablePAAE10jsonStringSSSgyF",
+            "moduleName": "Mappy",
+            "genericSig": "<τ_0_0 where τ_0_0 : Mappy.Serializable>",
+            "sugared_genericSig": "<Self where Self : Mappy.Serializable>",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
@@ -19104,6 +19130,98 @@
             ]
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(venueId:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Venue",
+                "printedName": "Mappy.Venue",
+                "usr": "s:5Mappy5VenueV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Mappy.VenueData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VenueData",
+                    "printedName": "Mappy.VenueData",
+                    "usr": "s:5Mappy9VenueDataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Mappy5VenueV7venueId4dataACSS_AA0B4DataVSgtcfc",
+            "mangledName": "$s5Mappy5VenueV7venueId4dataACSS_AA0B4DataVSgtcfc",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Venue",
+                "printedName": "Mappy.Venue",
+                "usr": "s:5Mappy5VenueV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Mappy5VenueV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5Mappy5VenueV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Mappy",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy5VenueV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5Mappy5VenueV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Mappy",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Var",
             "name": "initialExtent2DBookmark",
             "printedName": "initialExtent2DBookmark",
@@ -19355,6 +19473,27 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Serializable",
+            "printedName": "Serializable",
+            "usr": "s:5Mappy12SerializableP",
+            "mangledName": "$s5Mappy12SerializableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
           {
             "kind": "Conformance",
             "name": "MapInfo",
@@ -20275,6 +20414,436 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxScale",
+            "printedName": "maxScale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9VenueDataV8maxScaleSdSgvp",
+            "mangledName": "$s5Mappy9VenueDataV8maxScaleSdSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9VenueDataV8maxScaleSdSgvg",
+                "mangledName": "$s5Mappy9VenueDataV8maxScaleSdSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minScale",
+            "printedName": "minScale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9VenueDataV8minScaleSdSgvp",
+            "mangledName": "$s5Mappy9VenueDataV8minScaleSdSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9VenueDataV8minScaleSdSgvg",
+                "mangledName": "$s5Mappy9VenueDataV8minScaleSdSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(baseElevation:gondolaCount:skiableArea:skiPatrolEmergencyNumber:terrainParkCount:verticalElevation:ziplineCount:liftCount:name:description:geoReference:terrainPercentage:queryParamResortName:initialExtent2DBookmark:initialExtent3DBookmark:maxScale:minScale:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VenueData",
+                "printedName": "Mappy.VenueData",
+                "usr": "s:5Mappy9VenueDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Mappy.VenueGeoReference?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VenueGeoReference",
+                    "printedName": "Mappy.VenueGeoReference",
+                    "usr": "s:5Mappy17VenueGeoReferenceV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Mappy.VenueTerrainPercentage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VenueTerrainPercentage",
+                    "printedName": "Mappy.VenueTerrainPercentage",
+                    "usr": "s:5Mappy22VenueTerrainPercentageV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Mappy9VenueDataV13baseElevation12gondolaCount11skiableArea24skiPatrolEmergencyNumber011terrainParkG008verticalE007ziplineG004liftG04name11description12geoReference0N10Percentage20queryParamResortName23initialExtent2DBookmark23initialExtent3DBookmark8maxScale8minScaleACSiSg_A2USSSgA4u2vA0b3GeoV0VSgAA0b7TerrainW0VSgA3VSdSgA1_tcfc",
+            "mangledName": "$s5Mappy9VenueDataV13baseElevation12gondolaCount11skiableArea24skiPatrolEmergencyNumber011terrainParkG008verticalE007ziplineG004liftG04name11description12geoReference0N10Percentage20queryParamResortName23initialExtent2DBookmark23initialExtent3DBookmark8maxScale8minScaleACSiSg_A2USSSgA4u2vA0b3GeoV0VSgAA0b7TerrainW0VSgA3VSdSgA1_tcfc",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VenueData",
+                "printedName": "Mappy.VenueData",
+                "usr": "s:5Mappy9VenueDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Mappy9VenueDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5Mappy9VenueDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Mappy",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy9VenueDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5Mappy9VenueDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Mappy",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -20283,6 +20852,29 @@
         "moduleName": "Mappy",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Serializable",
+            "printedName": "Serializable",
+            "usr": "s:5Mappy12SerializableP",
+            "mangledName": "$s5Mappy12SerializableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -20531,6 +21123,83 @@
             ]
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(minY:minX:maxY:maxX:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VenueGeoReference",
+                "printedName": "Mappy.VenueGeoReference",
+                "usr": "s:5Mappy17VenueGeoReferenceV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Mappy17VenueGeoReferenceV4minY0E1X4maxY0F1XACSdSg_A3Htcfc",
+            "mangledName": "$s5Mappy17VenueGeoReferenceV4minY0E1X4maxY0F1XACSdSg_A3Htcfc",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
             "name": "contains",
             "printedName": "contains(latitude:longitude:)",
@@ -20562,6 +21231,57 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VenueGeoReference",
+                "printedName": "Mappy.VenueGeoReference",
+                "usr": "s:5Mappy17VenueGeoReferenceV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Mappy17VenueGeoReferenceV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5Mappy17VenueGeoReferenceV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Mappy",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy17VenueGeoReferenceV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5Mappy17VenueGeoReferenceV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Mappy",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -20570,6 +21290,29 @@
         "moduleName": "Mappy",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Serializable",
+            "printedName": "Serializable",
+            "usr": "s:5Mappy12SerializableP",
+            "mangledName": "$s5Mappy12SerializableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -20756,6 +21499,120 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(intermediate:advanced:beginer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VenueTerrainPercentage",
+                "printedName": "Mappy.VenueTerrainPercentage",
+                "usr": "s:5Mappy22VenueTerrainPercentageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Mappy22VenueTerrainPercentageV12intermediate8advanced7beginerACSfSg_A2Gtcfc",
+            "mangledName": "$s5Mappy22VenueTerrainPercentageV12intermediate8advanced7beginerACSfSg_A2Gtcfc",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VenueTerrainPercentage",
+                "printedName": "Mappy.VenueTerrainPercentage",
+                "usr": "s:5Mappy22VenueTerrainPercentageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Mappy22VenueTerrainPercentageV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5Mappy22VenueTerrainPercentageV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Mappy",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy22VenueTerrainPercentageV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5Mappy22VenueTerrainPercentageV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Mappy",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -20764,6 +21621,29 @@
         "moduleName": "Mappy",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Serializable",
+            "printedName": "Serializable",
+            "usr": "s:5Mappy12SerializableP",
+            "mangledName": "$s5Mappy12SerializableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -40251,77 +41131,77 @@
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "BooleanLiteral",
-      "offset": 3304,
+      "offset": 4900,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "StringLiteral",
-      "offset": 3907,
+      "offset": 5740,
       "length": 4,
       "value": "\"2d\""
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "StringLiteral",
-      "offset": 3929,
+      "offset": 5762,
       "length": 4,
       "value": "\"3d\""
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "StringLiteral",
-      "offset": 3907,
+      "offset": 5740,
       "length": 4,
       "value": "\"2d\""
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "StringLiteral",
-      "offset": 3929,
+      "offset": 5762,
       "length": 4,
       "value": "\"3d\""
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "IntegerLiteral",
-      "offset": 4260,
+      "offset": 6093,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "IntegerLiteral",
-      "offset": 4315,
+      "offset": 6148,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "IntegerLiteral",
-      "offset": 4370,
+      "offset": 6203,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "IntegerLiteral",
-      "offset": 4425,
+      "offset": 6258,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "IntegerLiteral",
-      "offset": 4499,
+      "offset": 6332,
       "length": 6,
       "value": "200000"
     },
     {
       "filePath": "\/Users\/afsar.shakeer\/Library\/CloudStorage\/OneDrive-EY\/Documents\/Development\/GitHub\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Venues\/Venue.swift",
       "kind": "IntegerLiteral",
-      "offset": 4577,
+      "offset": 6410,
       "length": 3,
       "value": "200"
     },

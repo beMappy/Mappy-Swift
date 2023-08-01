@@ -252,6 +252,7 @@ public protocol Serializable : Swift.Decodable, Swift.Encodable {
 }
 extension Mappy.Serializable {
   public func serialize() -> Foundation.Data?
+  public func jsonString() -> Swift.String?
 }
 public struct BuildingAmenity : Swift.Equatable, Swift.Hashable {
   public enum Category : Swift.String, Swift.Comparable {
@@ -544,11 +545,14 @@ final public class StatsService {
 }
 extension Swift.Array : Mappy.Serializable where Element : Swift.Decodable, Element : Swift.Encodable {
 }
-public struct Venue {
+public struct Venue : Mappy.Serializable {
   public let venueId: Swift.String
   public let data: Mappy.VenueData?
+  public init(venueId: Swift.String, data: Mappy.VenueData?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-public struct VenueData {
+public struct VenueData : Mappy.Serializable {
   public let baseElevation: Swift.Int?
   public let gondolaCount: Swift.Int?
   public let skiableArea: Swift.Int?
@@ -564,18 +568,29 @@ public struct VenueData {
   public let queryParamResortName: Swift.String?
   public let initialExtent2DBookmark: Swift.String?
   public let initialExtent3DBookmark: Swift.String?
+  public let maxScale: Swift.Double?
+  public let minScale: Swift.Double?
+  public init(baseElevation: Swift.Int?, gondolaCount: Swift.Int?, skiableArea: Swift.Int?, skiPatrolEmergencyNumber: Swift.String?, terrainParkCount: Swift.Int?, verticalElevation: Swift.Int?, ziplineCount: Swift.Int?, liftCount: Swift.Int?, name: Swift.String?, description: Swift.String?, geoReference: Mappy.VenueGeoReference?, terrainPercentage: Mappy.VenueTerrainPercentage?, queryParamResortName: Swift.String?, initialExtent2DBookmark: Swift.String?, initialExtent3DBookmark: Swift.String?, maxScale: Swift.Double?, minScale: Swift.Double?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-public struct VenueGeoReference {
+public struct VenueGeoReference : Mappy.Serializable {
   public let minY: Swift.Double?
   public let minX: Swift.Double?
   public let maxY: Swift.Double?
   public let maxX: Swift.Double?
+  public init(minY: Swift.Double?, minX: Swift.Double?, maxY: Swift.Double?, maxX: Swift.Double?)
   public func contains(latitude: Swift.Double, longitude: Swift.Double) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-public struct VenueTerrainPercentage {
+public struct VenueTerrainPercentage : Mappy.Serializable {
   public let intermediate: Swift.Float?
   public let advanced: Swift.Float?
   public let beginer: Swift.Float?
+  public init(intermediate: Swift.Float?, advanced: Swift.Float?, beginer: Swift.Float?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum MapType : Swift.String {
   case map
