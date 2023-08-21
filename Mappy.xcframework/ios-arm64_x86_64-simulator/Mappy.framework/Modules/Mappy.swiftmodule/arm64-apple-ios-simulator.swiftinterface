@@ -736,6 +736,23 @@ public struct TurnByTurnNavigationResponse {
     get
   }
 }
+extension Mappy.SceneView {
+  @_Concurrency.MainActor(unsafe) final public var isUserTrackRendered: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public func renderUserTrack(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, userId: Swift.String? = nil) -> Combine.AnyPublisher<Mappy.SceneView.UserTrackRenderingStatus, any Swift.Error>
+  @_Concurrency.MainActor(unsafe) final public func showUserTrack()
+  @_Concurrency.MainActor(unsafe) final public func hideUserTrack()
+  @_Concurrency.MainActor(unsafe) final public func removeUserTrack()
+  public enum UserTrackRenderingStatus {
+    case normal, empty
+    public static func == (a: Mappy.SceneView.UserTrackRenderingStatus, b: Mappy.SceneView.UserTrackRenderingStatus) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
 public struct RouteStepModel : Swift.Identifiable, Swift.Equatable {
   public let id: Foundation.UUID
   public var ratio: Swift.Int
@@ -1015,6 +1032,8 @@ extension Mappy.LoadStatus : Swift.Equatable {}
 extension Mappy.LoadStatus : Swift.Hashable {}
 extension Mappy.RouteResponse.TravelType : Swift.Equatable {}
 extension Mappy.RouteResponse.TravelType : Swift.Hashable {}
+extension Mappy.SceneView.UserTrackRenderingStatus : Swift.Equatable {}
+extension Mappy.SceneView.UserTrackRenderingStatus : Swift.Hashable {}
 extension Mappy.DirectionMessageType : Swift.Hashable {}
 extension Mappy.MapView.UserTrackRenderingStatus : Swift.Equatable {}
 extension Mappy.MapView.UserTrackRenderingStatus : Swift.Hashable {}
