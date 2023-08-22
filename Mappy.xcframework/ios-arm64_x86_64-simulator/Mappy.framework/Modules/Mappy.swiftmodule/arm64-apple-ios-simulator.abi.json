@@ -8446,6 +8446,28 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy5SceneC7destroyyyF",
+            "mangledName": "$s5Mappy5SceneC7destroyyyF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -24054,6 +24076,28 @@
             "declKind": "Func",
             "usr": "s:5Mappy3MapC9getRoutes4from2to8skiLevel7Combine12AnyPublisherVySayAA10RouteModelVGs5Error_pGAA7FeatureV_AqA8SkiSlopeV0H0OtF",
             "mangledName": "$s5Mappy3MapC9getRoutes4from2to8skiLevel7Combine12AnyPublisherVySayAA10RouteModelVGs5Error_pGAA7FeatureV_AqA8SkiSlopeV0H0OtF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy3MapC7destroyyyF",
+            "mangledName": "$s5Mappy3MapC7destroyyyF",
             "moduleName": "Mappy",
             "declAttributes": [
               "Final",

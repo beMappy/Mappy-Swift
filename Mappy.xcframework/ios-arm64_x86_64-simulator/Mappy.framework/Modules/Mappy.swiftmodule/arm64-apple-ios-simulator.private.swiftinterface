@@ -151,6 +151,7 @@ extension Mappy.Scene {
   final public func getFeatures() -> Combine.AnyPublisher<[Mappy.Feature], any Swift.Error>
   final public func getFeatures(category: Mappy.FeatureCategory) -> Combine.AnyPublisher<[Mappy.Feature], any Swift.Error>
   final public func getFeatures(text: Swift.String, categories: [Mappy.FeatureCategory]? = nil) -> Combine.AnyPublisher<[Mappy.Feature], any Swift.Error>
+  final public func destroy()
 }
 public struct SceneViewInteractionOptions {
 }
@@ -713,6 +714,7 @@ extension Mappy.Map {
   final public func getFeatures(category: Mappy.FeatureCategory) -> Combine.AnyPublisher<[Mappy.Feature], any Swift.Error>
   final public func getFeatures(text: Swift.String, categories: [Mappy.FeatureCategory]? = nil) -> Combine.AnyPublisher<[Mappy.Feature], any Swift.Error>
   final public func getRoutes(from origin: Mappy.Feature, to destination: Mappy.Feature, skiLevel: Mappy.SkiSlope.Level) -> Combine.AnyPublisher<[Mappy.RouteModel], any Swift.Error>
+  final public func destroy()
 }
 public struct Feature : Swift.Identifiable, Swift.Equatable, Swift.Hashable {
   public let id: Foundation.UUID
