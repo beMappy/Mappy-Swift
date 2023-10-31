@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
 
-  s.author             = { 'Mohamed Afsar Shakeer' => 'afsar@freshworks.io' }
+  s.author             = { 'Joshua Smith' => 'support@bemappy.io' }
   
   s.source       = { :git => 'https://github.com/beMappy/Mappy-Swift.git', :tag => "#{s.version}" }
 
