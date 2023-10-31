@@ -646,6 +646,7 @@ public struct UserStats {
   public let timeSkiedInMilliSeconds: Swift.Double?
   public let trackDurationInMilliSeconds: Swift.Double?
   public let trackCount: Swift.Int?
+  public let verticalFeetCumulative: Swift.Double?
 }
 extension UIKit.UIColor {
   public static let routeHighlight: UIKit.UIColor
