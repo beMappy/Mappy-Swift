@@ -1,7 +1,7 @@
 framework module Mappy {
   umbrella header "Mappy.h"
-
   export *
+
   module * { export * }
 }
 

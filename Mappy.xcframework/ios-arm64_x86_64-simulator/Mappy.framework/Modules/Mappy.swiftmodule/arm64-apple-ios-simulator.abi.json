@@ -1636,6 +1636,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -14055,13 +14062,20 @@
       },
       {
         "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Mappy",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "Mappy"
       },
       {
         "kind": "Import",
@@ -14089,13 +14103,20 @@
       },
       {
         "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Mappy",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "Mappy"
       },
       {
         "kind": "Import",
@@ -18954,6 +18975,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy"
       },
       {
         "kind": "TypeDecl",
@@ -30901,6 +30929,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -33281,6 +33316,34 @@
         "moduleName": "Mappy"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
         "kind": "TypeDecl",
         "name": "AGSSceneView",
         "printedName": "AGSSceneView",
@@ -33353,6 +33416,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -34288,48 +34358,39 @@
           },
           {
             "kind": "Conformance",
-            "name": "DataProtocol",
-            "printedName": "DataProtocol",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "Regions",
-                "printedName": "Regions",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CollectionOfOne",
-                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.UInt8]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UInt8",
-                            "printedName": "Swift.UInt8",
-                            "usr": "s:s5UInt8V"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:s15CollectionOfOneV"
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
                   }
                 ]
               }
             ],
-            "usr": "s:10Foundation12DataProtocolP",
-            "mangledName": "$s10Foundation12DataProtocolP"
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
           },
           {
             "kind": "Conformance",
-            "name": "MutableDataProtocol",
-            "printedName": "MutableDataProtocol",
-            "usr": "s:10Foundation19MutableDataProtocolP",
-            "mangledName": "$s10Foundation19MutableDataProtocolP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ContiguousBytes",
+            "printedName": "ContiguousBytes",
+            "usr": "s:10Foundation15ContiguousBytesP",
+            "mangledName": "$s10Foundation15ContiguousBytesP"
           },
           {
             "kind": "Conformance",
@@ -34375,39 +34436,48 @@
           },
           {
             "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
+                "name": "Regions",
+                "printedName": "Regions",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "NSArray",
-                    "printedName": "Foundation.NSArray",
-                    "usr": "c:objc(cs)NSArray"
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
                   }
                 ]
               }
             ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
           },
           {
             "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ContiguousBytes",
-            "printedName": "ContiguousBytes",
-            "usr": "s:10Foundation15ContiguousBytesP",
-            "mangledName": "$s10Foundation15ContiguousBytesP"
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
           },
           {
             "kind": "Conformance",
@@ -34943,6 +35013,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -37837,28 +37914,28 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "BooleanLiteral",
-      "offset": 10848,
+      "offset": 11823,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "StringLiteral",
-      "offset": 12032,
+      "offset": 13007,
       "length": 16,
       "value": "\">=2.0.0 <6.0.0\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "StringLiteral",
-      "offset": 13650,
+      "offset": 14625,
       "length": 5,
       "value": "\"map\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "StringLiteral",
-      "offset": 13743,
+      "offset": 14718,
       "length": 7,
       "value": "\"scene\""
     },
@@ -39755,98 +39832,98 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
       "kind": "StringLiteral",
-      "offset": 250,
+      "offset": 268,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
       "kind": "StringLiteral",
-      "offset": 256,
+      "offset": 274,
       "length": 8,
       "value": "\"serial\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
       "kind": "StringLiteral",
-      "offset": 267,
+      "offset": 285,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
       "kind": "StringLiteral",
-      "offset": 273,
+      "offset": 291,
       "length": 33,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
       "kind": "StringLiteral",
-      "offset": 305,
+      "offset": 323,
       "length": 12,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
       "kind": "StringLiteral",
-      "offset": 799,
+      "offset": 817,
       "length": 17,
       "value": "\"Error: \""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
       "kind": "StringLiteral",
-      "offset": 815,
+      "offset": 833,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
       "kind": "BooleanLiteral",
-      "offset": 1152,
+      "offset": 1170,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
       "kind": "IntegerLiteral",
-      "offset": 1279,
+      "offset": 1297,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
       "kind": "IntegerLiteral",
-      "offset": 1858,
+      "offset": 1876,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
       "kind": "StringLiteral",
-      "offset": 2114,
+      "offset": 2132,
       "length": 17,
       "value": "\"Error: \""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
       "kind": "StringLiteral",
-      "offset": 2130,
+      "offset": 2148,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
       "kind": "StringLiteral",
-      "offset": 2225,
+      "offset": 2243,
       "length": 7,
       "value": "\"Mappy\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
       "kind": "StringLiteral",
-      "offset": 2446,
+      "offset": 2464,
       "length": 7,
       "value": "\"realm\""
     },
@@ -41680,42 +41757,42 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Authentication\/AuthenticationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 1009,
+      "offset": 964,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Authentication\/AuthenticationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 1013,
+      "offset": 968,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/User\/Stats\/StatsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2950,
+      "offset": 2968,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/User\/Stats\/StatsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2955,
+      "offset": 2973,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/User\/Stats\/StatsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3018,
+      "offset": 3036,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/User\/Stats\/StatsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3023,
+      "offset": 3041,
       "length": 4,
       "value": "1000"
     },
@@ -44158,49 +44235,42 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1881,
+      "offset": 1718,
       "length": 16,
       "value": "\"mappy:clientId\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1987,
+      "offset": 1824,
       "length": 20,
       "value": "\"mappy:clientSecret\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2098,
-      "length": 21,
-      "value": "\"mappy:accessTokenBO\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 2206,
+      "offset": 1931,
       "length": 17,
       "value": "\"mappy:licenseBO\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2315,
+      "offset": 2040,
       "length": 16,
       "value": "\"mappy:mapMeta:\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2425,
+      "offset": 2150,
       "length": 18,
       "value": "\"mappy:sceneMeta:\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/SecureDatabaseProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2527,
+      "offset": 2252,
       "length": 14,
       "value": "\"mappy:userBO\""
     },
@@ -44406,6 +44476,27 @@
       "offset": 3145,
       "length": 17,
       "value": "\"load completion\""
+    },
+    {
+      "filePath": "\/Users\/thisma\/Library\/Developer\/Xcode\/DerivedData\/Mappy-gitcxjqbqjthqefmeoaiuhvifudr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Mappy\/IntermediateBuildFilesPath\/Mappy.build\/Release-iphonesimulator\/Mappy.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 636,
+      "length": 16,
+      "value": "\"routeHighlight\""
+    },
+    {
+      "filePath": "\/Users\/thisma\/Library\/Developer\/Xcode\/DerivedData\/Mappy-gitcxjqbqjthqefmeoaiuhvifudr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Mappy\/IntermediateBuildFilesPath\/Mappy.build\/Release-iphonesimulator\/Mappy.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 884,
+      "length": 11,
+      "value": "\"mappy_pin\""
+    },
+    {
+      "filePath": "\/Users\/thisma\/Library\/Developer\/Xcode\/DerivedData\/Mappy-gitcxjqbqjthqefmeoaiuhvifudr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Mappy\/IntermediateBuildFilesPath\/Mappy.build\/Release-iphonesimulator\/Mappy.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1033,
+      "length": 17,
+      "value": "\"mappy_pin_small\""
     }
   ]
 }
