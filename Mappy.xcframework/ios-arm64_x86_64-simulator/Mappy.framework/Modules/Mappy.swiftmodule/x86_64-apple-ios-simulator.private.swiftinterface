@@ -650,6 +650,8 @@ public struct UserStats {
   public let trackDurationInMilliSeconds: Swift.Double?
   public let trackCount: Swift.Int?
   public let verticalFeetCumulative: Swift.Double?
+  public let daysCount: Swift.Int?
+  public let daysStats: [Swift.String : Mappy.UserStats]?
 }
 extension UIKit.UIColor {
   public static let routeHighlight: UIKit.UIColor
