@@ -38062,28 +38062,28 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "BooleanLiteral",
-      "offset": 7658,
+      "offset": 7779,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "StringLiteral",
-      "offset": 8842,
+      "offset": 8963,
       "length": 16,
       "value": "\">=2.0.0 <6.0.0\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "StringLiteral",
-      "offset": 10460,
+      "offset": 10581,
       "length": 5,
       "value": "\"map\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "StringLiteral",
-      "offset": 10553,
+      "offset": 10674,
       "length": 7,
       "value": "\"scene\""
     },

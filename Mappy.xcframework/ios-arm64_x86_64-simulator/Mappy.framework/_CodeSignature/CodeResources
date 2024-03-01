@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		9thWpQeN5NnbwlJ9Gia07Q3JTJU=
+		hoiKH92BV2HJR/SvCuhshMYMHBU=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		9thWpQeN5NnbwlJ9Gia07Q3JTJU=
+		hoiKH92BV2HJR/SvCuhshMYMHBU=
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wHSC8+aKXT3t+B/CTbBFsw8URb1x5E9zOTB/aDnzCTg=
+			ovunjlmhx87O4KGPvSZH6nX9tmM8ekwgnzUcN6bJpys=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -127,7 +127,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wHSC8+aKXT3t+B/CTbBFsw8URb1x5E9zOTB/aDnzCTg=
+			ovunjlmhx87O4KGPvSZH6nX9tmM8ekwgnzUcN6bJpys=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
