@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		u3QmGxuJtiteGeohi/mvgkV6Cl8=
+		eWdkvqH4sZPtkkVz9PCJPkLTxD0=
 		</data>
 		<key>Headers/Mappy-Swift.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		L9PeKET392rCn2zAAtHb0iSVlq8=
+		d/s0iyttYtFQqSr+mbSepejuAjQ=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		E8cHVF02Db48HU4+zvYnPJzoskE=
+		eFBOgaRc6SJbu3d432XFEuP5ABw=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		E8cHVF02Db48HU4+zvYnPJzoskE=
+		eFBOgaRc6SJbu3d432XFEuP5ABw=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		VRuc98Dbri/E1Z0a1vjk70Ethj0=
+		9U0Ng2avsuggKKAH3QbtJwAUKBQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GBmux11R3IGuRPHiIYW826pMvI3Ci/Y6Wu5AhgWUW3c=
+			7mIB/xj54sIsE1V38LW6tJc0uVfRsSf7Z/n/EAdQK/c=
 			</data>
 		</dict>
 		<key>Headers/Mappy-Swift.h</key>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NFAeIwAcugY/BomIyCNk7BNe3nPugr2m+Dmp4BdJuYI=
+			yLegjL2ENXZ1HlUO+8zQDfW+fpP0CmIGY3SKjNBCGI0=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NDsVc7D0+UqNX20C1cJI9XgEnXBZ1dtJHjpqVNknjgw=
+			Cp4mgQGJbErYrV/h6daGErmm7jKFjRUx32a5BclxIbU=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NDsVc7D0+UqNX20C1cJI9XgEnXBZ1dtJHjpqVNknjgw=
+			Cp4mgQGJbErYrV/h6daGErmm7jKFjRUx32a5BclxIbU=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			89JbIkxv5Og8o88W797am1qAfLME9WX8KtWcDwhRIf0=
+			vnA25emXEEeV5AZJJpZ4Tx7tpTYZTR4Q68r7fBWb2Vg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

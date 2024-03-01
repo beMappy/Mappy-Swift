@@ -22308,8 +22308,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "miniumumAltitudeInMetres",
-            "printedName": "miniumumAltitudeInMetres",
+            "name": "minimumAltitudeInMetres",
+            "printedName": "minimumAltitudeInMetres",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -22327,8 +22327,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5Mappy9UserStatsV24miniumumAltitudeInMetresSdSgvp",
-            "mangledName": "$s5Mappy9UserStatsV24miniumumAltitudeInMetresSdSgvp",
+            "usr": "s:5Mappy9UserStatsV23minimumAltitudeInMetresSdSgvp",
+            "mangledName": "$s5Mappy9UserStatsV23minimumAltitudeInMetresSdSgvp",
             "moduleName": "Mappy",
             "declAttributes": [
               "HasStorage",
@@ -22358,8 +22358,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5Mappy9UserStatsV24miniumumAltitudeInMetresSdSgvg",
-                "mangledName": "$s5Mappy9UserStatsV24miniumumAltitudeInMetresSdSgvg",
+                "usr": "s:5Mappy9UserStatsV23minimumAltitudeInMetresSdSgvg",
+                "mangledName": "$s5Mappy9UserStatsV23minimumAltitudeInMetresSdSgvg",
                 "moduleName": "Mappy",
                 "implicit": true,
                 "accessorKind": "get"
@@ -42255,7 +42255,7 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/User\/Stats\/UserStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 912,
+      "offset": 911,
       "length": 1,
       "value": "0"
     },
