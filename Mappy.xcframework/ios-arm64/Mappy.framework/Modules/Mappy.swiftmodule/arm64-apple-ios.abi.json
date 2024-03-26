@@ -231,6 +231,91 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "autoSuspendAndResume",
+            "printedName": "autoSuspendAndResume(whenCrossingBoundaryOf:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Map",
+                "printedName": "Mappy.Map",
+                "usr": "s:5Mappy3MapC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy16TrackingProviderP20autoSuspendAndResume22whenCrossingBoundaryOfyAA3MapC_tKF",
+            "mangledName": "$s5Mappy16TrackingProviderP20autoSuspendAndResume22whenCrossingBoundaryOfyAA3MapC_tKF",
+            "moduleName": "Mappy",
+            "genericSig": "<τ_0_0 where τ_0_0 : Mappy.TrackingProvider>",
+            "sugared_genericSig": "<Self where Self : Mappy.TrackingProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelAutoSuspendAndResume",
+            "printedName": "cancelAutoSuspendAndResume(whenCrossingBoundaryOf:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Map",
+                "printedName": "Mappy.Map",
+                "usr": "s:5Mappy3MapC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy16TrackingProviderP26cancelAutoSuspendAndResume22whenCrossingBoundaryOfyAA3MapC_tF",
+            "mangledName": "$s5Mappy16TrackingProviderP26cancelAutoSuspendAndResume22whenCrossingBoundaryOfyAA3MapC_tF",
+            "moduleName": "Mappy",
+            "genericSig": "<τ_0_0 where τ_0_0 : Mappy.TrackingProvider>",
+            "sugared_genericSig": "<Self where Self : Mappy.TrackingProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "evaluateAutoTrackedBoundaries",
+            "printedName": "evaluateAutoTrackedBoundaries()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy16TrackingProviderP29evaluateAutoTrackedBoundariesyyF",
+            "mangledName": "$s5Mappy16TrackingProviderP29evaluateAutoTrackedBoundariesyyF",
+            "moduleName": "Mappy",
+            "genericSig": "<τ_0_0 where τ_0_0 : Mappy.TrackingProvider>",
+            "sugared_genericSig": "<Self where Self : Mappy.TrackingProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -8222,6 +8307,126 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "packageName",
+            "printedName": "packageName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy5SceneC11packageNameSSSgvp",
+            "mangledName": "$s5Mappy5SceneC11packageNameSSSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy5SceneC11packageNameSSSgvg",
+                "mangledName": "$s5Mappy5SceneC11packageNameSSSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy5SceneC11packageNameSSSgvs",
+                "mangledName": "$s5Mappy5SceneC11packageNameSSSgvs",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy5SceneC11packageNameSSSgvM",
+                "mangledName": "$s5Mappy5SceneC11packageNameSSSgvM",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(sceneInfo:)",
@@ -13734,6 +13939,82 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "autoSuspendAndResume",
+            "printedName": "autoSuspendAndResume(whenCrossingBoundaryOf:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Map",
+                "printedName": "Mappy.Map",
+                "usr": "s:5Mappy3MapC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy15TrackingServiceC20autoSuspendAndResume22whenCrossingBoundaryOfyAA3MapC_tKF",
+            "mangledName": "$s5Mappy15TrackingServiceC20autoSuspendAndResume22whenCrossingBoundaryOfyAA3MapC_tKF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelAutoSuspendAndResume",
+            "printedName": "cancelAutoSuspendAndResume(whenCrossingBoundaryOf:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Map",
+                "printedName": "Mappy.Map",
+                "usr": "s:5Mappy3MapC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy15TrackingServiceC26cancelAutoSuspendAndResume22whenCrossingBoundaryOfyAA3MapC_tF",
+            "mangledName": "$s5Mappy15TrackingServiceC26cancelAutoSuspendAndResume22whenCrossingBoundaryOfyAA3MapC_tF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "evaluateAutoTrackedBoundaries",
+            "printedName": "evaluateAutoTrackedBoundaries()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Mappy15TrackingServiceC29evaluateAutoTrackedBoundariesyyF",
+            "mangledName": "$s5Mappy15TrackingServiceC29evaluateAutoTrackedBoundariesyyF",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -14076,6 +14357,16 @@
         "printedName": "RealmSwift",
         "declKind": "Import",
         "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -17133,37 +17424,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "Mappy"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "Mappy"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Mappy"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Mappy",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "Loadable",
         "printedName": "Loadable",
@@ -18669,6 +18929,30 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Mappy"
       },
       {
         "kind": "Import",
@@ -24025,6 +24309,126 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "packageName",
+            "printedName": "packageName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy3MapC11packageNameSSSgvp",
+            "mangledName": "$s5Mappy3MapC11packageNameSSSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy3MapC11packageNameSSSgvg",
+                "mangledName": "$s5Mappy3MapC11packageNameSSSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy3MapC11packageNameSSSgvs",
+                "mangledName": "$s5Mappy3MapC11packageNameSSSgvs",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy3MapC11packageNameSSSgvM",
+                "mangledName": "$s5Mappy3MapC11packageNameSSSgvM",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(mapInfo:)",
@@ -28967,30 +29371,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Mappy",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "Mappy"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "Mappy"
-      },
-      {
-        "kind": "Import",
         "name": "CoreLocation",
         "printedName": "CoreLocation",
         "declKind": "Import",
@@ -29051,6 +29431,297 @@
         "moduleName": "Mappy",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RegionMonitoringError",
+        "printedName": "RegionMonitoringError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "maximumMonitoredRegionsExceeded",
+            "printedName": "maximumMonitoredRegionsExceeded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.RegionMonitoringError.Type) -> (Swift.Int) -> Mappy.RegionMonitoringError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> Mappy.RegionMonitoringError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RegionMonitoringError",
+                        "printedName": "Mappy.RegionMonitoringError",
+                        "usr": "s:5Mappy21RegionMonitoringErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(maxRegions: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.RegionMonitoringError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RegionMonitoringError",
+                        "printedName": "Mappy.RegionMonitoringError",
+                        "usr": "s:5Mappy21RegionMonitoringErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy21RegionMonitoringErrorO31maximumMonitoredRegionsExceededyACSi_tcACmF",
+            "mangledName": "$s5Mappy21RegionMonitoringErrorO31maximumMonitoredRegionsExceededyACSi_tcACmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidGeometry",
+            "printedName": "invalidGeometry",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.RegionMonitoringError.Type) -> Mappy.RegionMonitoringError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RegionMonitoringError",
+                    "printedName": "Mappy.RegionMonitoringError",
+                    "usr": "s:5Mappy21RegionMonitoringErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.RegionMonitoringError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RegionMonitoringError",
+                        "printedName": "Mappy.RegionMonitoringError",
+                        "usr": "s:5Mappy21RegionMonitoringErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy21RegionMonitoringErrorO15invalidGeometryyA2CmF",
+            "mangledName": "$s5Mappy21RegionMonitoringErrorO15invalidGeometryyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "serviceUnavailable",
+            "printedName": "serviceUnavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.RegionMonitoringError.Type) -> Mappy.RegionMonitoringError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RegionMonitoringError",
+                    "printedName": "Mappy.RegionMonitoringError",
+                    "usr": "s:5Mappy21RegionMonitoringErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.RegionMonitoringError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RegionMonitoringError",
+                        "printedName": "Mappy.RegionMonitoringError",
+                        "usr": "s:5Mappy21RegionMonitoringErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy21RegionMonitoringErrorO18serviceUnavailableyA2CmF",
+            "mangledName": "$s5Mappy21RegionMonitoringErrorO18serviceUnavailableyA2CmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "regionTooLarge",
+            "printedName": "regionTooLarge",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Mappy.RegionMonitoringError.Type) -> (Swift.Int) -> Mappy.RegionMonitoringError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> Mappy.RegionMonitoringError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RegionMonitoringError",
+                        "printedName": "Mappy.RegionMonitoringError",
+                        "usr": "s:5Mappy21RegionMonitoringErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(maxRadius: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Mappy.RegionMonitoringError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RegionMonitoringError",
+                        "printedName": "Mappy.RegionMonitoringError",
+                        "usr": "s:5Mappy21RegionMonitoringErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Mappy21RegionMonitoringErrorO14regionTooLargeyACSi_tcACmF",
+            "mangledName": "$s5Mappy21RegionMonitoringErrorO14regionTooLargeyACSi_tcACmF",
+            "moduleName": "Mappy"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy21RegionMonitoringErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s5Mappy21RegionMonitoringErrorO16errorDescriptionSSSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy21RegionMonitoringErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s5Mappy21RegionMonitoringErrorO16errorDescriptionSSSgvg",
+                "moduleName": "Mappy",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5Mappy21RegionMonitoringErrorO",
+        "mangledName": "$s5Mappy21RegionMonitoringErrorO",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
         ]
       },
       {
@@ -29858,6 +30529,37 @@
         "kind": "Import",
         "name": "ArcGIS",
         "printedName": "ArcGIS",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Mappy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "Mappy"
       },
@@ -35486,14 +36188,14 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/TrackingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 573,
+      "offset": 2315,
       "length": 20,
       "value": "\"User Id not found.\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/TrackingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 644,
+      "offset": 2386,
       "length": 22,
       "value": "\"Client Id not found.\""
     },
@@ -37656,21 +38358,21 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene+Functions.swift",
       "kind": "BooleanLiteral",
-      "offset": 3045,
+      "offset": 3106,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene+Functions.swift",
       "kind": "BooleanLiteral",
-      "offset": 3063,
+      "offset": 3124,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene+Functions.swift",
       "kind": "BooleanLiteral",
-      "offset": 3082,
+      "offset": 3143,
       "length": 5,
       "value": "false"
     },
@@ -38391,63 +39093,63 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "FloatLiteral",
-      "offset": 863,
+      "offset": 905,
       "length": 5,
       "value": "181.0"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "FloatLiteral",
-      "offset": 869,
+      "offset": 911,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "FloatLiteral",
-      "offset": 883,
+      "offset": 925,
       "length": 5,
       "value": "228.0"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "FloatLiteral",
-      "offset": 889,
+      "offset": 931,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "FloatLiteral",
-      "offset": 902,
+      "offset": 944,
       "length": 5,
       "value": "253.0"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "FloatLiteral",
-      "offset": 908,
+      "offset": 950,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "IntegerLiteral",
-      "offset": 922,
+      "offset": 964,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "StringLiteral",
-      "offset": 1281,
+      "offset": 1323,
       "length": 19,
       "value": "\"Object Not Found.\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/Scene.swift",
       "kind": "StringLiteral",
-      "offset": 1353,
+      "offset": 1395,
       "length": 23,
       "value": "\"Identifier Not Found.\""
     },
@@ -39861,49 +40563,49 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/TrackingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1428,
+      "offset": 2001,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/TrackingService.swift",
       "kind": "IntegerLiteral",
-      "offset": 1977,
+      "offset": 2550,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/TrackingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2098,
+      "offset": 2671,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/TrackingService.swift",
       "kind": "StringLiteral",
-      "offset": 2711,
+      "offset": 3284,
       "length": 35,
       "value": "\"LocationValidator error: \""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/TrackingService.swift",
       "kind": "StringLiteral",
-      "offset": 2745,
+      "offset": 3318,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/TrackingService.swift",
       "kind": "StringLiteral",
-      "offset": 3226,
+      "offset": 3799,
       "length": 41,
       "value": "\"Failed to create a breadcrumb: \""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/TrackingService.swift",
       "kind": "StringLiteral",
-      "offset": 3266,
+      "offset": 3839,
       "length": 2,
       "value": "\"\""
     },
@@ -39976,6 +40678,76 @@
       "offset": 1457,
       "length": 57,
       "value": "\"https:\/\/3abb8xmin7.execute-api.us-west-2.amazonaws.com\/\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService+RegionMonitoring.swift",
+      "kind": "Dictionary",
+      "offset": 548,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService+RegionMonitoring.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1642,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService+RegionMonitoring.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1678,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService+RegionMonitoring.swift",
+      "kind": "StringLiteral",
+      "offset": 2297,
+      "length": 88,
+      "value": "\"Cannot stop monitoring map '\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService+RegionMonitoring.swift",
+      "kind": "StringLiteral",
+      "offset": 2348,
+      "length": 38,
+      "value": "\"' because it is not being monitored.\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService+RegionMonitoring.swift",
+      "kind": "StringLiteral",
+      "offset": 3264,
+      "length": 64,
+      "value": "\"locationManagerDidDetermineState: \""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService+RegionMonitoring.swift",
+      "kind": "StringLiteral",
+      "offset": 3308,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService+RegionMonitoring.swift",
+      "kind": "StringLiteral",
+      "offset": 3327,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService+RegionMonitoring.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3948,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService+RegionMonitoring.swift",
+      "kind": "StringLiteral",
+      "offset": 4336,
+      "length": 24,
+      "value": "\"mappy.monitoredRegion.\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
@@ -40137,6 +40909,13 @@
       "offset": 791,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/CLLocationManager+Ext.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1706,
+      "length": 2,
+      "value": "20"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/GroupLocation\/GroupLocationService.swift",
@@ -40895,188 +41674,6 @@
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 709,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 809,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 929,
-      "length": 7,
-      "value": "\"start\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 1623,
-      "length": 34,
-      "value": "\"Location tracking not authorized\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 1837,
-      "length": 47,
-      "value": "\"User has authorized Reduced Location Accuracy\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1998,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2060,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2116,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2175,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 3336,
-      "length": 6,
-      "value": "\"stop\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 3610,
-      "length": 30,
-      "value": "\"requestAuthorizationIfNeeded\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 3929,
-      "length": 31,
-      "value": "\"Startup location: \""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 3959,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 4135,
-      "length": 53,
-      "value": "\"Accuracy: \""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 4187,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 4217,
-      "length": 49,
-      "value": "\"Status: \""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 4265,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 4312,
-      "length": 61,
-      "value": "\"Status: \""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 4372,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 4626,
-      "length": 13,
-      "value": "\"pokeManager\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 4862,
-      "length": 46,
-      "value": "\"Preventing location manager possible restart\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 5056,
-      "length": 29,
-      "value": "\"Restarting location manager\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 5912,
-      "length": 37,
-      "value": "\"locations.count: \""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 5948,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 6320,
-      "length": 41,
-      "value": "\"locationManagerDidResumeLocationUpdates\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
-      "kind": "StringLiteral",
-      "offset": 6475,
-      "length": 39,
-      "value": "\"locationManagerDidChangeAuthorization\""
-    },
-    {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/SceneUnsupportedSceneJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 3068,
@@ -41525,6 +42122,279 @@
       "value": "\"mappy:mp_env\""
     },
     {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 254,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 307,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 369,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 429,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 495,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 567,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 633,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 704,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 758,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1939,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "StringLiteral",
+      "offset": 2177,
+      "length": 32,
+      "value": "\"No Internet. Location ignored.\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2247,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2648,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2977,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3479,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4596,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6929,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7681,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7937,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8225,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8287,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "Array",
+      "offset": 8336,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8356,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8374,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9004,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9733,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9898,
+      "length": 2,
+      "value": "90"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9988,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10027,
+      "length": 2,
+      "value": "80"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10117,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10156,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10246,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10285,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10375,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10414,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10504,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10543,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10633,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
+      "kind": "StringLiteral",
+      "offset": 10998,
+      "length": 19,
+      "value": "\"Object not found.\""
+    },
+    {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
       "offset": 879,
@@ -41919,28 +42789,28 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/User\/Stats\/StatsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2968,
+      "offset": 3306,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/User\/Stats\/StatsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2973,
+      "offset": 3311,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/User\/Stats\/StatsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3036,
+      "offset": 3374,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/User\/Stats\/StatsService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3041,
+      "offset": 3379,
       "length": 4,
       "value": "1000"
     },
@@ -42367,28 +43237,28 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/Map.swift",
       "kind": "StringLiteral",
-      "offset": 1130,
+      "offset": 1172,
       "length": 19,
       "value": "\"Object Not Found.\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/Map+Functions.swift",
       "kind": "BooleanLiteral",
-      "offset": 2865,
+      "offset": 2926,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/Map+Functions.swift",
       "kind": "BooleanLiteral",
-      "offset": 2883,
+      "offset": 2944,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/Map+Functions.swift",
       "kind": "BooleanLiteral",
-      "offset": 2902,
+      "offset": 2963,
       "length": 5,
       "value": "false"
     },
@@ -42806,279 +43676,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 254,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 307,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 369,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 429,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 495,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 567,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 633,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 704,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 758,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1939,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "StringLiteral",
-      "offset": 2177,
-      "length": 32,
-      "value": "\"No Internet. Location ignored.\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2247,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2648,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2977,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3479,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4596,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6929,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7681,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7937,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8225,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8287,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "Array",
-      "offset": 8336,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8356,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8374,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9004,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9733,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9898,
-      "length": 2,
-      "value": "90"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9988,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10027,
-      "length": 2,
-      "value": "80"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10117,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10156,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10246,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10285,
-      "length": 2,
-      "value": "50"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10375,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10414,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10504,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10543,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10633,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationValidator.swift",
-      "kind": "StringLiteral",
-      "offset": 10998,
-      "length": 19,
-      "value": "\"Object not found.\""
-    },
-    {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Utilities\/ReachabilityManager.swift",
       "kind": "StringLiteral",
       "offset": 1579,
@@ -43119,6 +43716,48 @@
       "offset": 815,
       "length": 13,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/RegionMonitoringError.swift",
+      "kind": "StringLiteral",
+      "offset": 458,
+      "length": 108,
+      "value": "\"Cannot monitor map region because the app is already monitoring maximum number of regions (\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/RegionMonitoringError.swift",
+      "kind": "StringLiteral",
+      "offset": 563,
+      "length": 1,
+      "value": "\").\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/RegionMonitoringError.swift",
+      "kind": "StringLiteral",
+      "offset": 617,
+      "length": 156,
+      "value": "\"Cannot monitor map region because the map was created with invalid geometry. If the map was created with Venue data, the Venue region data may be corrupt.\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/RegionMonitoringError.swift",
+      "kind": "StringLiteral",
+      "offset": 827,
+      "length": 71,
+      "value": "\"Cannot monitor map region because location monitoring is unavailable.\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/RegionMonitoringError.swift",
+      "kind": "StringLiteral",
+      "offset": 963,
+      "length": 90,
+      "value": "\"Cannot monitor map region because it is too large. Maxium radius is \""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/RegionMonitoringError.swift",
+      "kind": "StringLiteral",
+      "offset": 1044,
+      "length": 6,
+      "value": "\" meters.\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbPayload.swift",
@@ -43854,6 +44493,188 @@
       "offset": 8189,
       "length": 2,
       "value": "25"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 701,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 801,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 921,
+      "length": 7,
+      "value": "\"start\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 1615,
+      "length": 34,
+      "value": "\"Location tracking not authorized\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 1829,
+      "length": 47,
+      "value": "\"User has authorized Reduced Location Accuracy\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1990,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2052,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2108,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2167,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 3328,
+      "length": 6,
+      "value": "\"stop\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 3602,
+      "length": 30,
+      "value": "\"requestAuthorizationIfNeeded\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 3921,
+      "length": 31,
+      "value": "\"Startup location: \""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 3951,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 4127,
+      "length": 53,
+      "value": "\"Accuracy: \""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 4179,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 4209,
+      "length": 49,
+      "value": "\"Status: \""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 4257,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 4304,
+      "length": 61,
+      "value": "\"Status: \""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 4364,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 4618,
+      "length": 13,
+      "value": "\"pokeManager\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 4854,
+      "length": 46,
+      "value": "\"Preventing location manager possible restart\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 5048,
+      "length": 29,
+      "value": "\"Restarting location manager\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 5904,
+      "length": 37,
+      "value": "\"locations.count: \""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 5940,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 6312,
+      "length": 41,
+      "value": "\"locationManagerDidResumeLocationUpdates\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
+      "kind": "StringLiteral",
+      "offset": 6467,
+      "length": 39,
+      "value": "\"locationManagerDidChangeAuthorization\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/SceneView.swift",

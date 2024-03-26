@@ -28,6 +28,9 @@ public protocol TrackingProvider {
   var isTracking: Swift.Bool { get }
   func resume(appTrackingInfo: Mappy.AppTrackingInfo?)
   func suspend()
+  func autoSuspendAndResume(whenCrossingBoundaryOf map: Mappy.Map) throws
+  func cancelAutoSuspendAndResume(whenCrossingBoundaryOf map: Mappy.Map)
+  func evaluateAutoTrackedBoundaries()
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class MapView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) final public var map: Mappy.Map? {
@@ -236,6 +239,7 @@ final public class Scene : Mappy.Loadable {
   final public var loadStatus: Mappy.LoadStatus {
     get
   }
+  final public var packageName: Swift.String?
   public init(sceneInfo: any Mappy.SceneInfo)
   @objc deinit
 }
@@ -390,6 +394,9 @@ public enum FeatureCategory : Swift.Equatable, Swift.Hashable {
   }
   final public func resume(appTrackingInfo: Mappy.AppTrackingInfo?)
   final public func suspend()
+  final public func autoSuspendAndResume(whenCrossingBoundaryOf map: Mappy.Map) throws
+  final public func cancelAutoSuspendAndResume(whenCrossingBoundaryOf map: Mappy.Map)
+  final public func evaluateAutoTrackedBoundaries()
   @objc deinit
 }
 public enum Environment : Swift.String, Mappy.Serializable {
@@ -690,6 +697,7 @@ final public class Map : Mappy.Loadable {
   final public var loadStatus: Mappy.LoadStatus {
     get
   }
+  final public var packageName: Swift.String?
   public init(mapInfo: any Mappy.MapInfo)
   @objc deinit
 }
@@ -875,6 +883,15 @@ public protocol DirectionMessage : AnyObject, Swift.Equatable {
 }
 extension ArcGIS.AGSDirectionMessage : Mappy.DirectionMessage {
   public var messageType: Mappy.DirectionMessageType {
+    get
+  }
+}
+public enum RegionMonitoringError : Foundation.LocalizedError {
+  case maximumMonitoredRegionsExceeded(maxRegions: Swift.Int)
+  case invalidGeometry
+  case serviceUnavailable
+  case regionTooLarge(maxRadius: Swift.Int)
+  public var errorDescription: Swift.String? {
     get
   }
 }
