@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		u3QmGxuJtiteGeohi/mvgkV6Cl8=
+		eWdkvqH4sZPtkkVz9PCJPkLTxD0=
 		</data>
 		<key>Headers/Mappy-Swift.h</key>
 		<data>
@@ -18,47 +18,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3nKSzOeqDHyrpaRGZR6mL/0hJfM=
+		sjbtm2gagSO5d4CJSgQExYNts5s=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		cOsswHVLWlYHzU1Bf7wvhqtmc/o=
+		x4oZ3K14Frisq6Xte4NXft9ZNEM=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		yCWSX3VzGd3Nj65/SLKxOyyr3Hw=
+		ThsAOdxdjB8XvDFjeKTtzFLFtEA=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ItOVICj2elaWe6jr+Ve4lGEI0v4=
+		2xUr1LuNrHFhMnJulc0rO1mzRB0=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yCWSX3VzGd3Nj65/SLKxOyyr3Hw=
+		ThsAOdxdjB8XvDFjeKTtzFLFtEA=
 		</data>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TT2JOCLuqoTNi61bct0n6Z5AdeM=
+		lrRejkAHJWnBTiw76RyDLque488=
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		cOsswHVLWlYHzU1Bf7wvhqtmc/o=
+		x4oZ3K14Frisq6Xte4NXft9ZNEM=
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		67IBjcbXU7jBWIHMdb3yrDa+JJo=
+		kiRYctHgmksuTTdy3WY6BrVzKTo=
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		qfz/cVQAt/4trZ9iQytYBjVDdU4=
+		fJgKFJgo6wbyR5g4KtaR6wYZ87g=
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		67IBjcbXU7jBWIHMdb3yrDa+JJo=
+		kiRYctHgmksuTTdy3WY6BrVzKTo=
 		</data>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		M6sK/pUPU6busPWyJkaLaKlgQMA=
+		PxvdRMtKfIOUUK/c0id7MoPhyqg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GBmux11R3IGuRPHiIYW826pMvI3Ci/Y6Wu5AhgWUW3c=
+			7mIB/xj54sIsE1V38LW6tJc0uVfRsSf7Z/n/EAdQK/c=
 			</data>
 		</dict>
 		<key>Headers/Mappy-Swift.h</key>
@@ -92,70 +92,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yf3trniBwif3nru9oOejRhjgUgNT1SNeNTQSerHdMWo=
+			KeI4hyx4kiCu5cZ8XVuzv6FEazumVWyWFnrbtNKy9rI=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T2qWZZKB/83Wrr1+PebQUn+HoImeBNCl6zGK4kPY52c=
+			i7U4i6Gf40iBU0jWWQUYncJQxVz4HaBhhdsdpAISKgE=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EZHeBBjojTTM8/hV9sMwf1km1w5KDxgdcH2kMIW5SNo=
+			i9QF/lX2ZWAsUscb7EXoivuRj/686s9koyGdL7mxwfg=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T2qWZZKB/83Wrr1+PebQUn+HoImeBNCl6zGK4kPY52c=
+			i7U4i6Gf40iBU0jWWQUYncJQxVz4HaBhhdsdpAISKgE=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			69eHyuESA4YLV/fsxUBPwHC2odlPjQjkTEzCgSfmavA=
+			P/3SityFAJV+pyXVcMkFK6/S9OCteYTmYTGeGzpYU8k=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yf3trniBwif3nru9oOejRhjgUgNT1SNeNTQSerHdMWo=
+			KeI4hyx4kiCu5cZ8XVuzv6FEazumVWyWFnrbtNKy9rI=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SlZ0MnCJrQlBpzktTB+YgaMB8f0A8Y0cYoYyjr2olP0=
+			ByH7zaSIXA8fqQ3208+3iXl+Bj8e5vVbeK8PzeYThF0=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7rljJ6ldNDukSGLXqZhQQ62q9Rd945+HzyuMIiiaFAQ=
+			XOK3Dg5/WB3fEfZ4r8vdU1mFxoO4NGpCw4rQE/MMnZo=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SlZ0MnCJrQlBpzktTB+YgaMB8f0A8Y0cYoYyjr2olP0=
+			ByH7zaSIXA8fqQ3208+3iXl+Bj8e5vVbeK8PzeYThF0=
 			</data>
 		</dict>
 		<key>Modules/Mappy.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			22pYDkRlwxDCzmFuOuVEhgf6UQMqiyhXLBgsgv/7NAo=
+			fQr432je0lPq2bm+pvNOhHLgixA8HBkhWyOytCh3lGI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

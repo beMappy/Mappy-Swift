@@ -22592,6 +22592,128 @@
         "children": [
           {
             "kind": "Var",
+            "name": "startTime",
+            "printedName": "startTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9UserStatsV9startTime10Foundation4DateVSgvp",
+            "mangledName": "$s5Mappy9UserStatsV9startTime10Foundation4DateVSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9UserStatsV9startTime10Foundation4DateVSgvg",
+                "mangledName": "$s5Mappy9UserStatsV9startTime10Foundation4DateVSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "endTime",
+            "printedName": "endTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9UserStatsV7endTime10Foundation4DateVSgvp",
+            "mangledName": "$s5Mappy9UserStatsV7endTime10Foundation4DateVSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9UserStatsV7endTime10Foundation4DateVSgvg",
+                "mangledName": "$s5Mappy9UserStatsV7endTime10Foundation4DateVSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "minimumAltitudeInMetres",
             "printedName": "minimumAltitudeInMetres",
             "children": [
@@ -22616,7 +22738,8 @@
             "moduleName": "Mappy",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -22676,7 +22799,8 @@
             "moduleName": "Mappy",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -22736,7 +22860,8 @@
             "moduleName": "Mappy",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -22796,7 +22921,8 @@
             "moduleName": "Mappy",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -22856,7 +22982,8 @@
             "moduleName": "Mappy",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -22916,7 +23043,8 @@
             "moduleName": "Mappy",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -22944,6 +23072,67 @@
                 "declKind": "Accessor",
                 "usr": "s:5Mappy9UserStatsV23timeSkiedInMilliSecondsSdSgvg",
                 "mangledName": "$s5Mappy9UserStatsV23timeSkiedInMilliSecondsSdSgvg",
+                "moduleName": "Mappy",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "activeHours",
+            "printedName": "activeHours",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Mappy9UserStatsV11activeHoursSdSgvp",
+            "mangledName": "$s5Mappy9UserStatsV11activeHoursSdSgvp",
+            "moduleName": "Mappy",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Mappy9UserStatsV11activeHoursSdSgvg",
+                "mangledName": "$s5Mappy9UserStatsV11activeHoursSdSgvg",
                 "moduleName": "Mappy",
                 "implicit": true,
                 "accessorKind": "get"
@@ -23036,7 +23225,8 @@
             "moduleName": "Mappy",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -23096,7 +23286,8 @@
             "moduleName": "Mappy",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -23156,7 +23347,8 @@
             "moduleName": "Mappy",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -23230,7 +23422,8 @@
             "moduleName": "Mappy",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -43125,9 +43318,23 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/User\/Stats\/UserStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 911,
+      "offset": 1615,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/User\/Stats\/UserStats.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1799,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/User\/Stats\/UserStats.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1936,
+      "length": 4,
+      "value": "1000"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/License\/LicenseProvider.swift",
@@ -44374,6 +44581,13 @@
       "offset": 356,
       "length": 4,
       "value": "3600"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/HTTPClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3190,
+      "length": 3,
+      "value": "200"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView+Functions.swift",

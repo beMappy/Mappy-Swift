@@ -648,12 +648,15 @@ extension Mappy.SceneView {
   @_Concurrency.MainActor(unsafe) final public func zoomToLocation(latitude: Swift.Double, longitude: Swift.Double)
 }
 public struct UserStats {
+  public let startTime: Foundation.Date?
+  public let endTime: Foundation.Date?
   public let minimumAltitudeInMetres: Swift.Double?
   public let maximumAltitudeInMetres: Swift.Double?
   public let minimumSpeedInMilesPerHour: Swift.Double?
   public let maximumSpeedInMilesPerHour: Swift.Double?
   public let distanceInMetres: Swift.Double?
   public let timeSkiedInMilliSeconds: Swift.Double?
+  public let activeHours: Swift.Double?
   public let trackDurationInMilliSeconds: Swift.Double?
   public let trackCount: Swift.Int?
   public let verticalFeetCumulative: Swift.Double?
