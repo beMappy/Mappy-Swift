@@ -38957,28 +38957,28 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "BooleanLiteral",
-      "offset": 7779,
+      "offset": 7771,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "StringLiteral",
-      "offset": 8963,
+      "offset": 8955,
       "length": 16,
       "value": "\">=2.0.0 <6.0.0\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "StringLiteral",
-      "offset": 10581,
+      "offset": 10573,
       "length": 5,
       "value": "\"map\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "StringLiteral",
-      "offset": 10674,
+      "offset": 10666,
       "length": 7,
       "value": "\"scene\""
     },
@@ -44620,91 +44620,91 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView+Functions.swift",
       "kind": "StringLiteral",
-      "offset": 4289,
+      "offset": 4296,
       "length": 17,
       "value": "\"error: \""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView+Functions.swift",
       "kind": "StringLiteral",
-      "offset": 4305,
+      "offset": 4312,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView+Functions.swift",
       "kind": "BooleanLiteral",
-      "offset": 4784,
+      "offset": 4791,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView+Functions.swift",
       "kind": "BooleanLiteral",
-      "offset": 5370,
+      "offset": 5377,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView+Functions.swift",
       "kind": "IntegerLiteral",
-      "offset": 5881,
+      "offset": 5888,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView+Functions.swift",
       "kind": "BooleanLiteral",
-      "offset": 5903,
+      "offset": 5910,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView+Functions.swift",
       "kind": "Array",
-      "offset": 6311,
+      "offset": 6318,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView+Functions.swift",
       "kind": "Array",
-      "offset": 6386,
+      "offset": 6393,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView+Functions.swift",
       "kind": "StringLiteral",
-      "offset": 6616,
+      "offset": 6623,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView+Functions.swift",
       "kind": "StringLiteral",
-      "offset": 7187,
+      "offset": 7194,
       "length": 27,
       "value": "\"Bookmark set successfully\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView+Functions.swift",
       "kind": "StringLiteral",
-      "offset": 7262,
+      "offset": 7269,
       "length": 25,
       "value": "\"Setting bookmark failed\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView+Functions.swift",
       "kind": "StringLiteral",
-      "offset": 7731,
+      "offset": 7738,
       "length": 39,
       "value": "\"identifyLayers No error and No result\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Map\/MapView+Functions.swift",
       "kind": "IntegerLiteral",
-      "offset": 8189,
+      "offset": 8196,
       "length": 2,
       "value": "25"
     },
