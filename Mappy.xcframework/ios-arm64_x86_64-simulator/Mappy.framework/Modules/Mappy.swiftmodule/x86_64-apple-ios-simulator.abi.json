@@ -38957,35 +38957,42 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "BooleanLiteral",
-      "offset": 7771,
+      "offset": 7987,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "StringLiteral",
-      "offset": 8955,
+      "offset": 9220,
       "length": 16,
       "value": "\">=2.0.0 <6.0.0\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "StringLiteral",
-      "offset": 10573,
+      "offset": 10838,
       "length": 5,
       "value": "\"map\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Maps\/MapsService.swift",
       "kind": "StringLiteral",
-      "offset": 10666,
+      "offset": 10931,
       "length": 7,
       "value": "\"scene\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/SceneLocationDisplay.swift",
       "kind": "IntegerLiteral",
-      "offset": 1415,
+      "offset": 1570,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Scene\/SceneLocationDisplay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1758,
       "length": 1,
       "value": "1"
     },
@@ -45642,28 +45649,35 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/CommonMapWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 627,
-      "length": 14,
-      "value": "\"Missing Data\""
+      "offset": 650,
+      "length": 18,
+      "value": "\"Missing Map Data\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/CommonMapWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 687,
+      "offset": 707,
+      "length": 22,
+      "value": "\"Missing Locator Data\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/CommonMapWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 775,
       "length": 27,
       "value": "\"Route Task Loading Failed\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/CommonMapWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 1199,
+      "offset": 1287,
       "length": 6,
       "value": "\"load\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Features\/CommonMapWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 3145,
+      "offset": 3460,
       "length": 17,
       "value": "\"load completion\""
     },
