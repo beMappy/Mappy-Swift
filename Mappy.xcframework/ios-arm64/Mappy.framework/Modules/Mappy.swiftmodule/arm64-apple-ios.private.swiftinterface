@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Mappy
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Mappy
 import AVFoundation
 import ArcGIS
 import CocoaLumberjack
@@ -265,64 +264,9 @@ extension Mappy.Serializable {
   public init?(from: Any)
 }
 public struct BuildingAmenity : Swift.Equatable, Swift.Hashable {
-  public enum Category : Swift.String, Swift.Comparable {
-    case foodAndBeverage
-    case retail
-    case firstAid
-    case other
-    case accommodations
-    case guestServices
-    case transportation
-    case baseArea
-    case skiFeature
-    case information
-    public static func < (lhs: Mappy.BuildingAmenity.Category, rhs: Mappy.BuildingAmenity.Category) -> Swift.Bool
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public enum Subtype : Swift.String {
-    case bar
-    case fullService
-    case casual
-    case ticketOffice
-    case rentalShop
-    case repairShop
-    case retailStore
-    case zipTours
-    case skiPatrol
-    case aed
-    case restroom
-    case skiSchool
-    case kidZones
-    case lockers
-    case restArea
-    case adaAccessible
-    case other
-    case shuttleStop
-    case transportation
-    case rentals
-    case atm
-    case hotel
-    case condo
-    case information
-    case baseArea
-    case village
-    case villageNoDetail
-    case racingArena
-    case terrainPark
-    case guestServices
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
   public let name: Swift.String
-  public let category: Mappy.BuildingAmenity.Category?
-  public let subtype: Mappy.BuildingAmenity.Subtype?
+  public let category: Swift.String?
+  public let subtype: Swift.String?
   public let buildingId: Swift.Int?
   public let buildingName: Swift.String?
   public let levelId: Swift.String?
@@ -331,7 +275,7 @@ public struct BuildingAmenity : Swift.Equatable, Swift.Hashable {
   public let foreignId: Swift.String?
   public let foreignSource: Swift.String?
   public static let any: Mappy.BuildingAmenity
-  public init(name: Swift.String, category: Mappy.BuildingAmenity.Category?, subtype: Mappy.BuildingAmenity.Subtype?, buildingId: Swift.Int?, buildingName: Swift.String?, levelId: Swift.String?, url: Swift.String?, phone: Swift.String?, foreignId: Swift.String?, foreignSource: Swift.String?)
+  public init(name: Swift.String, category: Swift.String?, subtype: Swift.String?, buildingId: Swift.Int?, buildingName: Swift.String?, levelId: Swift.String?, url: Swift.String?, phone: Swift.String?, foreignId: Swift.String?, foreignSource: Swift.String?)
   public static func == (a: Mappy.BuildingAmenity, b: Mappy.BuildingAmenity) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -1040,11 +984,6 @@ extension Mappy.SkiLift.LiftType : Swift.RawRepresentable {}
 extension Mappy.SkiLift.PassengerPosition : Swift.Equatable {}
 extension Mappy.SkiLift.PassengerPosition : Swift.Hashable {}
 extension Mappy.SkiLift.PassengerPosition : Swift.RawRepresentable {}
-extension Mappy.BuildingAmenity.Category : Swift.Hashable {}
-extension Mappy.BuildingAmenity.Category : Swift.RawRepresentable {}
-extension Mappy.BuildingAmenity.Subtype : Swift.Equatable {}
-extension Mappy.BuildingAmenity.Subtype : Swift.Hashable {}
-extension Mappy.BuildingAmenity.Subtype : Swift.RawRepresentable {}
 extension Mappy.Bookmark.Category : Swift.Equatable {}
 extension Mappy.Bookmark.Category : Swift.Hashable {}
 extension Mappy.Bookmark.Category : Swift.RawRepresentable {}
