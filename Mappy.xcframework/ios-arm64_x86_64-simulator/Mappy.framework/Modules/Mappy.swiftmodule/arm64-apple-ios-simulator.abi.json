@@ -12553,13 +12553,6 @@
       },
       {
         "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "Mappy"
-      },
-      {
-        "kind": "Import",
         "name": "CoreLocation",
         "printedName": "CoreLocation",
         "declKind": "Import",
@@ -12601,13 +12594,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "Mappy"
       },
       {
         "kind": "Import",
@@ -26119,6 +26105,13 @@
       },
       {
         "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "Mappy"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -27804,15 +27797,15 @@
       },
       {
         "kind": "Import",
-        "name": "Reachability",
-        "printedName": "Reachability",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "Mappy"
       },
       {
         "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
+        "name": "Network",
+        "printedName": "Network",
         "declKind": "Import",
         "moduleName": "Mappy"
       },
@@ -33722,20 +33715,6 @@
             "printedName": "MutableDataProtocol",
             "usr": "s:10Foundation19MutableDataProtocolP",
             "mangledName": "$s10Foundation19MutableDataProtocolP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BSON",
-            "printedName": "BSON",
-            "usr": "s:10RealmSwift4BSONP",
-            "mangledName": "$s10RealmSwift4BSONP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "PartitionValue",
-            "printedName": "PartitionValue",
-            "usr": "s:10RealmSwift14PartitionValueP",
-            "mangledName": "$s10RealmSwift14PartitionValueP"
           }
         ]
       },
@@ -36645,38 +36624,17 @@
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
-      "kind": "StringLiteral",
-      "offset": 268,
-      "length": 3,
-      "value": "\".\""
+      "kind": "Array",
+      "offset": 208,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
       "kind": "StringLiteral",
-      "offset": 274,
-      "length": 8,
-      "value": "\"serial\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
-      "kind": "StringLiteral",
-      "offset": 285,
-      "length": 3,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
-      "kind": "StringLiteral",
-      "offset": 291,
-      "length": 33,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Breadcrumbs\/BreadcrumbsCache.swift",
-      "kind": "StringLiteral",
-      "offset": 323,
-      "length": 12,
-      "value": "\"\""
+      "offset": 253,
+      "length": 24,
+      "value": "\"mappy-BreadcrumbsCache\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/GroupLocation\/GroupLocationService.swift",
@@ -37052,182 +37010,182 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1707,
+      "offset": 1843,
       "length": 20,
       "value": "\"GroupLimitExceeded\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1761,
+      "offset": 1897,
       "length": 25,
       "value": "\"GroupUsersLimitExceeded\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1809,
+      "offset": 1945,
       "length": 14,
       "value": "\"UserNotFound\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1847,
+      "offset": 1983,
       "length": 15,
       "value": "\"GroupNotFound\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1890,
+      "offset": 2026,
       "length": 19,
       "value": "\"UserAlreadyExists\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1938,
+      "offset": 2074,
       "length": 20,
       "value": "\"GroupAlreadyExists\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1981,
+      "offset": 2117,
       "length": 14,
       "value": "\"GroupIsEmpty\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 2024,
+      "offset": 2160,
       "length": 20,
       "value": "\"UserAlreadyInGroup\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 2069,
+      "offset": 2205,
       "length": 16,
       "value": "\"UserNotInGroup\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 2110,
+      "offset": 2246,
       "length": 16,
       "value": "\"GroupCodeInUse\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 2154,
+      "offset": 2290,
       "length": 19,
       "value": "\"GroupCodeNotFound\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 2198,
+      "offset": 2334,
       "length": 16,
       "value": "\"InvalidPayload\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 2237,
+      "offset": 2373,
       "length": 14,
       "value": "\"UnknownError\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1707,
+      "offset": 1843,
       "length": 20,
       "value": "\"GroupLimitExceeded\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1761,
+      "offset": 1897,
       "length": 25,
       "value": "\"GroupUsersLimitExceeded\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1809,
+      "offset": 1945,
       "length": 14,
       "value": "\"UserNotFound\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1847,
+      "offset": 1983,
       "length": 15,
       "value": "\"GroupNotFound\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1890,
+      "offset": 2026,
       "length": 19,
       "value": "\"UserAlreadyExists\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1938,
+      "offset": 2074,
       "length": 20,
       "value": "\"GroupAlreadyExists\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 1981,
+      "offset": 2117,
       "length": 14,
       "value": "\"GroupIsEmpty\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 2024,
+      "offset": 2160,
       "length": 20,
       "value": "\"UserAlreadyInGroup\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 2069,
+      "offset": 2205,
       "length": 16,
       "value": "\"UserNotInGroup\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 2110,
+      "offset": 2246,
       "length": 16,
       "value": "\"GroupCodeInUse\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 2154,
+      "offset": 2290,
       "length": 19,
       "value": "\"GroupCodeNotFound\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 2198,
+      "offset": 2334,
       "length": 16,
       "value": "\"InvalidPayload\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Networking\/Protocols\/HTTPClientProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 2237,
+      "offset": 2373,
       "length": 14,
       "value": "\"UnknownError\""
     },
@@ -37360,7 +37318,7 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/GroupLocation\/GroupLocationServiceDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 626,
+      "offset": 564,
       "length": 5,
       "value": "false"
     },
