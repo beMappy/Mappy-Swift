@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Mappy
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import ArcGIS
 import CocoaLumberjack
@@ -30,25 +31,25 @@ public protocol TrackingProvider {
   func cancelAutoSuspendAndResume(whenCrossingBoundaryOf map: Mappy.Map)
   func evaluateAutoTrackedBoundaries()
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class MapView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) final public var map: Mappy.Map? {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class MapView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency final public var map: Mappy.Map? {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) final public let event: Combine.PassthroughSubject<Mappy.MapView.Event, Swift.Never>
-  @_Concurrency.MainActor(unsafe) final public var isPointingNorth: Swift.Bool {
+  @_Concurrency.MainActor @preconcurrency final public let event: Combine.PassthroughSubject<Mappy.MapView.Event, Swift.Never>
+  @_Concurrency.MainActor @preconcurrency final public var isPointingNorth: Swift.Bool {
     get
   }
-  @_Concurrency.MainActor(unsafe) final public var interactionOptions: Mappy.MapViewInteractionOptions {
+  @_Concurrency.MainActor @preconcurrency final public var interactionOptions: Mappy.MapViewInteractionOptions {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 extension Mappy.MapView : ArcGIS.AGSGeoViewTouchDelegate {
-  @_Concurrency.MainActor(unsafe) @objc final public func geoView(_ geoView: ArcGIS.AGSGeoView, didTapAtScreenPoint screenPoint: CoreFoundation.CGPoint, mapPoint: ArcGIS.AGSPoint)
+  @_Concurrency.MainActor @preconcurrency @objc final public func geoView(_ geoView: ArcGIS.AGSGeoView, didTapAtScreenPoint screenPoint: CoreFoundation.CGPoint, mapPoint: ArcGIS.AGSPoint)
 }
 extension Mappy.MapView {
   public enum Event {
@@ -400,7 +401,7 @@ public struct SkiSlope : Swift.Equatable, Swift.Hashable {
     public typealias AllCases = [Mappy.SkiSlope.Level]
     public typealias ID = Swift.Int
     public typealias RawValue = Swift.Int
-    public static var allCases: [Mappy.SkiSlope.Level] {
+    nonisolated public static var allCases: [Mappy.SkiSlope.Level] {
       get
     }
     public var rawValue: Swift.Int {
@@ -584,11 +585,11 @@ public enum VenuesProviderError : Foundation.LocalizedError {
   }
 }
 extension Mappy.SceneView {
-  @_Concurrency.MainActor(unsafe) final public func setInitialViewpoint()
-  @_Concurrency.MainActor(unsafe) final public func rotateToNorth()
-  @_Concurrency.MainActor(unsafe) final public func select(feature: Mappy.Feature?)
-  @_Concurrency.MainActor(unsafe) final public func displayUserPins(using locations: [Mappy.UserPinLocation])
-  @_Concurrency.MainActor(unsafe) final public func zoomToLocation(latitude: Swift.Double, longitude: Swift.Double)
+  @_Concurrency.MainActor @preconcurrency final public func setInitialViewpoint()
+  @_Concurrency.MainActor @preconcurrency final public func rotateToNorth()
+  @_Concurrency.MainActor @preconcurrency final public func select(feature: Mappy.Feature?)
+  @_Concurrency.MainActor @preconcurrency final public func displayUserPins(using locations: [Mappy.UserPinLocation])
+  @_Concurrency.MainActor @preconcurrency final public func zoomToLocation(latitude: Swift.Double, longitude: Swift.Double)
 }
 public struct UserStats {
   public let startTime: Foundation.Date?
@@ -623,7 +624,7 @@ public struct RouteResponse : Swift.Identifiable, Swift.Equatable {
     public static func == (a: Mappy.RouteResponse.TravelType, b: Mappy.RouteResponse.TravelType) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public typealias AllCases = [Mappy.RouteResponse.TravelType]
-    public static var allCases: [Mappy.RouteResponse.TravelType] {
+    nonisolated public static var allCases: [Mappy.RouteResponse.TravelType] {
       get
     }
     public var hashValue: Swift.Int {
@@ -699,13 +700,13 @@ public struct TurnByTurnNavigationResponse {
   }
 }
 extension Mappy.SceneView {
-  @_Concurrency.MainActor(unsafe) final public var isUserTrackRendered: Swift.Bool {
+  @_Concurrency.MainActor @preconcurrency final public var isUserTrackRendered: Swift.Bool {
     get
   }
-  @_Concurrency.MainActor(unsafe) final public func renderUserTrack(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, userId: Swift.String? = nil) -> Combine.AnyPublisher<Mappy.SceneView.UserTrackRenderingStatus, any Swift.Error>
-  @_Concurrency.MainActor(unsafe) final public func showUserTrack()
-  @_Concurrency.MainActor(unsafe) final public func hideUserTrack()
-  @_Concurrency.MainActor(unsafe) final public func removeUserTrack()
+  @_Concurrency.MainActor @preconcurrency final public func renderUserTrack(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, userId: Swift.String? = nil) -> Combine.AnyPublisher<Mappy.SceneView.UserTrackRenderingStatus, any Swift.Error>
+  @_Concurrency.MainActor @preconcurrency final public func showUserTrack()
+  @_Concurrency.MainActor @preconcurrency final public func hideUserTrack()
+  @_Concurrency.MainActor @preconcurrency final public func removeUserTrack()
   public enum UserTrackRenderingStatus {
     case normal, empty
     public static func == (a: Mappy.SceneView.UserTrackRenderingStatus, b: Mappy.SceneView.UserTrackRenderingStatus) -> Swift.Bool
@@ -861,34 +862,34 @@ public enum GroupsProviderError : Foundation.LocalizedError {
   }
 }
 extension Mappy.MapView {
-  @_Concurrency.MainActor(unsafe) final public func setInitialViewpoint()
-  @_Concurrency.MainActor(unsafe) final public func rotateToNorth()
-  @_Concurrency.MainActor(unsafe) final public func select(feature: Mappy.Feature?)
-  @_Concurrency.MainActor(unsafe) final public func displayUserPins(using locations: [Mappy.UserPinLocation])
-  @_Concurrency.MainActor(unsafe) final public func display(route: Mappy.RouteResponse?, routeHighlightColor: UIKit.UIColor = .routeHighlight, destinationImage: UIKit.UIImage = .mappyPinSmall)
-  @_Concurrency.MainActor(unsafe) final public func startNavigation(route: Mappy.RouteResponse, routeHighlightColor: UIKit.UIColor = .routeHighlight, destinationImage: UIKit.UIImage = .mappyPin) -> Mappy.RouteTracker?
-  @_Concurrency.MainActor(unsafe) final public func stopNavigation()
-  @_Concurrency.MainActor(unsafe) final public func zoomToLocation(latitude: Swift.Double, longitude: Swift.Double)
+  @_Concurrency.MainActor @preconcurrency final public func setInitialViewpoint()
+  @_Concurrency.MainActor @preconcurrency final public func rotateToNorth()
+  @_Concurrency.MainActor @preconcurrency final public func select(feature: Mappy.Feature?)
+  @_Concurrency.MainActor @preconcurrency final public func displayUserPins(using locations: [Mappy.UserPinLocation])
+  @_Concurrency.MainActor @preconcurrency final public func display(route: Mappy.RouteResponse?, routeHighlightColor: UIKit.UIColor = .routeHighlight, destinationImage: UIKit.UIImage = .mappyPinSmall)
+  @_Concurrency.MainActor @preconcurrency final public func startNavigation(route: Mappy.RouteResponse, routeHighlightColor: UIKit.UIColor = .routeHighlight, destinationImage: UIKit.UIImage = .mappyPin) -> Mappy.RouteTracker?
+  @_Concurrency.MainActor @preconcurrency final public func stopNavigation()
+  @_Concurrency.MainActor @preconcurrency final public func zoomToLocation(latitude: Swift.Double, longitude: Swift.Double)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class SceneView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) final public var scene: Mappy.Scene? {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class SceneView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency final public var scene: Mappy.Scene? {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) final public let event: Combine.PassthroughSubject<Mappy.SceneView.Event, Swift.Never>
-  @_Concurrency.MainActor(unsafe) final public var isPointingNorth: Swift.Bool {
+  @_Concurrency.MainActor @preconcurrency final public let event: Combine.PassthroughSubject<Mappy.SceneView.Event, Swift.Never>
+  @_Concurrency.MainActor @preconcurrency final public var isPointingNorth: Swift.Bool {
     get
   }
-  @_Concurrency.MainActor(unsafe) final public var interactionOptions: Mappy.SceneViewInteractionOptions {
+  @_Concurrency.MainActor @preconcurrency final public var interactionOptions: Mappy.SceneViewInteractionOptions {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 extension Mappy.SceneView : ArcGIS.AGSGeoViewTouchDelegate {
-  @_Concurrency.MainActor(unsafe) @objc final public func geoView(_ geoView: ArcGIS.AGSGeoView, didTapAtScreenPoint screenPoint: CoreFoundation.CGPoint, mapPoint: ArcGIS.AGSPoint)
+  @_Concurrency.MainActor @preconcurrency @objc final public func geoView(_ geoView: ArcGIS.AGSGeoView, didTapAtScreenPoint screenPoint: CoreFoundation.CGPoint, mapPoint: ArcGIS.AGSPoint)
 }
 extension Mappy.SceneView {
   public enum Event {
@@ -916,13 +917,13 @@ public struct MapViewInteractionOptions {
   public var snapToNorthThreshold: Swift.Double
 }
 extension Mappy.MapView {
-  @_Concurrency.MainActor(unsafe) final public var isUserTrackRendered: Swift.Bool {
+  @_Concurrency.MainActor @preconcurrency final public var isUserTrackRendered: Swift.Bool {
     get
   }
-  @_Concurrency.MainActor(unsafe) final public func renderUserTrack(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, userId: Swift.String? = nil) -> Combine.AnyPublisher<Mappy.MapView.UserTrackRenderingStatus, any Swift.Error>
-  @_Concurrency.MainActor(unsafe) final public func showUserTrack()
-  @_Concurrency.MainActor(unsafe) final public func hideUserTrack()
-  @_Concurrency.MainActor(unsafe) final public func removeUserTrack()
+  @_Concurrency.MainActor @preconcurrency final public func renderUserTrack(startTime: Foundation.TimeInterval, endTime: Foundation.TimeInterval, userId: Swift.String? = nil) -> Combine.AnyPublisher<Mappy.MapView.UserTrackRenderingStatus, any Swift.Error>
+  @_Concurrency.MainActor @preconcurrency final public func showUserTrack()
+  @_Concurrency.MainActor @preconcurrency final public func hideUserTrack()
+  @_Concurrency.MainActor @preconcurrency final public func removeUserTrack()
   public enum UserTrackRenderingStatus {
     case normal, empty
     public static func == (a: Mappy.MapView.UserTrackRenderingStatus, b: Mappy.MapView.UserTrackRenderingStatus) -> Swift.Bool
