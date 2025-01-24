@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Mappy
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
@@ -456,6 +456,8 @@ public enum LoadStatus {
 }
 @_hasMissingDesignatedInitializers public class MappyCore {
   public static func initialize(clientId: Swift.String, secret: Swift.String, mappyUserId: Swift.String?, deferTracking: Swift.Bool = false, appTrackingInfo: Mappy.AppTrackingInfo? = nil) -> Combine.AnyPublisher<Mappy.MappyMeta, Swift.Never>
+  public static func prepare(venueIDs: [Swift.String], autoSuspendAndResumeTracking monitor: Swift.Bool, completionCallback: @escaping () -> ())
+  public static func prepare(venueIDs: [Swift.String], autoSuspendAndResumeTracking monitor: Swift.Bool) async
   @objc deinit
 }
 public struct MappyMeta {
