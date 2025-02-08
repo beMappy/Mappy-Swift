@@ -454,10 +454,10 @@ public enum LoadStatus {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class MappyCore {
-  public static func initialize(clientId: Swift.String, secret: Swift.String, mappyUserId: Swift.String?, deferTracking: Swift.Bool = false, appTrackingInfo: Mappy.AppTrackingInfo? = nil) -> Combine.AnyPublisher<Mappy.MappyMeta, Swift.Never>
-  public static func prepare(venueIDs: [Swift.String], autoSuspendAndResumeTracking monitor: Swift.Bool, completionCallback: @escaping () -> ())
-  public static func prepare(venueIDs: [Swift.String], autoSuspendAndResumeTracking monitor: Swift.Bool) async
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor public class MappyCore {
+  @_Concurrency.MainActor public static func initialize(clientId: Swift.String, secret: Swift.String, mappyUserId: Swift.String?, deferTracking: Swift.Bool = false, appTrackingInfo: Mappy.AppTrackingInfo? = nil) -> Combine.AnyPublisher<Mappy.MappyMeta, Swift.Never>
+  @_Concurrency.MainActor public static func prepare(venueIDs: [Swift.String], autoSuspendAndResumeTracking monitor: Swift.Bool, completionCallback: @escaping () -> ())
+  @_Concurrency.MainActor public static func prepare(venueIDs: [Swift.String], autoSuspendAndResumeTracking monitor: Swift.Bool) async
   @objc deinit
 }
 public struct MappyMeta {
@@ -999,6 +999,7 @@ extension Mappy.SkiSlope.RunType : Swift.Hashable {}
 extension Mappy.SkiSlope.RunType : Swift.RawRepresentable {}
 extension Mappy.LoadStatus : Swift.Equatable {}
 extension Mappy.LoadStatus : Swift.Hashable {}
+extension Mappy.MappyCore : Swift.Sendable {}
 extension Mappy.RouteResponse.TravelType : Swift.Equatable {}
 extension Mappy.RouteResponse.TravelType : Swift.Hashable {}
 extension Mappy.SceneView.UserTrackRenderingStatus : Swift.Equatable {}

@@ -16732,6 +16732,7 @@
             "static": true,
             "declAttributes": [
               "Final",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -16791,6 +16792,7 @@
             "moduleName": "Mappy",
             "static": true,
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -16834,6 +16836,7 @@
             "moduleName": "Mappy",
             "static": true,
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -16847,6 +16850,7 @@
         "moduleName": "Mappy",
         "declAttributes": [
           "AccessControl",
+          "Custom",
           "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true,
@@ -16864,6 +16868,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -38005,7 +38016,7 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService+RegionMonitoring.swift",
       "kind": "StringLiteral",
-      "offset": 4336,
+      "offset": 4514,
       "length": 24,
       "value": "\"mappy.monitoredRegion.\""
     },
@@ -38117,7 +38128,7 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/MappyCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 1415,
+      "offset": 1343,
       "length": 5,
       "value": "false"
     },
@@ -38222,9 +38233,23 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIImage+Ext.swift",
       "kind": "StringLiteral",
-      "offset": 296,
+      "offset": 270,
+      "length": 8,
+      "value": "\"mappin\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIImage+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 329,
       "length": 11,
       "value": "\"mappy_pin\""
+    },
+    {
+      "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Extensions\/UIImage+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 419,
+      "length": 8,
+      "value": "\"mappin\""
     },
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Data\/Database\/DefaultsDatabaseProvider.swift",
@@ -38621,7 +38646,7 @@
     {
       "filePath": "\/Volumes\/thizyFiles\/RealWeb\/Mappy\/Repositories\/Mappy-Swift-Source\/Mappy\/Mappy\/SDK\/Location\/LocationService.swift",
       "kind": "StringLiteral",
-      "offset": 6467,
+      "offset": 6786,
       "length": 39,
       "value": "\"locationManagerDidChangeAuthorization\""
     },
